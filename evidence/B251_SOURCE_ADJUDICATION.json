@@ -1,0 +1,138 @@
+{
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T09:20:33.219266+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/normalization/reductions.tex",
+      "sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+      "actually_read_scope": "entire actual source/old and draft target"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "actually_read_scope": "entire actual source/old and draft target"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "actually_read_scope": "entire actual source; no-normal-form contract"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "actually_read_scope": "entire actual source; successor term"
+    },
+    {
+      "source_path": "content/computability/recursive-functions/partial-functions.tex",
+      "sha256": "a30626b08ef610b2da04defc5b41f53ff48c62da6a30587a048278625d5f318d",
+      "actually_read_scope": "actual lines12–83, especially strict partial composition and recurrence53–62"
+    },
+    {
+      "source_path": "content/computability/recursive-functions/primitive-recursion.tex",
+      "sha256": "97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af",
+      "actually_read_scope": "actual lines94–132; base/step pattern"
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+      "sha256": "a7157a4cffa4a4a862c3ccca068d1b57b190ac830bbc7ce53a2df999663fe519",
+      "actually_read_scope": "entire actual source and existing133 record"
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read_scope": "actual lines173–196; compatible distinct discharge labels"
+    },
+    {
+      "source_path": "content/proof-theory/normalization/segments.tex",
+      "sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+      "actually_read_scope": "entire actual source; cut/rank/length definition"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "actually_read_scope": "actual lines18–61; later totality requirement"
+    }
+  ],
+  "finding_records": [
+    {
+      "id": "OLCMP-172",
+      "canonical_source_issue_id": "OLCMP-133",
+      "classification": "demonstrated-source-mathematical-fix; new occurrence of existing defect",
+      "grafting_counterexample": "In delta2 derive P→(P∧P) from Px, by using inner Py and discharging y. Let delta3 be Py proving P. The original outer implication detour has Py open; grafting at x makes both inserted Py and inner Py discharged. Compatible same-formula labels do not imply equality of open assumptions.",
+      "vacuous_counterexample": "Let delta2 be a closed proof of P→P, and apply vacuous implication introduction with antecedent Q; eliminate using delta3 the open Qz. The original detour has Qz open, but after reduction only the closed delta2 remains.",
+      "correction": "Every remaining open assumption has an unreplaced original or undischarged inserted leaf origin. The same-labelled inserted assumptions may be discharged. No new fresh-label hypothesis."
+    },
+    {
+      "id": "OLCMP-173",
+      "classification": "source_editorial_small",
+      "correction": "Remove only the copied undefined delta4 reference in the implication example; delta2/delta3 are its only constituent subproofs."
+    },
+    {
+      "id": "OLCMP-174",
+      "classification": "demonstrated-source-label-fix",
+      "exact_source_fragment": "\\AxiomC{$\\Discharge{!C}{x}$}",
+      "exact_target_fragment": "\\AxiomC{$\\Discharge{!C}{y}$}",
+      "proof": "Source rules-proofs183–185 require no two different assumption formulas with one discharge label; table version already has C labelled y. Change only the final ex-falso C branch label."
+    },
+    {
+      "id": "OLSOL-021",
+      "classification": "demonstrated-source-construction-domain-gap; same erasing-argument mechanism as020 in primitive recursion",
+      "contract": "Source partial-functions53–62 uses strict partial primitive recursion, and348 requires no normal form on undefined inputs.",
+      "counterexample": "Omega=(lambda t.t t)(lambda t.t t); in parameter-free absorbed notation choose G=Omega and H=lambda a.lambda b.num0. The base is undefined, the step is the total binary constant-zero function.",
+      "reduction": [
+        "F num0 ≡ G = Omega, which has no normal form",
+        "F num1 ≡ H(num0,F num0) -> num0; H discards the divergent second argument"
+      ],
+      "strict_partial_value": "f(0) undefined implies f(1)=h(0,f(0)) undefined, contrary to the constructed normal numeral.",
+      "general_closure_theorem_refuted": false,
+      "replacement_general_proof_supplied": false,
+      "all_prior_math_bytes_retained": true
+    },
+    {
+      "id": "OLSOL-022",
+      "classification": "source_editorial_small",
+      "proof": "Five-line second-clause display: line3 substitutes the pair induction hypothesis into T; line4 uses the transition reduction. Source second-to-last points to line4.",
+      "formal_derivation_changed": false
+    }
+  ],
+  "translation_local_choices": [
+    {
+      "id": "DEC-PS-0676-INTRODUCTION-CASE-SCOPE",
+      "treatment": "Opening describes introduction-rule case explicitly; later original ex-falso case remains. No new theorem or rank-zero error."
+    },
+    {
+      "id": "DEC-PS-0353-SUCCESSOR-NOTATION",
+      "treatment": "Explain existing S as preceding successor lambda term; retain exact S formula, no undefined-name defect claimed."
+    }
+  ],
+  "old005_008_independently_reverified": [
+    {
+      "id": "OLLAM-005",
+      "finding": "H already defines h; all following result-term equations use F."
+    },
+    {
+      "id": "OLLAM-006",
+      "finding": "Step is x+1 and previous f(x,z), so step index is x, not parameter z."
+    },
+    {
+      "id": "OLLAM-007",
+      "finding": "Fresh given G-prime/H-prime require primes in first full-parameter equations; later unprimed terms absorb parameters."
+    },
+    {
+      "id": "OLLAM-008",
+      "finding": "After parameter absorption F(n) takes z only. Choosing v=lambda z.z, u=num0,z=num1 and H-prime=lambda u.lambda a.lambda z.a makes source v(u,z) reduce to lambda y.y rather than intended num1."
+    }
+  ],
+  "optional_improvements_implemented": [],
+  "withdrawn_findings": [],
+  "unresolved": [
+    "General strict partial recursion proof not supplied",
+    "Full722 reader, EPUB, full source audit and final release unfinished"
+  ],
+  "new_upstream_post": false,
+  "new_release": false,
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  }
+}

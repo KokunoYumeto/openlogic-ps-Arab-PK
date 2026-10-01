@@ -1,0 +1,19 @@
+{
+  "schema": "ps-decision-entry-type-repair/1",
+  "utc": "2026-10-01T09:22:34.819095+00:00",
+  "status": "fixed two local wording records to existing canonical schema type; acceptance pending",
+  "entry_ids": [
+    "DEC-PS-0676-INTRODUCTION-CASE-SCOPE",
+    "DEC-PS-0353-SUCCESSOR-NOTATION"
+  ],
+  "before_type": "wording-choice",
+  "after_type": "translation wording",
+  "before_expert_log_sha256": "c3b858bdbdeff3fee1d69147c0d88c70c73df9166b3cc2f1cf96cdc5ee39f3d4",
+  "after_expert_log_sha256": "0a414dd80a29e3d59e70ca89545e918a4bb5811018f5b9225eb147f054a3bc0b",
+  "failed_diagnostic_sha256": "dae01990dcef0f5ed431047fdd6f1d7a7e112b625f79b5ad4af5881908ffd30f",
+  "exact_diagnostic": "KeyError: wording-choice in existing record_kind mapping",
+  "canonical_builder_changed": false,
+  "decision_meaning_changed": false,
+  "target_changed": false,
+  "next_action": "Re-run accepted-source canonical generation against corrected records; full722active."
+}

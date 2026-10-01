@@ -1,0 +1,82 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T09:20:33.219266+00:00",
+  "status": "بشپړه خپلواکه بياکتنه؛ ټول پخواني رسمي بايټونه ساتل شوي، پخواني څلور سمونونه بيا تصديق دي، د جزوي تابعو د ثبوت پاتې حد او د استقرا کرښه سمه شوې ده۔",
+  "units": [
+    {
+      "unit_id": "OLP-0353",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "target_sha256_before": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+      "target_sha256_after": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+      "target_bytes": 8727,
+      "paired_blocks": 15,
+      "source_correction_ids": [
+        "OLSOL-021",
+        "OLSOL-022"
+      ],
+      "reverified_existing_source_ids": [
+        "OLLAM-005",
+        "OLLAM-006",
+        "OLLAM-007",
+        "OLLAM-008"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0353-SUCCESSOR-NOTATION"
+      ],
+      "translated_blocks_reviewed": 11,
+      "target_retained_unchanged": false,
+      "changed_prior_blocks": [
+        14
+      ],
+      "all_prior_math_bytes_retained": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "همدا اصلي درې مخونه د مسودې مخکې بيا په سترګو کتل شوي؛ پاکستانے بالغ علمي نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "پاکستانے مخ د علمي نثر او کښې/ے شاهد دے؛ افغان ۳۹ استنتاج او ثبوت، ۱۴۷ ابتدايي تابعې او بازګښت ښيي، د لامبډا او د کمولو عين پاکستاني مرکب مستقل تصديق نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "همدا اصلي درې مخونه د مسودې مخکې بيا په سترګو کتل شوي؛ پاکستانے بالغ علمي نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "پاکستانے مخ د علمي نثر او کښې/ے شاهد دے؛ افغان ۳۹ استنتاج او ثبوت، ۱۴۷ ابتدايي تابعې او بازګښت ښيي، د لامبډا او د کمولو عين پاکستاني مرکب مستقل تصديق نۀ لري۔"
+    }
+  ],
+  "segment_entries_added": 11,
+  "new_source_correction_ids": [
+    "OLSOL-021",
+    "OLSOL-022"
+  ],
+  "wording_choice_ids": [
+    "DEC-PS-0353-SUCCESSOR-NOTATION"
+  ],
+  "old_source_corrections_independently_reverified": [
+    "OLLAM-005",
+    "OLLAM-006",
+    "OLLAM-007",
+    "OLLAM-008"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0353.jsonl",
+  "whole_unit_segment_snapshot_sha256": "2e68a3fa200ab2422b9a9945d1bfcad30e3323d2e7c16ed9fce7958f0e51340d",
+  "source_adjudication_sha256": "b07ccba27cab884825557d3f443832ed8e30cb5f9963f171d60f985814b1e1b9",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "بشپړ OLP-0677 او OLP-0354 دوام؛ ټول ۷۲۲ فعال دي۔"
+}

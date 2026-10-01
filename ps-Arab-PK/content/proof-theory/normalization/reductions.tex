@@ -1,0 +1,360 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: reductions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{red}
+
+\olsection{د کمولو بدلونونه}
+
+لومړے د معرفي کولو د قاعدې حالت اخلو۔ که په \Log{N1i} کښې د
+!!a{proof} د پرېکون اوږدوالے~$1$ وي، دا يوه داسې برخه ده چې د
+!!{formula} يو مورد لري، او همدغه !!{formula} هم د
+!!a{introduction} استنتاج پايله او هم د !!a{elimination} استنتاج
+لويه مقدمه ده۔ د عادي کولو په ثبوت کښې دا ډول پرېکونونه داسې
+``کمول'' کېږي چې په دغې !!{introduction}/!!{elimination} جوړې
+پاے ته رسېدونکے فرعي !!{proof} په نوي !!{proof} بدل شي، چې
+د استنتاجونو دا جوړه ترې لرې شوې وي۔ داسې بدلول نوي پرېکونونه
+پيدا کولے شي۔ خو کتلے شو چې د نويو پرېکونونو رتبه د کمېدونکي
+پرېکون له رتبې ټيټه ده۔ نو د نوي !!{proof} يا د پرېکون اوږدوالے
+کم دے، ځکه د تر ټولو لوړې رتبې يو د~$1$ اوږدوالي پرېکون لرې شو،
+يا د !!{proof} د پرېکون رتبه ټيټه شوې ده، که همدا د تر ټولو
+لوړې رتبې يوازينے پرېکون و۔
+
+مثلاً، که اړوند استنتاجونه \Intro{\lif} او \Elim{\lif}
+وي، $!A \ident !B \lif !C$ وي او داسې فرعي
+!!{proof}~$\delta_1$ وي چې په لاندې رسم پاے ته رسېږي:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+د دې پرېکون د لرې کولو دپاره په~$\delta$ کښې فرعي
+ثبوت~$\delta_1$ په لاندې رسم بدلوو:
+\[
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\DeduceC{$!C$}
+\DisplayProof
+\]
+په $\Subst{\delta_2}{\delta_3}{!B^x}$ هغه !!{proof} مراد دے چې
+له~$\delta_2$ څخه د هر~$!B$ فرض، چې نښه ئې~$x$ ده، د بشپړ
+!!{proof}~$\delta_3$ په ځاے کولو حاصلېږي۔ په دې !!{proof} کښې
+بدل شوي اصلي پرانيستي $!B$ فرضونه، چې نښه ئې~$x$ ده، نۀ دي
+پاتې؛ خو دننه شوي ورته نښه لرونکي فرضونه پاتې کېدے شي۔ د~$x$
+نښه لرونکے بل بېل فارمول نۀ شته، ځکه د معمول په شان فرض کوو
+چې دوه بېل !!{formula}s د يوې نښې لرونکي فرضونه نۀ وي۔ د نوي
+!!{proof} هر پرانيستے فرض يا له~$\delta_1$ څخه پاتې نۀ بدل شوے
+پرانيستے فرض دے، يا له داخل شوي ثبوت څخه داسې فرض دے چې له
+داخلېدو وروسته نۀ دے ايستل شوے۔ په~$\delta_2$ کښې د فرضونو
+ايستونکے هر استنتاج په $\Subst{\delta_2}{\delta_3}{!B^x}$ کښې
+د هماغې نښې فرضونه باسي؛ په هغو کښې نوي دننه شوي فرضونه هم
+راتلے شي۔ په~$\delta_3$ کښې د فرضونو هر ايستونکے استنتاج ښايي
+څو نقلونه ولري، چې په $\Subst{\delta_2}{\delta_3}{!B^x}$ کښې
+اړوند فرضونه باسي۔
+\textbf{د سرچينه‌يي دعوې سمون OLCMP-172، د OLCMP-133 تکراري مورد:}
+د ټولو پخوانيو پرانيستو فرضونو عين پاتې کېدل لازم نۀ دي؛ دننه
+شوے فرض ايستل کېدے شي، او که د ايستل کېدونکي فرض هېڅ مورد نۀ
+وي، د آرګومېنټ ټول ثبوت حذفېږي۔ د پاتې فرضونو اصل دلته کره شو؛
+د نښو د تازګۍ نوی شرط نۀ دے ورزيات شوے۔
+
+هر پرېکون چې بشپړ په $\delta_2$ يا $\delta_3$ کښې وي، يا
+په~$\delta$ کښې بشپړ له~$\delta_1$ څخه بهر وي، نۀ بدلېږي:
+هماغه !!{formula}s رانغاړي او له هماغو استنتاجونو تېرېږي۔ نو
+په ځانګړي ډول ئې رتبه او اوږدوالے په~$\delta$ کښې د اړوند
+پرېکون سره عين دي۔ د تر ټولو لوړې رتبې يو د~$1$ اوږدوالي
+پرېکون مو لرې کړے دے، نو يا د پرېکون اوږدوالے کم شوے يا ئې
+رتبه ټيټه شوې ده، که د~$\delta$ د پرېکون اوږدوالے~$1$ و او
+همدا د تر ټولو لوړې رتبې يوازينے پرېکون و۔
+\textbf{د سرچينه‌يي حوالې سمون OLCMP-173:} دلته بېلګه يوازې
+دويم او درېيم فرعي ثبوتونه لري؛ د څلورم ناتعريف فرعي ثبوت
+کاپي شوې حواله لرې شوه۔
+
+خو دوه خبرې کېدے شي:
+\begin{enumerate}
+  \item د ټولو $!B^x$ فرضونو په $\delta_3$ بدلولو سره مو
+  په~$\delta_3$ کښې د ټولو پرېکونونو نقلونه زيات کړي دي۔ که په
+  هغو کښې د تر ټولو لوړې رتبې پرېکونونه وي، د نوي !!{proof} د
+  پرېکون اوږدوالے د زاړه !!{proof} له پرېکون اوږدوالي زياتېدے
+  شي۔ بايد ډاډه شو چې داسې نۀ کېږي۔ دا په دې يقيني کوو چې د
+  کمولو بدلونونه يوازې په تر ټولو \emph{ښي اړخ} د تر ټولو لوړې
+  رتبې پرېکونونو تطبيق کړو: داسې پرېکونونه چې په~$\delta$ کښې
+  ئې ښي اړخ ته په کومه څانګه د تر ټولو لوړې رتبې بل پرېکون نۀ
+  وي۔ که په~$\delta_3$ کښې داسې پرېکون وي، د دې کمېدونکي
+  پرېکون ښي اړخ ته به وي، نو دلته به مو تر ټولو ښي پرېکون نۀ
+  و غوره کړے۔ تل د تر ټولو ښي پرېکون په غوره کولو سره يقيني
+  کوو چې يا د !!{proof} د پرېکون اوږدوالے کم کړو يا ئې د پرېکون
+  رتبه هم ټيټه کړو۔
+  \item که په $\delta_2$ کښې فرض $!B^x$ د !!a{elimination}
+  استنتاج لويه مقدمه وي او د~$\delta_3$ وروستے استنتاج
+  \Elim{\lor}، \Elim{\lexists} يا !!a{introduction} وي، نو
+  په~$\delta_2$ کښې پر داسې فرض د~$\delta_3$ په پېوندولو مو
+  نوی پرېکون جوړ کړے دے۔ هغه څۀ چې په~$\delta_2$ کښې يوازې
+  فرض و، اوس د~$1$ اوږدوالي پرېکون دے، يعنې د
+  !!a{introduction} استنتاج پايله او د !!a{elimination} استنتاج
+  لويه مقدمه، يا د پرېکون د برخې وروستے !!{formula} مورد دے،
+  يعنې د !!a{elimination} استنتاج لويه مقدمه او د \Elim{\lor}
+  يا \Elim{\lexists} پايله۔ که $B^x$ د \Elim{\lor} يا
+  \Elim{\lexists} کوچنۍ مقدمه وه، له مخکې د يوې برخې، او ښايي
+  د پرېکون د برخې، لومړے !!{formula} مورد و۔ په نوي !!{proof}
+  کښې دا برخه اوس اوږدېدې شي۔ خو پام وکړئ چې د دې نوي پرېکون
+  يا پخوانۍ پرېکون برخې !!{formula}~$!B$ دے او
+  $\depth{!B} < \depth{!B \lif !C}$۔ نو که مو پرېکونونه زيات
+  کړي يا ئې اوږدوالے زيات کړے هم وي، په هغو کښې يو هم د تر
+  ټولو لوړې رتبې پرېکون نۀ دے۔ په دې توګه مو يا د پرېکون رتبه
+  ټيټه کړې، يا که د هماغې رتبې نور پرېکونونه پاتې وي، د پرېکون
+  اوږدوالے مو کم کړے دے۔
+\end{enumerate}
+
+د~$1$ اوږدوالي پرېکون د کمولو عمل د \emph{کمولو بدلون}
+يا د \emph{تاو راتاو بدلون} بلل کېږي۔ د ځينو قاعده‌جوړو بڼې
+په \olref{tab:reduction-conversions} کښې ورکړې دي؛ پاتې بڼې د
+مشقونو په توګه پرېښودل شوې دي۔
+
+\begin{table}
+\begin{multline*}
+\bottomAlignProof
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\DisplayProof}\qquad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_3}{\delta_2}{!B^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\\[2ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(c)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\Subst{\delta_2}{t}{c}$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\DisplayProof}
+\\[4ex]
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{$\Subst{\Subst{\delta_3}{t}{c}}{\delta_2}{!B(t)^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\end{multline*}
+\caption{د \Log{N1i} د کمولو ځينې بدلونونه۔}
+\ollabel{tab:reduction-conversions}
+\end{table}
+
+\begin{prob}
+د \Intro{\lnot} او ورپسې \Elim{\lnot} د کمولو بدلون ورکړئ۔
+\end{prob}
+
+يو حالت لا پاتې دے۔ د پرېکون تعريف هغه حالت هم رانغاړي
+چې د پرېکون اوږدوالے~$1$ وي او $!A$ هم د~\FalseInt{} پايله
+او هم د !!a{elimination} استنتاج لويه مقدمه وي۔ په دې حالت
+کښې په هغه شان چلند کوو لکه چې $!A$ د !!a{introduction}
+قاعدې پايله وي۔ مثلاً، دا رسم
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad\text{په دې}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$!C$}
+\DisplayProof
+\]
+په ښي اړخ رسم بدلوو۔ په هغو حالتونو کښې لږ احتياط پکار دے چې
+$!A \ident (!B \lor !C)$ يا $!A \ident \lexists[x][!B(x)]$
+وي۔ مثلاً، که لاندې چپ رسم په ښي رسم بدل کړو،
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad\text{په دې}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!D$}
+\DisplayProof
+\]
+نو د~$!D$ په پرېکون !!{formula} نوی پرېکون جوړېدے شي، او هېڅ
+ضمانت نشته چې $\depth{!D} < \depth{!B \lor !C}$!{} نو دلته
+هم د \Intro{\lor}/\Elim{\lor} د کمولو په شان عمل کوو او
+په لاندې يوه بڼه ئې بدلوو:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\DisplayProof
+\quad\text{يا}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!C$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DisplayProof
+\]
+\textbf{د سرچينه‌يي نښې سمون OLCMP-174:} د يا ايستلو په
+اصلي رسم کښې دواړو بېلو فرضونو يوه نښه لرله؛ د دويمې څانګې
+نښه په بله نښه بدله شوه، څو د بېلو فارمولونو نښې سازګارې وي۔
+نور ټول رسمي رسمونه عين ساتل شوي دي۔
+
+\end{document}

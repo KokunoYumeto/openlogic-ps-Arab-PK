@@ -7102,7 +7102,18 @@
         "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:20"
       ],
       "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B251",
+          "utc": "2026-10-01T09:20:33.219266+00:00",
+          "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+          "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+          "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ],
+      "latest_revalidation_target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a"
     },
     {
       "id": "OLLAM-006",
@@ -7147,7 +7158,18 @@
         "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:23"
       ],
       "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B251",
+          "utc": "2026-10-01T09:20:33.219266+00:00",
+          "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+          "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+          "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ],
+      "latest_revalidation_target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a"
     },
     {
       "id": "OLLAM-007",
@@ -7192,7 +7214,18 @@
         "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:36"
       ],
       "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B251",
+          "utc": "2026-10-01T09:20:33.219266+00:00",
+          "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+          "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+          "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ],
+      "latest_revalidation_target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a"
     },
     {
       "id": "OLLAM-008",
@@ -7237,7 +7270,18 @@
         "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:49"
       ],
       "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B251",
+          "utc": "2026-10-01T09:20:33.219266+00:00",
+          "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+          "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+          "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ],
+      "latest_revalidation_target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a"
     },
     {
       "id": "OLLAM-009",
@@ -23184,6 +23228,231 @@
       "frozen_source_unchanged": true,
       "reader_disclosure_language": "ps-Arab-PK",
       "upstream_reporting": "source_erratum_medium; proof-construction domain gap, no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "canonical_source_issue_id": "FR-C1701-OLP0352-PARTIAL-COMPOSITION",
+      "cross_edition_alias_receipt_sha256": "cf5db0b695c8093fb4c7f775a3222bf3b72c7b0c580b255fc65850d9163dd924",
+      "new_unique_upstream_error": false
+    },
+    {
+      "id": "OLCMP-172",
+      "unit_id": "OLP-0676",
+      "classification": "grafting-open-assumption-equality-recurrence",
+      "source_path": "content/proof-theory/normalization/reductions.tex",
+      "source_sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+      "source_line_1based": 26,
+      "source_locator": "content/proof-theory/normalization/reductions.tex:block7",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/reductions.tex",
+      "target_line_1based": 27,
+      "target_sha256": "c89bacb0102353e31e81c1ac6e998282654cb0914f1d1efe85df8370ceac32b6",
+      "mode": "minimal-correction-or-source-proof-scope-disclosure-in-Pashto",
+      "reason": "د ۱۳۳ سرچينه‌يي عيب تکراري مورد: د دننه شويو او پاتې پاڼو اصل کره دے، د ټولو پخوانيو فرضونو عين پاتې کېدل او د ټولو ايستنو د عين پاڼو دعوه نۀ ساتل کېږي۔",
+      "translation_change": "د ۱۳۳ سرچينه‌يي عيب تکراري مورد: د دننه شويو او پاتې پاڼو اصل کره دے، د ټولو پخوانيو فرضونو عين پاتې کېدل او د ټولو ايستنو د عين پاڼو دعوه نۀ ساتل کېږي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، مستقيم مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b07ccba27cab884825557d3f443832ed8e30cb5f9963f171d60f985814b1e1b9",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "canonical_source_issue_id": "OLCMP-133",
+      "new_unique_upstream_error": false,
+      "formula_policy": "All formal expressions retained; reapply exact leaf-origin correction from133 to this recurrence, no fresh-label hypothesis.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-173",
+      "unit_id": "OLP-0676",
+      "classification": "copied-undefined-subproof-reference",
+      "source_path": "content/proof-theory/normalization/reductions.tex",
+      "source_sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+      "source_line_1based": 65,
+      "source_locator": "content/proof-theory/normalization/reductions.tex:block8",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/reductions.tex",
+      "target_line_1based": 74,
+      "target_sha256": "c89bacb0102353e31e81c1ac6e998282654cb0914f1d1efe85df8370ceac32b6",
+      "mode": "minimal-correction-or-source-proof-scope-disclosure-in-Pashto",
+      "reason": "په دې بېلګه کښې څلورم فرعي ثبوت نشته؛ يوازې کاپي شوې حواله لرې شوه۔",
+      "translation_change": "په دې بېلګه کښې څلورم فرعي ثبوت نشته؛ يوازې کاپي شوې حواله لرې شوه۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، مستقيم مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b07ccba27cab884825557d3f443832ed8e30cb5f9963f171d60f985814b1e1b9",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "exact_source_fragment": "$\\delta_4$",
+      "exact_target_fragment": "",
+      "formula_policy": "Omit exactly one copied undefined delta4 inline reference; all other formal content retained.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\delta_4$"
+        ],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-174",
+      "unit_id": "OLP-0676",
+      "classification": "distinct-formula-discharge-label-collision",
+      "source_path": "content/proof-theory/normalization/reductions.tex",
+      "source_sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+      "source_line_1based": 266,
+      "source_locator": "content/proof-theory/normalization/reductions.tex:block13",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/reductions.tex",
+      "target_line_1based": 277,
+      "target_sha256": "c89bacb0102353e31e81c1ac6e998282654cb0914f1d1efe85df8370ceac32b6",
+      "mode": "minimal-correction-or-source-proof-scope-disclosure-in-Pashto",
+      "reason": "د يا ايستلو په وروستي رسم کښې د بېل C فرض نښه له x څخه y شوه؛ د نښو د سازګارۍ شرط او نور ټول رسمونه ساتل شوي۔",
+      "translation_change": "د يا ايستلو په وروستي رسم کښې د بېل C فرض نښه له x څخه y شوه؛ د نښو د سازګارۍ شرط او نور ټول رسمونه ساتل شوي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، مستقيم مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b07ccba27cab884825557d3f443832ed8e30cb5f9963f171d60f985814b1e1b9",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "exact_source_fragment": "\\AxiomC{$\\Discharge{!C}{x}$}",
+      "exact_target_fragment": "\\AxiomC{$\\Discharge{!C}{y}$}",
+      "formula_policy": "Change exactly one C-branch discharge label x→y. Preserve all20 trees apart from that one label and localize display prose by/or.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$\\lfalse$}\\RightLabel{\\FalseInt}\\UnaryInfC{$!B\\lor!C$}\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_3$}\\DeduceC{$!D$}\\AxiomC{$\\Discharge{!C}{x}$}\\RightLabel{$\\delta_4$}\\DeduceC{$!D$}\\RightLabel{\\Elim{\\lor}}\\TrinaryInfC{$!D$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$\\lfalse$}\\RightLabel{\\FalseInt}\\UnaryInfC{$!D$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$\\lfalse$}\\RightLabel{\\FalseInt}\\UnaryInfC{$!B\\lor!C$}\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_3$}\\DeduceC{$!D$}\\AxiomC{$\\Discharge{!C}{y}$}\\RightLabel{$\\delta_4$}\\DeduceC{$!D$}\\RightLabel{\\Elim{\\lor}}\\TrinaryInfC{$!D$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$\\lfalse$}\\RightLabel{\\FalseInt}\\UnaryInfC{$!D$}\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-021",
+      "unit_id": "OLP-0353",
+      "classification": "partial-recursion-iterator-can-erase-undefined-base",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_line_1based": 96,
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:block14",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_line_1based": 107,
+      "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+      "mode": "minimal-correction-or-source-proof-scope-disclosure-in-Pashto",
+      "reason": "تکراروونکے د اساس ناتعريف ترم غورځولے شي؛ د عمومي جزوي تابعو د ناتعريفه والي شرط په دې محاسبه نۀ ثابتېږي۔ لمه او ټول رسمي بايټونه ساتل شوي، پاتې حد څرګند دے۔",
+      "translation_change": "تکراروونکے د اساس ناتعريف ترم غورځولے شي؛ د عمومي جزوي تابعو د ناتعريفه والي شرط په دې محاسبه نۀ ثابتېږي۔ لمه او ټول رسمي بايټونه ساتل شوي، پاتې حد څرګند دے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، مستقيم مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b07ccba27cab884825557d3f443832ed8e30cb5f9963f171d60f985814b1e1b9",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "formula_policy": "All prior formal expressions byte-exact; correct only proof locator or disclose partial-domain gap; no invented replacement proof.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-022",
+      "unit_id": "OLP-0353",
+      "classification": "induction-hypothesis-line-locator",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_line_1based": 96,
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:block14",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_line_1based": 107,
+      "target_sha256": "fbc3958a7fa68670ab011ee4b9a4a9e21484c06674f11f2d2e5cdfcd1487647a",
+      "mode": "minimal-correction-or-source-proof-scope-disclosure-in-Pashto",
+      "reason": "د جوړې د استقرا فرضيه د پنځو کرښو په درېيمه کرښه کارېږي؛ د سرچينې له پاے دويمې کرښې حواله سمه شوه۔",
+      "translation_change": "د جوړې د استقرا فرضيه د پنځو کرښو په درېيمه کرښه کارېږي؛ د سرچينې له پاے دويمې کرښې حواله سمه شوه۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، مستقيم مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B251_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b07ccba27cab884825557d3f443832ed8e30cb5f9963f171d60f985814b1e1b9",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "formula_policy": "All prior formal expressions byte-exact; correct only proof locator or disclose partial-domain gap; no invented replacement proof.",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []
