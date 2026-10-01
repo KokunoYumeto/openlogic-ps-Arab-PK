@@ -8308,7 +8308,17 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:27"
       ],
       "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B262",
+          "utc": "2026-10-01T14:31:32.588013+00:00",
+          "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+          "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+          "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-028",
@@ -8350,7 +8360,17 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:59"
       ],
       "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B262",
+          "utc": "2026-10-01T14:31:32.588013+00:00",
+          "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+          "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+          "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-029",
@@ -8392,7 +8412,17 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:67"
       ],
       "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B262",
+          "utc": "2026-10-01T14:31:32.588013+00:00",
+          "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+          "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+          "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-030",
@@ -8438,7 +8468,17 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:78"
       ],
       "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B262",
+          "utc": "2026-10-01T14:31:32.588013+00:00",
+          "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+          "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+          "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-031",
@@ -8480,7 +8520,17 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:109"
       ],
       "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B262",
+          "utc": "2026-10-01T14:31:32.588013+00:00",
+          "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+          "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+          "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-032",
@@ -25172,6 +25222,441 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-201",
+      "unit_id": "OLP-0687",
+      "classification": "normalization-requires-well-typed-proof-terms-and-stated-reduction-scope",
+      "counterexample": "Raw syntax generates (lambda x:p.xx)(lambda x:p.xx), whose beta contraction reproduces itself. The source types chapter explicitly rules out self-application from well-typed terms. Correct/well-typed scope is necessary; the omitted permutation/simplification conversions are separately declared in the chapter editorial.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 13,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block6",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 13,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصلي نحوي proof-termتعريف غيرټايپي خودتطبيق هم اجازه ورکوي، نو ټول خام ترمونه نۀ عادي کېږي۔ دعوه صحيح ټايپ‌لرونکو ترمونو او د دې تجربوي باب د درې محاسبوي بدلونونو حد ته صريحه شوه؛ پاتې ځاې-بدلولو/ساده کولو عمومي درېدنه نۀ ترې ثابتېږي۔",
+      "translation_change": "اصلي نحوي proof-termتعريف غيرټايپي خودتطبيق هم اجازه ورکوي، نو ټول خام ترمونه نۀ عادي کېږي۔ دعوه صحيح ټايپ‌لرونکو ترمونو او د دې تجربوي باب د درې محاسبوي بدلونونو حد ته صريحه شوه؛ پاتې ځاې-بدلولو/ساده کولو عمومي درېدنه نۀ ترې ثابتېږي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-202",
+      "unit_id": "OLP-0687",
+      "classification": "proof-term-complexity-bottom-summand-and-empty-max",
+      "counterexample": "A normal variable has no redex, so the printed maximum of the empty set is undefined despite the prose zero convention. An allowed function type with bottom invokes a missing length base clause. The sum redex specifies A1/A2 but its right side refers to unspecified A/B.",
+      "formal_changes": [
+        {
+          "source": "\\len{p} &= 0\\\\",
+          "target": "\\len{p} &= 0\\\\\n  \\len{\\lfalse} &= 0\\\\"
+        },
+        {
+          "source": "\\cutrank{\\ore{\\ori{i}{!A_{i}}{\\typeof{M}{!A_i}}}\n    {\\typeof{x_1}{!A_1}}{\\typeof{N_1}{!C}}\n    {\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}} &=\n  \\len{!A} + \\len{!B} + 1\n",
+          "target": "\\cutrank{\\ore{\\ori{i}{!A_{i}}{\\typeof{M}{!A_i}}}\n    {\\typeof{x_1}{!A_1}}{\\typeof{N_1}{!C}}\n    {\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}} &=\n  \\len{!A_1} + \\len{!A_2} + 1\n"
+        },
+        {
+          "source": "\\[\n  \\maxrank{M} = \\max \\{\\cutrank{N} | N \\text{ is a sub term of } M \\text{\n    and is redex}\\}\n\\]",
+          "target": "\\[\n  \\maxrank{M} = \\max (\\{0\\} \\cup \\{\\cutrank{N} | N \\text{ د } M \\text{\n    فرعي ترم او رېډکس دے}\\})\n\\]"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 20,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block7",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 24,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د يا د رېډکس حذفېدونکے ټايپ هماغه A1/A2دوه ښودل شوي ټايپونه دي؛ بې‌تعريفه A/Bپه عين شاخصونو بدل شول۔ د دروغ/تش ټايپ اوږدوالے صفر او د بې‌رېډکسه ترم نثري صفر اعظمي قاعده رسمي شول؛ نور rankتعريفونه عين دي۔",
+      "translation_change": "د يا د رېډکس حذفېدونکے ټايپ هماغه A1/A2دوه ښودل شوي ټايپونه دي؛ بې‌تعريفه A/Bپه عين شاخصونو بدل شول۔ د دروغ/تش ټايپ اوږدوالے صفر او د بې‌رېډکسه ترم نثري صفر اعظمي قاعده رسمي شول؛ نور rankتعريفونه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\len{p}&=0\\\\\\len{!A\\land!B}&=\\len{!A}+\\len{!B}+1\\\\\\len{!A\\lor!B}&=\\len{!A}+\\len{!B}+1\\\\\\len{!A\\lif!B}&=\\len{!A}+\\len{!B}+1.\\end{align*}",
+          "\\begin{align*}\\cutrank{(\\lambd[\\typeof{x}{!A}][\\typeof{N}{!B}])Q}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ande{i}{\\andi{\\typeof{M}{!A}}{\\typeof{N}{!B}}}}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ore{\\ori{i}{!A_{i}}{\\typeof{M}{!A_i}}}{\\typeof{x_1}{!A_1}}{\\typeof{N_1}{!C}}{\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}}&=\\len{!A}+\\len{!B}+1\\end{align*}",
+          "\\[\\maxrank{M}=\\max\\{\\cutrank{N}|N\\text{LOCALIZED}M\\text{LOCALIZED}\\}\\]",
+          "$\\ore{i}{x_1}{P_1}{x_2}{P_2}$",
+          "$\\cutrank{\\Subst{M}{N}{x}}=\\len{!A})$",
+          "$\\cutrank{x}$",
+          "$O_2$",
+          "$N_1'=N_1''$",
+          "$N_1'\\neqN_1''$",
+          "$N_1'\\redN'''$",
+          "$N_1''\\redN'''$",
+          "$N'''\\neqN'$",
+          "$N'''\\neqN''$",
+          "$N_1'$",
+          "$N_1''$"
+        ],
+        "target_only": [
+          "\\begin{align*}\\len{p}&=0\\\\\\len{\\lfalse}&=0\\\\\\len{!A\\land!B}&=\\len{!A}+\\len{!B}+1\\\\\\len{!A\\lor!B}&=\\len{!A}+\\len{!B}+1\\\\\\len{!A\\lif!B}&=\\len{!A}+\\len{!B}+1.\\end{align*}",
+          "\\begin{align*}\\cutrank{(\\lambd[\\typeof{x}{!A}][\\typeof{N}{!B}])Q}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ande{i}{\\andi{\\typeof{M}{!A}}{\\typeof{N}{!B}}}}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ore{\\ori{i}{!A_{i}}{\\typeof{M}{!A_i}}}{\\typeof{x_1}{!A_1}}{\\typeof{N_1}{!C}}{\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}}&=\\len{!A_1}+\\len{!A_2}+1\\end{align*}",
+          "\\[\\maxrank{M}=\\max(\\{0\\}\\cup\\{\\cutrank{N}|N\\text{LOCALIZED}M\\text{LOCALIZED}\\})\\]",
+          "$\\ore{x}{x_1}{P_1}{x_2}{P_2}$",
+          "$\\cutrank{\\Subst{M}{N}{x}}=\\len{!A}$",
+          "$O_1'$",
+          "$N_2'=N_2''$",
+          "$N_2'\\neqN_2''$",
+          "$N_2'\\redN'''$",
+          "$N_2''\\redN'''$",
+          "$K$",
+          "$N_2'\\redK$",
+          "$N_2''\\redK$",
+          "$K\\neqN'$",
+          "$K\\neqN''$",
+          "$N_2'$",
+          "$N_2''$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-202",
+      "qa_math_exception_group_members": [
+        "OLCMP-202",
+        "OLCMP-203",
+        "OLCMP-206",
+        "OLCMP-207"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-203",
+      "unit_id": "OLP-0687",
+      "classification": "substitution-redex-scrutinee-and-undefined-variable-rank",
+      "counterexample": "Substitution for x exposes a case redex only when the scrutinee is x and the replacement is an injection. A standalone variable has no cut-rank. The projection redex rank equals the length of its input product type.",
+      "formal_changes": [
+        {
+          "source": "$\\ore{i}{x_1}{P_1}{x_2}{P_2}$",
+          "target": "$\\ore{x}{x_1}{P_1}{x_2}{P_2}$"
+        },
+        {
+          "source": "$\\cutrank{\\Subst{M}{N}{x}} = \\len{!A})$",
+          "target": "$\\cutrank{\\Subst{M}{N}{x}} = \\len{!A}$"
+        },
+        {
+          "source": "$\\cutrank{x}$",
+          "target": ""
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 47,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block8",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 59,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د يا ايستلو د تعويض نوي رېډکس اصلي ځای xدے، عددي iنۀ دے۔ يو بې‌جوړه قوس لرې شو؛ متغير xرېډکس نۀ دے او cutrank(x)بې‌تعريفه ده، نو د جوړې د اصلي ټايپ اوږدوالي يوازنۍ صحيح رتبه پاتې شوه۔",
+      "translation_change": "د يا ايستلو د تعويض نوي رېډکس اصلي ځای xدے، عددي iنۀ دے۔ يو بې‌جوړه قوس لرې شو؛ متغير xرېډکس نۀ دے او cutrank(x)بې‌تعريفه ده، نو د جوړې د اصلي ټايپ اوږدوالي يوازنۍ صحيح رتبه پاتې شوه۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-202",
+      "qa_math_exception_group_members": [
+        "OLCMP-202",
+        "OLCMP-203",
+        "OLCMP-206",
+        "OLCMP-207"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-204",
+      "unit_id": "OLP-0687",
+      "classification": "contraction-proof-omits-argument-origin-redexes",
+      "counterexample": "Take A=p->p, body x, and argument lambda u:p.((lambda v:p.v)u). The outer identity application has rank3 and the proper argument redex rank1. Its reduct retains the argument-origin redex, which is neither from the variable body nor newly created by substitution. This satisfies the lemma strict-rank hypothesis.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 98,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block10",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 119,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "په تعويض پايله کښې د بدن پخواني، په پوله نوي او د آرګومېنټ په نقلونو کښې پخواني رېډکسونه درې حالتونه دي۔ سرچينې وروستے حالت پرېښے و؛ دغه رېډکسونه د اصلي رېډکس مناسب فرعي ترمونه وو او د سختې فرعي-رتبې فرضيې له مخې ټيټې رتبې لري۔",
+      "translation_change": "په تعويض پايله کښې د بدن پخواني، په پوله نوي او د آرګومېنټ په نقلونو کښې پخواني رېډکسونه درې حالتونه دي۔ سرچينې وروستے حالت پرېښے و؛ دغه رېډکسونه د اصلي رېډکس مناسب فرعي ترمونه وو او د سختې فرعي-رتبې فرضيې له مخې ټيټې رتبې لري۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-205",
+      "unit_id": "OLP-0687",
+      "classification": "normalization-global-count-and-strong-proof-scope",
+      "counterexample": "The displayed lemma bounds redexes inside the contracted subtree. The theorem step asserts a decrease of the global maximal-rank count without handling newly exposed redexes in enclosing contexts. A chosen reduction schedule alone does not establish termination for every possible reduction schedule. The typed normalization theorem is retained; no counterexample to that theorem is claimed.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 147,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block14",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 181,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د فرعي رېډکس پايله ټيټه رتبه لري، خو د ټول چاپېريال د نوو دباندنيو رېډکسونو رتبې هم د شمېر د عمومي استقرا دپاره لازمې دي او دلته نۀ دي کتل شوې۔ د ټاکلې تګلارې ضعيف عادي کېدو دليل د هر ترتيب د قوي درېدنې بشپړ ثبوت نۀ دے؛ دواړه پاتې حدود صريحه شول۔",
+      "translation_change": "د فرعي رېډکس پايله ټيټه رتبه لري، خو د ټول چاپېريال د نوو دباندنيو رېډکسونو رتبې هم د شمېر د عمومي استقرا دپاره لازمې دي او دلته نۀ دي کتل شوې۔ د ټاکلې تګلارې ضعيف عادي کېدو دليل د هر ترتيب د قوي درېدنې بشپړ ثبوت نۀ دے؛ دواړه پاتې حدود صريحه شول۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-206",
+      "unit_id": "OLP-0687",
+      "classification": "local-confluence-projection-copied-second-component",
+      "counterexample": "Let O1=(lambda z:p.z)a and O2=b in a context with a:p,b:p. Reducing the inner redex gives pair(a,b); first projection then gives a=O1prime, not b=O2.",
+      "formal_changes": [
+        {
+          "source": "$O_2$",
+          "target": "$O_1'$"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 206,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block20",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 250,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د لومړي پروجکشن تازه لومړے جز O1primeپايله ده؛ وروستے O2په هماغه O1primeبدل شو۔ نور رسمي ترمونه عين دي؛ د نورو دننيو رېډکسونو د ډولونو عمومي حالتونه لا نۀ دي ښودل شوي، دغه مثال بشپړ عمومي ثبوت نۀ ګڼل کېږي۔",
+      "translation_change": "د لومړي پروجکشن تازه لومړے جز O1primeپايله ده؛ وروستے O2په هماغه O1primeبدل شو۔ نور رسمي ترمونه عين دي؛ د نورو دننيو رېډکسونو د ډولونو عمومي حالتونه لا نۀ دي ښودل شوي، دغه مثال بشپړ عمومي ثبوت نۀ ګڼل کېږي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-202",
+      "qa_math_exception_group_members": [
+        "OLCMP-202",
+        "OLCMP-203",
+        "OLCMP-206",
+        "OLCMP-207"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-207",
+      "unit_id": "OLP-0687",
+      "classification": "newman-proof-first-reduct-and-normal-common-reduct",
+      "counterexample": "The source defines both first sequence members to be N; its equal-first-member case therefore repeats the starting term. A common reduct is not necessarily normal, so inequality with one normal form does not by itself exhibit two normal forms. Termination supplies a normal form K of the common reduct; at least one first reduct then has distinct normal forms.",
+      "formal_changes": [
+        {
+          "source": "$N_1' = N_1''$",
+          "target": "$N_2' = N_2''$"
+        },
+        {
+          "source": "$N_1' \\neq N_1''$",
+          "target": "$N_2' \\neq N_2''$"
+        },
+        {
+          "source": "$N_1' \\red N'''$",
+          "target": "$N_2' \\red N'''$"
+        },
+        {
+          "source": "$N_1'' \\red N'''$",
+          "target": "$N_2'' \\red N'''$"
+        },
+        {
+          "source": "$N_1'$",
+          "target": "$N_2'$"
+        },
+        {
+          "source": "$N_1''$",
+          "target": "$N_2''$"
+        },
+        {
+          "source": "$N''' \\neq N'$",
+          "target": "$K \\neq N'$"
+        },
+        {
+          "source": "$N''' \\neq N''$",
+          "target": "$K \\neq N''$"
+        },
+        {
+          "source": "$N'''$",
+          "target": "$N'''$ (normal form $K$ reachable through $N_2' \\red K$ and $N_2'' \\red K$)"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+      "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+      "source_line_1based": 242,
+      "source_locator": "content/proof-theory/propositions-as-types/normalization.tex:block23",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/normalization.tex",
+      "target_line_1based": 296,
+      "target_sha256": "f135d116b6d074cba54173ad3ed91c1c01b301e8a80487f8c38d050216d21b5b",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصلي دوه لړۍ له N=N1prime=N1doubleprimeپيل کېږي، نو د هماغو لومړيو غړو بيا پرتله سمدستي پايلې ته نۀ ځي۔ د N2غړو پرتله او د ګډې پايلې عادي بڼه Kلازم دي، څو د يوې سمدستي پايلې دوې بېلې عادي بڼې ولرو او حقيقي سخت نزول جوړ شي۔",
+      "translation_change": "اصلي دوه لړۍ له N=N1prime=N1doubleprimeپيل کېږي، نو د هماغو لومړيو غړو بيا پرتله سمدستي پايلې ته نۀ ځي۔ د N2غړو پرتله او د ګډې پايلې عادي بڼه Kلازم دي، څو د يوې سمدستي پايلې دوې بېلې عادي بڼې ولرو او حقيقي سخت نزول جوړ شي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B262_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "201050f592262d7c50f4bcd2a615e1e2dd8762393f50dd2f9b2b3c2e58705bd0",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-202",
+      "qa_math_exception_group_members": [
+        "OLCMP-202",
+        "OLCMP-203",
+        "OLCMP-206",
+        "OLCMP-207"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
     }
   ],
   "external_upstream_report_submitted": false,
