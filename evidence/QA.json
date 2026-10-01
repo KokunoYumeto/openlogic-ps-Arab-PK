@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 673,
-    "structural_pass": 673,
+    "draft_units": 674,
+    "structural_pass": 674,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B247-NORMALIZATION-MEASURES-COMPUTABLE-LAMBDA",
+  "batch": "PS-B248-NORMALIZATION-DRIVER-BASIC-FUNCTIONS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11992,7 +11992,7 @@
       "unit_id": "OLP-0351",
       "path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
       "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
-      "translation_sha256": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "translation_sha256": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
       "source_blocks": 9,
       "target_blocks": 9,
       "checks": {
@@ -23273,6 +23273,35 @@
       "source_correction_ids": [
         "OLCMP-170"
       ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0674",
+      "path": "content/proof-theory/normalization/normalization.tex",
+      "source_sha256": "3adbf315f473121f2b5bbc253c968081c58814a9b0e30d539001fea72d0ba55d",
+      "translation_sha256": "ffaf66fed356f5ba22514b0402d6cda5925b1e8e06cf93874184a9046e8378aa",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
       "status": "structural-pass"
     }
   ],
@@ -42128,6 +42157,42 @@
       "passage": "OLP-0350-B007",
       "reverse_paraphrase": "د څو متغيرونو دوديزه نښه يوازې د کَري شوي تطبيق لنډون دے؛ بې‌ټايپه ترم ټاکلې ځاييزه کچه نۀ لري او د هماغه ترم بېل آرګومېنټ شمېر کارېدے شي۔ د نښو د طرز پښتو نثر لږ روښانه شو، ټول رسمي عبارتونه او الفاظ د اصلي مانا سره عين دي۔",
       "finding": "هر اصلي بلاک، رسمي عبارت، استقرايي اندازه او د پاتې جوړولو اصلي حواله بشپړه کتل شوې؛ نوے مستقل استدلال نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0674",
+      "passage": "OLP-0674-B004",
+      "reverse_paraphrase": "د عادي کولو بشپړ باب سرليک؛ شپږ اصلي واردونې، ترتيب، وروستے هوک او ټول جوړښت عين دي۔ باب لا بشپړ نۀ دے، د ځاے بدلولو، راکمولو، برخو او نورو اړوندو واحدونو ژباړه پاتې ده۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B004",
+      "reverse_paraphrase": "د سرليک basic قيد د لومړنيو بنسټيزو بازګشتي تابعو په توګه بېرته واضح شو؛ يوازې صفر، تالي او پروجيکشن د لمې ابتدايي تابعې دي، سرليک د ټولو بنسټيزو بازګشتي تابعو د عمومي ثبوت معنا نۀ ورکوي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B005",
+      "reverse_paraphrase": "صفر، تالي او پروجيکشن لامبډا-تعريفېدونکې تابعې دي؛ بشپړه اصلي لمه عين ده۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B006",
+      "reverse_paraphrase": "د صفر يوځاييزه تابع د هر ننوت په اخيستو هماغه د چرچ صفر عددنښه ورکوي۔ پخوانے معتبر OLLAM-004 بهرنی ننوت تړون ورزياتوي؛ د اصلي وروستي باب عين تعريف او بېټا مخالف مثال سره مستقلاً بيا وکتل شو، نوی عيب نۀ شمېرل کېږي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B007",
+      "reverse_paraphrase": "د تالي د اصل ترم د عددنښې تکرار لومړے n ځله او بيا يو ځل نور تطبيقوي؛ له y څخه پيل او د Succ د کَري شوي تطبيق ټول رسمي عبارتونه عين دي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B008",
+      "reverse_paraphrase": "د پروجيکشن ترم له n آرګومېنټونو iم آرګومېنټ ټاکي؛ له صفره پيل شوي ټول فرعي شمېرونه، د تړونونو ترتيب او اصلي معادله عين دي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
     }
   ],
   "builds": [

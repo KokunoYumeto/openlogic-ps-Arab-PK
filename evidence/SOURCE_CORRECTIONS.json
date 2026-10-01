@@ -7012,7 +7012,7 @@
       "source_locator": "content/lambda-calculus/introduction/basic-pr-lambda.tex:17-18",
       "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex",
       "target_line_1based": 18,
-      "target_sha256": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "target_sha256": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
       "translation_change": "The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.",
       "reason": "The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.",
@@ -7047,7 +7047,17 @@
         "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25"
       ],
       "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "source_line_1based": 18,
+      "exact_source_fragment": "$\\lambd[x][\\lambd[y][y]]$",
+      "exact_target_fragment": "$\\lambd[u][\\lambd[x][\\lambd[y][y]]]$",
+      "revalidated_batch": "B248",
+      "revalidation_reason_native": "د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔",
+      "revalidation_primary_context": {
+        "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+        "sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+        "actually_read_scope": "lines1–30, particularly originalZero definition22–25; not a whole-unit audit"
+      }
     },
     {
       "id": "OLLAM-005",

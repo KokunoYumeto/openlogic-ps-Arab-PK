@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — full expert-review index
 
-This index contains 937 decisions and 32431 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
+This index contains 938 decisions and 32433 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
 
 ## TERM-SET
 
@@ -25310,11 +25310,11 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-022411` | `OLP-0350` / `OLP-0350-B005` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | pending; no page guessed |
 | `ps-Arab-PK-OCC-022412` | `OLP-0350` / `OLP-0350-B006` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:17-28` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:17-27` | pending; no page guessed |
 | `ps-Arab-PK-OCC-022413` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-022414` | `OLP-0351` / `OLP-0351-B004` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-022415` | `OLP-0351` / `OLP-0351-B005` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-022416` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
-| `ps-Arab-PK-OCC-022417` | `OLP-0351` / `OLP-0351-B007` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-022418` | `OLP-0351` / `OLP-0351-B008` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-022414` | `OLP-0351` / `OLP-0351-B004` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-022415` | `OLP-0351` / `OLP-0351-B005` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-022416` | `OLP-0351` / `OLP-0351-B006` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-022417` | `OLP-0351` / `OLP-0351-B007` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-022418` | `OLP-0351` / `OLP-0351-B008` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
 | `ps-Arab-PK-OCC-022419` | `OLP-0352` / `OLP-0352-B004` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-022420` | `OLP-0352` / `OLP-0352-B005` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:12-14` | pending; no page guessed |
 | `ps-Arab-PK-OCC-022421` | `OLP-0352` / `OLP-0352-B006` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:16-28` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:16-28` | pending; no page guessed |
@@ -30513,11 +30513,11 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-025882` | `OLP-0350` / `OLP-0350-B005` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | pending; no page guessed |
 | `ps-Arab-PK-OCC-025883` | `OLP-0350` / `OLP-0350-B006` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:17-28` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:17-27` | pending; no page guessed |
 | `ps-Arab-PK-OCC-025884` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-025885` | `OLP-0351` / `OLP-0351-B004` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-025886` | `OLP-0351` / `OLP-0351-B005` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-025887` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
-| `ps-Arab-PK-OCC-025888` | `OLP-0351` / `OLP-0351-B007` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-025889` | `OLP-0351` / `OLP-0351-B008` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-025885` | `OLP-0351` / `OLP-0351-B004` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-025886` | `OLP-0351` / `OLP-0351-B005` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-025887` | `OLP-0351` / `OLP-0351-B006` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-025888` | `OLP-0351` / `OLP-0351-B007` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-025889` | `OLP-0351` / `OLP-0351-B008` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
 | `ps-Arab-PK-OCC-025890` | `OLP-0352` / `OLP-0352-B004` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-025891` | `OLP-0352` / `OLP-0352-B005` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:12-14` | pending; no page guessed |
 | `ps-Arab-PK-OCC-025892` | `OLP-0352` / `OLP-0352-B006` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:16-28` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:16-28` | pending; no page guessed |
@@ -36550,22 +36550,26 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 ## DEC-OLLAM-004
 
 - Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
-- Source term or construction: DEC-OLLAM-004: content/lambda-calculus/introduction/basic-pr-lambda.tex:17-18
-- Intended sense: Add only a fresh outer lambda-bound input u; preserve the inner Church numeral zero. Compare frozen later source content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25.
-- Chosen Pashto: The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.
-- Rationale: Add only a fresh outer lambda-bound input u; preserve the inner Church numeral zero. Compare frozen later source content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25.
-- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
-- Expert question: Does the Pashto correction for OLLAM-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Source term or construction: DEC-OLLAM-004: source-correction
+- Intended sense: د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+- Chosen Pashto: د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+- Rationale: د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+- Confidence reason: د اصلي وروستي تعريف او مستقيم بېټا کمولو له مخې کره۔. د رياضي توپير کره دے؛ پښتو نثر د سمون وړ دے۔
+- Expert question: آيا بهرنی د ننوت تړون د يوځاييزې صفر تابعې او د چرچ صفر عددنښې توپير واضح کوي؟
 - Authorities:
-  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — zero-function-omits-input-binder; Add only a fresh outer lambda-bound input u; preserve the inner Church numeral zero. Compare frozen later source content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25.
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — zero-function-omits-input-binder; د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+  - `OPENLOGIC-DEC-OLLAM-004-2` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+  - `OPENLOGIC-DEC-OLLAM-004-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+  - `OPENLOGIC-DEC-OLLAM-004-4` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د اصل صفر عددنښه د يوځاييزې صفر تابعې د ننوت تړون نۀ لري۔ پخوانے OLLAM-004 يو تازه بهرنی تړون زياتوي، څو هر ننوت د چرچ صفر عددنښه ورکړي۔ د اصل د وروستي باب په ۲۲–۲۵ کرښو کښې همدغه بهرنی تړون شته۔ بې له بهرني تړونه پر عددنښه تطبيق يوازې د يوه تړون پېژندنه ورکوي، نۀ دوه‌تړونه صفر عددنښه؛ معتبر سمون عين ساتل شوے، نوی عيب نۀ شمېرل کېږي۔
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — The native prose uses کښې and Pakistani final ے in expository constructions; it distinguishes communication through words and sentences. Consulted for expository phrasing and spelling, not set-theoretic terminology.
+  - `AF-NIAZMAN-P147-FUNCTIONS` (checked_supports): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — Native number-theoretic exposition defines zero, successor and projection functions and builds new functions by substitution and recursion. Supports تابع and the successor example, with general composition concept illustrated by substitution. Exact injection, surjection, bijection and inverse labels remain provisional. Afghan Pashto regional comparator; rendered page visually inspected for this functions batch.
 - Alternatives:
-  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - همدغه سم ترم او څنګ ته د اصلي عيب لنډ پښتو بيان ساتل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
 - Exact paired occurrences: 1
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-026737` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-026737` | `OLP-0351` / `OLP-0351-B006` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
 
 ## DEC-OLLAM-005
 
@@ -52277,7 +52281,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
   - `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; Nangarhar University Science Faculty; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز مخ استقرايي بنسټ او ګام ښيي؛ رتبه لومړۍ او د پرېکون اوږدوالے دويمه ځانګړې اندازه د اصل تعريف دے۔
 - Alternatives:
   - کره محدوده په واضح پاکستاني پښتو بيان ساتل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 12
+- Exact paired occurrences: 13
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
@@ -52293,6 +52297,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-032420` | `OLP-0673` / `OLP-0673-B010` | د عادي کولو قضیه | `upstream/content/proof-theory/normalization/normalization-thm.tex:40-45` | `ps-Arab-PK/content/proof-theory/normalization/normalization-thm.tex:48-54` | pending; no page guessed |
 | `ps-Arab-PK-OCC-032421` | `OLP-0673` / `OLP-0673-B011` | د عادي کولو قضیه | `upstream/content/proof-theory/normalization/normalization-thm.tex:47-50` | `ps-Arab-PK/content/proof-theory/normalization/normalization-thm.tex:56-59` | pending; no page guessed |
 | `ps-Arab-PK-OCC-032422` | `OLP-0673` / `OLP-0673-B012` | د عادي کولو قضیه | `upstream/content/proof-theory/normalization/normalization-thm.tex:52-55` | `ps-Arab-PK/content/proof-theory/normalization/normalization-thm.tex:61-64` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032423` | `OLP-0674` / `OLP-0674-B004` | pt | `upstream/content/proof-theory/normalization/normalization.tex:8-8` | `ps-Arab-PK/content/proof-theory/normalization/normalization.tex:8-8` | pending; no page guessed |
 
 ## DEC-PS-0349-FAIR-SEARCH-NONTERMINATION
 
@@ -52314,7 +52319,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032423` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032424` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-32` | pending; no page guessed |
 
 ## DEC-OLCMP-167
 
@@ -52337,7 +52342,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032424` | `OLP-0672` / `OLP-0672-B006` | پېژندنه | `upstream/content/proof-theory/normalization/introduction.tex:13-36` | `ps-Arab-PK/content/proof-theory/normalization/introduction.tex:13-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032425` | `OLP-0672` / `OLP-0672-B006` | پېژندنه | `upstream/content/proof-theory/normalization/introduction.tex:13-36` | `ps-Arab-PK/content/proof-theory/normalization/introduction.tex:13-44` | pending; no page guessed |
 
 ## DEC-OLCMP-168
 
@@ -52360,7 +52365,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032425` | `OLP-0672` / `OLP-0672-B006` | پېژندنه | `upstream/content/proof-theory/normalization/introduction.tex:13-36` | `ps-Arab-PK/content/proof-theory/normalization/introduction.tex:13-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032426` | `OLP-0672` / `OLP-0672-B006` | پېژندنه | `upstream/content/proof-theory/normalization/introduction.tex:13-36` | `ps-Arab-PK/content/proof-theory/normalization/introduction.tex:13-44` | pending; no page guessed |
 
 ## DEC-OLCMP-169
 
@@ -52383,7 +52388,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032426` | `OLP-0672` / `OLP-0672-B008` | پېژندنه | `upstream/content/proof-theory/normalization/introduction.tex:45-58` | `ps-Arab-PK/content/proof-theory/normalization/introduction.tex:53-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032427` | `OLP-0672` / `OLP-0672-B008` | پېژندنه | `upstream/content/proof-theory/normalization/introduction.tex:45-58` | `ps-Arab-PK/content/proof-theory/normalization/introduction.tex:53-77` | pending; no page guessed |
 
 ## DEC-OLSOL-019
 
@@ -52404,7 +52409,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032427` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032428` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-32` | pending; no page guessed |
 
 ## DEC-OLI-HIST-CHURCH-DEATH-DATE
 
@@ -52425,7 +52430,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032428` | `OLP-0623` / `OLP-0623-B009` | الونزو چرچ | `upstream/content/history/biographies/alonzo-church.tex:38-40` | `ps-Arab-PK/content/history/biographies/alonzo-church.tex:48-53` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032429` | `OLP-0623` / `OLP-0623-B009` | الونزو چرچ | `upstream/content/history/biographies/alonzo-church.tex:38-40` | `ps-Arab-PK/content/history/biographies/alonzo-church.tex:48-53` | pending; no page guessed |
 
 ## DEC-OLI-HIST-CHURCH-THESIS-LABEL
 
@@ -52446,7 +52451,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032429` | `OLP-0623` / `OLP-0623-B010` | الونزو چرچ | `upstream/content/history/biographies/alonzo-church.tex:42-52` | `ps-Arab-PK/content/history/biographies/alonzo-church.tex:55-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032430` | `OLP-0623` / `OLP-0623-B010` | الونزو چرچ | `upstream/content/history/biographies/alonzo-church.tex:42-52` | `ps-Arab-PK/content/history/biographies/alonzo-church.tex:55-72` | pending; no page guessed |
 
 ## DEC-OLCMP-170
 
@@ -52473,7 +52478,7 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032430` | `OLP-0673` / `OLP-0673-B008` | د عادي کولو قضیه | `upstream/content/proof-theory/normalization/normalization-thm.tex:25-28` | `ps-Arab-PK/content/proof-theory/normalization/normalization-thm.tex:26-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032431` | `OLP-0673` / `OLP-0673-B008` | د عادي کولو قضیه | `upstream/content/proof-theory/normalization/normalization-thm.tex:25-28` | `ps-Arab-PK/content/proof-theory/normalization/normalization-thm.tex:26-35` | pending; no page guessed |
 
 ## DEC-PS-0350-CONVENTIONAL-NOTATION
 
@@ -52494,4 +52499,27 @@ This index contains 937 decisions and 32431 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-032431` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-032432` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
+
+## DEC-PS-0351-BASIC-FUNCTION-TITLE
+
+- Kind: `register`; priority: `normal`; confidence: `medium`; provisional: `true`
+- Source term or construction: DEC-PS-0351-BASIC-FUNCTION-TITLE: basic primitive recursive functions
+- Intended sense: د اصل د سرليک basic قيد د لومړنيو تابعو په لفظ بېرته څرګند دے؛ لمه يوازې صفر، تالي او پروجيکشن رانغاړي۔ ټول پخواني رياضي بايټونه او د صفر معتبر بهرنی ننوت تړون عين دي۔
+- Chosen Pashto: د اصل د سرليک basic قيد د لومړنيو تابعو په لفظ بېرته څرګند دے؛ لمه يوازې صفر، تالي او پروجيکشن رانغاړي۔ ټول پخواني رياضي بايټونه او د صفر معتبر بهرنی ننوت تړون عين دي۔
+- Rationale: د اصل د سرليک basic قيد د لومړنيو تابعو په لفظ بېرته څرګند دے؛ لمه يوازې صفر، تالي او پروجيکشن رانغاړي۔ ټول پخواني رياضي بايټونه او د صفر معتبر بهرنی ننوت تړون عين دي۔
+- Confidence reason: د عنوان حد او رسمي عبارتونو مطابقت کره دے؛ عين پاکستانے تخصصي مرکب موقتي دے۔. عين پاکستانے لامبډا مرکب په دغو چاپي مخونو کښې مستقل نۀ دے تصديق شوے۔
+- Expert question: آيا لومړنۍ په عنوان کښې د اصل basic او د لمې درې ابتدايي تابعې واضح کوي؟
+- Authorities:
+  - `OPENLOGIC-DEC-PS-0351-BASIC-FUNCTION-TITLE-1` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د اصل د سرليک basic قيد د لومړنيو تابعو په لفظ بېرته څرګند دے؛ لمه يوازې صفر، تالي او پروجيکشن رانغاړي۔ ټول پخواني رياضي بايټونه او د صفر معتبر بهرنی ننوت تړون عين دي۔
+  - `OPENLOGIC-DEC-PS-0351-BASIC-FUNCTION-TITLE-2` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د اصل د سرليک basic قيد د لومړنيو تابعو په لفظ بېرته څرګند دے؛ لمه يوازې صفر، تالي او پروجيکشن رانغاړي۔ ټول پخواني رياضي بايټونه او د صفر معتبر بهرنی ننوت تړون عين دي۔
+  - `OPENLOGIC-DEC-PS-0351-BASIC-FUNCTION-TITLE-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د اصل د سرليک basic قيد د لومړنيو تابعو په لفظ بېرته څرګند دے؛ لمه يوازې صفر، تالي او پروجيکشن رانغاړي۔ ټول پخواني رياضي بايټونه او د صفر معتبر بهرنی ننوت تړون عين دي۔
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — The native prose uses کښې and Pakistani final ے in expository constructions; it distinguishes communication through words and sentences. Consulted for expository phrasing and spelling, not set-theoretic terminology.
+  - `AF-NIAZMAN-P147-FUNCTIONS` (checked_supports): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — Native number-theoretic exposition defines zero, successor and projection functions and builds new functions by substitution and recursion. Supports تابع and the successor example, with general composition concept illustrated by substitution. Exact injection, surjection, bijection and inverse labels remain provisional. Afghan Pashto regional comparator; rendered page visually inspected for this functions batch.
+- Alternatives:
+  - د ابتدايي تابعو قيد د همدغه بيان په واضح پښتو ساتل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-032433` | `OLP-0351` / `OLP-0351-B004` | لومړنۍ بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |

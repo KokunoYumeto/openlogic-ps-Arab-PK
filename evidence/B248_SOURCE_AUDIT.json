@@ -1,0 +1,116 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T08:03:01.800522+00:00",
+  "status": "بشپړ OLP-0674 او بشپړه OLP-0351 بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0674",
+      "source_path": "content/proof-theory/normalization/normalization.tex",
+      "source_sha256": "3adbf315f473121f2b5bbc253c968081c58814a9b0e30d539001fea72d0ba55d",
+      "source_bytes": 342,
+      "target_sha256": "ffaf66fed356f5ba22514b0402d6cda5925b1e8e06cf93874184a9046e8378aa",
+      "target_bytes": 344,
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4
+      ],
+      "checks": {
+        "ids_equal": true,
+        "structural_macros_equal": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "math_exact": true,
+        "six_imports_in_exact_original_order": true,
+        "chapter_hook_retained": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0351",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "target_sha256_before": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "target_sha256": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
+      "target_sha256_after": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
+      "target_bytes": 1698,
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLLAM-004"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0351-BASIC-FUNCTION-TITLE"
+      ]
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "د دې مسودې مخکې همدا څلور اصلي مخونه په سترګو بيا کتل شوي دي؛ پاکستانے نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "د پاکستاني نثر کښې او د معنا څرګند بيان اصلي شاهد دے؛ افغان ۱۴۷ لومړنۍ صفر، تالي، پروجيکشن او بازګښت تعريفوي، د عين پاکستاني لامبډا مرکب مستقل تصديق نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "د دې مسودې مخکې همدا څلور اصلي مخونه په سترګو بيا کتل شوي دي؛ پاکستانے نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "د پاکستاني نثر کښې او د معنا څرګند بيان اصلي شاهد دے؛ افغان ۱۴۷ لومړنۍ صفر، تالي، پروجيکشن او بازګښت تعريفوي، د عين پاکستاني لامبډا مرکب مستقل تصديق نۀ دے۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "د دې مسودې مخکې همدا څلور اصلي مخونه په سترګو بيا کتل شوي دي؛ پاکستانے نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "د پاکستاني نثر کښې او د معنا څرګند بيان اصلي شاهد دے؛ افغان ۱۴۷ لومړنۍ صفر، تالي، پروجيکشن او بازګښت تعريفوي، د عين پاکستاني لامبډا مرکب مستقل تصديق نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "د دې مسودې مخکې همدا څلور اصلي مخونه په سترګو بيا کتل شوي دي؛ پاکستانے نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "د پاکستاني نثر کښې او د معنا څرګند بيان اصلي شاهد دے؛ افغان ۱۴۷ لومړنۍ صفر، تالي، پروجيکشن او بازګښت تعريفوي، د عين پاکستاني لامبډا مرکب مستقل تصديق نۀ دے۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "existing_source_correction_ids": [
+    "OLLAM-004"
+  ],
+  "new_review_entry_ids": [
+    "DEC-PS-0351-BASIC-FUNCTION-TITLE"
+  ],
+  "revised_review_entry_ids": [
+    "DEC-OLLAM-004"
+  ],
+  "semantic_samples_added": 6,
+  "focused_qa_sha256": "07aef53ab86e9f99f21a23acc0bb7d1553503f6fd7d8958e21635b0a63fc2329",
+  "model_provenance_sha256": "356742bbe74a0bf283db1b291f1aecd51ec836651b20bd04b0f2f97cbd234483",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0351.json",
+  "related_reaudit_sha256": "0677bed275f5c866fb27e36689bb52c956fb654a1215fd8b6169804b0ae5ae3f",
+  "unresolved": "۴۸ سرچينه‌يي واحدونه، د بشپړې تجربوي برخې ورګډول، EPUB، بشپړ چاپي منل او د پخواني ماډل ۲۵۸ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۷۴ واحدونو دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ بشپړ OLP-0675 او OLP-0352 دوام؛ د TeX ځای ژباړه نۀ دروي۔"
+}

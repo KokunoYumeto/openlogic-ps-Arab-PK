@@ -1,0 +1,31 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-10-01T08:03:01.800522+00:00",
+  "unit_id": "OLP-0674",
+  "status": "complete674 driver and whole351 reviewed; dualQA/acceptance pending",
+  "primary_contexts": [
+    {
+      "unit_id": "OLP-0674",
+      "source_path": "content/proof-theory/normalization/normalization.tex",
+      "sha256": "3adbf315f473121f2b5bbc253c968081c58814a9b0e30d539001fea72d0ba55d",
+      "actually_read_scope": "entire actual source and prior/current target"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "actually_read_scope": "entire actual source and prior/current target"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "actually_read_scope": "lines1–30, particularly originalZero definition22–25; not a whole-unit audit"
+    }
+  ],
+  "source_import_count": 6,
+  "new_source_corrections": 0,
+  "existing_correction_reverified": "OLLAM-004",
+  "source_sha256": "3adbf315f473121f2b5bbc253c968081c58814a9b0e30d539001fea72d0ba55d",
+  "target_sha256": "ffaf66fed356f5ba22514b0402d6cda5925b1e8e06cf93874184a9046e8378aa",
+  "next_action": "DualQA/replay/accept674; continue complete675 and whole352, full722 active."
+}

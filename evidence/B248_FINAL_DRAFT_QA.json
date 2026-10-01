@@ -1,0 +1,81 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T08:03:01.800522+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0674",
+      "source_path": "content/proof-theory/normalization/normalization.tex",
+      "source_sha256": "3adbf315f473121f2b5bbc253c968081c58814a9b0e30d539001fea72d0ba55d",
+      "source_bytes": 342,
+      "target_sha256": "ffaf66fed356f5ba22514b0402d6cda5925b1e8e06cf93874184a9046e8378aa",
+      "target_bytes": 344,
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4
+      ],
+      "checks": {
+        "ids_equal": true,
+        "structural_macros_equal": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "math_exact": true,
+        "six_imports_in_exact_original_order": true,
+        "chapter_hook_retained": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0351",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "target_sha256_before": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "target_sha256": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
+      "target_sha256_after": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
+      "target_bytes": 1698,
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLLAM-004"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0351-BASIC-FUNCTION-TITLE"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0674": {
+      "ids_equal": true,
+      "structural_macros_equal": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "math_exact": true,
+      "six_imports_in_exact_original_order": true,
+      "chapter_hook_retained": true
+    },
+    "OLP-0351": {
+      "ids_equal": true,
+      "structural_macros_equal": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "only_prior_title_block_changed": true,
+      "all_prior_math_spans_byte_identical": true,
+      "exact_old004_exception_only": true,
+      "all_source_block_math_with_exact_existing004": true,
+      "one_original_lemma_and_proof": true
+    }
+  },
+  "new_source_corrections": 0,
+  "existing_source_correction_ids": [
+    "OLLAM-004"
+  ],
+  "source_preaudit_sha256": "d70e671588c685f1e5057e477df72894419605e69c91cf4a7353dcf28a7e4fee"
+}

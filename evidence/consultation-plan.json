@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B247-NORMALIZATION-MEASURES-COMPUTABLE-LAMBDA",
+  "batch_id": "PS-B248-NORMALIZATION-DRIVER-BASIC-FUNCTIONS",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -9206,7 +9206,7 @@
       "scope": "دوه اصلي حدسي قضیې، هر شمېر او فورمول او د محاسبې د پاتې جوړولو اصلي نقشه عين دي؛ قوي د هر ترتيب بيان د اصل بيان په توګه ساتلے، نوے ثبوت نۀ زياتېږي۔"
     },
     "OLP-0351": {
-      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "batch_id": "PS-B248-NORMALIZATION-DRIVER-BASIC-FUNCTIONS",
       "passages": [
         "PK-IQRAM-P1-PROSE",
         "AF-NIAZMAN-P147-FUNCTIONS"
@@ -9215,7 +9215,51 @@
         "TERM-LAMBDA-CHURCH-NUMERALS",
         "TERM-PRIMITIVE-RECURSION"
       ],
-      "scope": "The source omits the unary input binder from Zero; OLLAM-004 adds it with adjacent disclosure. Successor and projection terms retain their source equations.",
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "7": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "8": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-PRIMITIVE-RECURSION"
+        ],
+        "5": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-PRIMITIVE-RECURSION"
+        ],
+        "6": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-PRIMITIVE-RECURSION"
+        ],
+        "7": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-PRIMITIVE-RECURSION"
+        ],
+        "8": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-PRIMITIVE-RECURSION"
+        ]
+      },
+      "scope": "بشپړ باب سرليک او شپږ واردونې؛ لومړنۍ تابعې او د صفر پخوانے معتبر سمون بيا کتل شوي، نوی ثبوت يا عيب نۀ زياتېږي۔",
       "allowed_residual_english": [
         "OLLAM"
       ]
@@ -20365,6 +20409,29 @@
         ]
       },
       "scope": "دوه اصلي حدسي قضیې، هر شمېر او فورمول او د محاسبې د پاتې جوړولو اصلي نقشه عين دي؛ قوي د هر ترتيب بيان د اصل بيان په توګه ساتلے، نوے ثبوت نۀ زياتېږي۔"
+    },
+    "OLP-0674": {
+      "batch_id": "PS-B248-NORMALIZATION-DRIVER-BASIC-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION-NORMALIZATION"
+      ],
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION"
+        ]
+      },
+      "scope": "بشپړ باب سرليک او شپږ واردونې؛ لومړنۍ تابعې او د صفر پخوانے معتبر سمون بيا کتل شوي، نوی ثبوت يا عيب نۀ زياتېږي۔",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -39219,6 +39286,42 @@
       "passage": "OLP-0350-B007",
       "reverse_paraphrase": "د څو متغيرونو دوديزه نښه يوازې د کَري شوي تطبيق لنډون دے؛ بې‌ټايپه ترم ټاکلې ځاييزه کچه نۀ لري او د هماغه ترم بېل آرګومېنټ شمېر کارېدے شي۔ د نښو د طرز پښتو نثر لږ روښانه شو، ټول رسمي عبارتونه او الفاظ د اصلي مانا سره عين دي۔",
       "finding": "هر اصلي بلاک، رسمي عبارت، استقرايي اندازه او د پاتې جوړولو اصلي حواله بشپړه کتل شوې؛ نوے مستقل استدلال نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0674",
+      "passage": "OLP-0674-B004",
+      "reverse_paraphrase": "د عادي کولو بشپړ باب سرليک؛ شپږ اصلي واردونې، ترتيب، وروستے هوک او ټول جوړښت عين دي۔ باب لا بشپړ نۀ دے، د ځاے بدلولو، راکمولو، برخو او نورو اړوندو واحدونو ژباړه پاتې ده۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B004",
+      "reverse_paraphrase": "د سرليک basic قيد د لومړنيو بنسټيزو بازګشتي تابعو په توګه بېرته واضح شو؛ يوازې صفر، تالي او پروجيکشن د لمې ابتدايي تابعې دي، سرليک د ټولو بنسټيزو بازګشتي تابعو د عمومي ثبوت معنا نۀ ورکوي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B005",
+      "reverse_paraphrase": "صفر، تالي او پروجيکشن لامبډا-تعريفېدونکې تابعې دي؛ بشپړه اصلي لمه عين ده۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B006",
+      "reverse_paraphrase": "د صفر يوځاييزه تابع د هر ننوت په اخيستو هماغه د چرچ صفر عددنښه ورکوي۔ پخوانے معتبر OLLAM-004 بهرنی ننوت تړون ورزياتوي؛ د اصلي وروستي باب عين تعريف او بېټا مخالف مثال سره مستقلاً بيا وکتل شو، نوی عيب نۀ شمېرل کېږي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B007",
+      "reverse_paraphrase": "د تالي د اصل ترم د عددنښې تکرار لومړے n ځله او بيا يو ځل نور تطبيقوي؛ له y څخه پيل او د Succ د کَري شوي تطبيق ټول رسمي عبارتونه عين دي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "OLP-0351-B008",
+      "reverse_paraphrase": "د پروجيکشن ترم له n آرګومېنټونو iم آرګومېنټ ټاکي؛ له صفره پيل شوي ټول فرعي شمېرونه، د تړونونو ترتيب او اصلي معادله عين دي۔",
+      "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
     }
   ]
 }

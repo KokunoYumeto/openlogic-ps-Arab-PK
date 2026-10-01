@@ -1,0 +1,65 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T08:03:01.800522+00:00",
+  "status": "بشپړه خپلواکه بياکتنه؛ د عنوان basic قيد څرګند، ټول پخواني رياضي بايټونه عين، د صفر پخوانے معتبر سمون مستقلاً تصديق شوے۔",
+  "units": [
+    {
+      "unit_id": "OLP-0351",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "target_sha256_before": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "target_sha256": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
+      "target_sha256_after": "028d1de4412b19ae41162cd4e4a39b03c2b2cfa7d5ff17d36b88f33c5079e697",
+      "target_bytes": 1698,
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLLAM-004"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0351-BASIC-FUNCTION-TITLE"
+      ],
+      "translated_blocks_reviewed": 5,
+      "target_retained_unchanged": false,
+      "all_prior_math_bytes_retained": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "د دې مسودې مخکې همدا څلور اصلي مخونه په سترګو بيا کتل شوي دي؛ پاکستانے نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "د پاکستاني نثر کښې او د معنا څرګند بيان اصلي شاهد دے؛ افغان ۱۴۷ لومړنۍ صفر، تالي، پروجيکشن او بازګښت تعريفوي، د عين پاکستاني لامبډا مرکب مستقل تصديق نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "د دې مسودې مخکې همدا څلور اصلي مخونه په سترګو بيا کتل شوي دي؛ پاکستانے نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "د پاکستاني نثر کښې او د معنا څرګند بيان اصلي شاهد دے؛ افغان ۱۴۷ لومړنۍ صفر، تالي، پروجيکشن او بازګښت تعريفوي، د عين پاکستاني لامبډا مرکب مستقل تصديق نۀ دے۔"
+    }
+  ],
+  "segment_entries_added": 5,
+  "new_source_correction_ids": [],
+  "existing_source_correction_ids": [
+    "OLLAM-004"
+  ],
+  "wording_choice_ids": [
+    "DEC-PS-0351-BASIC-FUNCTION-TITLE"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0351.jsonl",
+  "whole_unit_segment_snapshot_sha256": "a196a58dc452fa64f374d70a37be31e9c0af3932736647e689240ccd95706563",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "بشپړ OLP-0675 او OLP-0352 دوام؛ ټول ۷۲۲ فعال دي۔"
+}
