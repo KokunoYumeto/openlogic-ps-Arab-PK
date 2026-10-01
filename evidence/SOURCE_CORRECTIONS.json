@@ -8574,7 +8574,17 @@
       ],
       "later_source_sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2",
       "decision_timing": "contemporaneous B070 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B263",
+          "utc": "2026-10-01T14:47:44.389727+00:00",
+          "source_sha256": "42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd",
+          "target_sha256": "a6c5d3f116deec353e649f3f1fae067623e4e58080d55689db81c5af11ba815c",
+          "adjudication_receipt": "B263_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-033",
@@ -25655,6 +25665,179 @@
         "OLCMP-203",
         "OLCMP-206",
         "OLCMP-207"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-208",
+      "unit_id": "OLP-0688",
+      "classification": "conjunction-constructor-copied-premise-case",
+      "counterexample": "The displayed premises supply N:A and M:B. A constructor c(N,m) uses a term not supplied by those premises; correct pairing is c(N,M).",
+      "formal_changes": [
+        {
+          "source": "c^\\land(N, m)",
+          "target": "c^\\land(N, M)"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+      "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66",
+      "source_line_1based": 28,
+      "source_locator": "content/proof-theory/propositions-as-types/proof-terms.tex:block7",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/proof-terms.tex",
+      "target_line_1based": 31,
+      "target_sha256": "9f04e7f5a514bab82c5f7c5140ce01b4ee653628b64a2798ffcab05dc3198b59",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د او په رسم کښې دويمه مقدمه Mنوم لري، کوچنے mنۀ۔ يوازې د جوړوونکي عين دويم آرګومېنټ د اصلي مقدمې په نوم بدل شو؛ د مقدمې ترم او ټايپ دواړه عين دي۔",
+      "translation_change": "د او په رسم کښې دويمه مقدمه Mنوم لري، کوچنے mنۀ۔ يوازې د جوړوونکي عين دويم آرګومېنټ د اصلي مقدمې په نوم بدل شو؛ د مقدمې ترم او ټايپ دواړه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B263_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "3a751d2105771e8b65fd3cc8e77d11777348a8b9f29c67d2caaf25890c838fdd",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$\\Gamma_1\\fCenterN:!A$\\Axiom$\\Gamma_2\\fCenterM:!B$\\RightLabel{\\Intro{\\land}}\\BinaryInf$\\Gamma_1,\\Gamma_2\\fCenterc^\\land(N,m):!A\\land!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:!A\\land!B$\\RightLabel{\\Elim{\\land}[1]}\\UnaryInf$\\Gamma\\fCenterd^\\land_1(N):!A$\\DisplayProof\\]",
+          "\\[\\Axiom$\\Gamma\\fCenterN:!A$\\RightLabel{\\Intro{\\lor}[1]}\\UnaryInf$\\Gamma\\fCenterc^{\\lor{!B}}_1:!A\\lor!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:\\lfalse$\\RightLabel{\\FalseInt}\\UnaryInf$\\Gamma\\fCenterd^\\lfalse_{!A}(N):!A$\\DisplayProof\\]",
+          "$\\inj[!A]{i}{!M}$"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Gamma_1\\fCenterN:!A$\\Axiom$\\Gamma_2\\fCenterM:!B$\\RightLabel{\\Intro{\\land}}\\BinaryInf$\\Gamma_1,\\Gamma_2\\fCenterc^\\land(N,M):!A\\land!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:!A\\land!B$\\RightLabel{\\Elim{\\land}[1]}\\UnaryInf$\\Gamma\\fCenterd^\\land_1(N):!A$\\DisplayProof\\]",
+          "\\[\\Axiom$\\Gamma\\fCenterN:!A$\\RightLabel{\\Intro{\\lor}[1]}\\UnaryInf$\\Gamma\\fCenterc^{\\lor{!B}}_1(N):!A\\lor!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:\\lfalse$\\RightLabel{\\FalseInt}\\UnaryInf$\\Gamma\\fCenterd^\\lfalse_{!A}(N):!A$\\DisplayProof\\]",
+          "$\\inj[!A]{i}{N}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-208",
+      "qa_math_exception_group_members": [
+        "OLCMP-208",
+        "OLCMP-209",
+        "OLCMP-210"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-209",
+      "unit_id": "OLP-0688",
+      "classification": "sum-constructor-missing-premise-argument",
+      "counterexample": "Different proofs N of A must be encoded by different injected proof terms. The original nullary result carries no premise term; the actual tN2ip sum rule explicitly applies the injection constructor to N.",
+      "formal_changes": [
+        {
+          "source": "c^{\\lor{!B}}_1:!A \\lor !B",
+          "target": "c^{\\lor{!B}}_1(N):!A \\lor !B"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+      "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66",
+      "source_line_1based": 68,
+      "source_locator": "content/proof-theory/propositions-as-types/proof-terms.tex:block8",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/proof-terms.tex",
+      "target_line_1based": 75,
+      "target_sha256": "9f04e7f5a514bab82c5f7c5140ce01b4ee653628b64a2798ffcab05dc3198b59",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د يا داخلولو يو-آرګومېنټ جوړوونکے بايد د مقدمې Nترم کوډ کړي۔ له اصلي پايلې دغه آرګومېنټ ورک و؛ يوازې Nورګډ شو، د بل ټايپ annotationاو ټول نظام عين دي۔",
+      "translation_change": "د يا داخلولو يو-آرګومېنټ جوړوونکے بايد د مقدمې Nترم کوډ کړي۔ له اصلي پايلې دغه آرګومېنټ ورک و؛ يوازې Nورګډ شو، د بل ټايپ annotationاو ټول نظام عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B263_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "3a751d2105771e8b65fd3cc8e77d11777348a8b9f29c67d2caaf25890c838fdd",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-208",
+      "qa_math_exception_group_members": [
+        "OLCMP-208",
+        "OLCMP-209",
+        "OLCMP-210"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-210",
+      "unit_id": "OLP-0688",
+      "classification": "sum-proof-term-generation-copied-unbound-argument",
+      "counterexample": "The generation clause assumes N is a proof term but introduces !M in its consequent. The actual tN2ip sum rules apply inj to the known premise term N. The already-read types clause repeats the same variable-copy problem and should be adjudicated there as a recurrence of this canonical defect.",
+      "formal_changes": [
+        {
+          "source": "\\inj[!A]{i}{!M}",
+          "target": "\\inj[!A]{i}{N}"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+      "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66",
+      "source_line_1based": 100,
+      "source_locator": "content/proof-theory/propositions-as-types/proof-terms.tex:block11",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/proof-terms.tex",
+      "target_line_1based": 111,
+      "target_sha256": "9f04e7f5a514bab82c5f7c5140ce01b4ee653628b64a2798ffcab05dc3198b59",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصلي ماده Nد ثبوت ترم په توګه فرضوي، خو پايله بل بې‌تعريفه فورمولي !Mکاروي۔ يوازې د يا د جوړوونکي آرګومېنټ هماغه فرض شوي Nته بدل شو؛ د شاخص او بل ټايپ شرطونه عين دي۔",
+      "translation_change": "اصلي ماده Nد ثبوت ترم په توګه فرضوي، خو پايله بل بې‌تعريفه فورمولي !Mکاروي۔ يوازې د يا د جوړوونکي آرګومېنټ هماغه فرض شوي Nته بدل شو؛ د شاخص او بل ټايپ شرطونه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B263_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "3a751d2105771e8b65fd3cc8e77d11777348a8b9f29c67d2caaf25890c838fdd",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-208",
+      "qa_math_exception_group_members": [
+        "OLCMP-208",
+        "OLCMP-209",
+        "OLCMP-210"
       ],
       "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
     }
