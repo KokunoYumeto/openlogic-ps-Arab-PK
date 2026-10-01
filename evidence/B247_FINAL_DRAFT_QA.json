@@ -1,0 +1,95 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T07:47:32.175928+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0673",
+      "source_path": "content/proof-theory/normalization/normalization-thm.tex",
+      "source_sha256": "ec1fd2839474750e88e272f8e90be4d8001f328b03f666b39e7a36518d2d12e6",
+      "source_bytes": 2261,
+      "target_sha256": "3ffd6d1b41901e8d5bded32a16165e09548c2d7987a8f27c6e35d259b63f5b77",
+      "target_bytes": 3771,
+      "paired_blocks": 13,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "math_exact_per_source_block": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "both_original_intuitionistic_theorems_retained": true,
+        "one_original_weak_normalization_proof_retained": true,
+        "no_added_proof_for_any_order_assertion": true,
+        "cut_length_measure_disclosed": true
+      },
+      "source_correction_ids": [
+        "OLCMP-170"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0350",
+      "source_path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "source_sha256": "dc8ed2fba6b292e6a4e46bd081300c14b388a8109cbe617cee7a4e513d73743c",
+      "target_sha256_before": "3c935d7f1aa84921c0f578114165dc16d34b4e7bd99a45175f2bebce3e5af32a",
+      "target_sha256": "36c85ea23a23d34048a8e1b2de1258856b6525b611fce9c4d067850c5efd2f60",
+      "target_sha256_after": "36c85ea23a23d34048a8e1b2de1258856b6525b611fce9c4d067850c5efd2f60",
+      "target_bytes": 2183,
+      "paired_blocks": 8,
+      "source_correction_ids": [],
+      "wording_choice_ids": [
+        "DEC-PS-0350-CONVENTIONAL-NOTATION"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0673": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math": true,
+      "math_exact_per_source_block": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "both_original_intuitionistic_theorems_retained": true,
+      "one_original_weak_normalization_proof_retained": true,
+      "no_added_proof_for_any_order_assertion": true,
+      "cut_length_measure_disclosed": true
+    },
+    "OLP-0350": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math": true,
+      "math_exact_per_source_block": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "all_prior_math_spans_byte_identical": true,
+      "untyped_terms_have_no_fixed_arity_retained": true,
+      "all_remaining_construction_conditions_retained": true
+    }
+  },
+  "mathematical_or_historical_source_corrections_added": 1,
+  "source_correction_reporting_lane": "source_erratum_small",
+  "source_preaudit_sha256": "633fc2bc00db3a02c728556a0dad3eb7ac36f9ffb750ac98585f3d624fa7f912"
+}

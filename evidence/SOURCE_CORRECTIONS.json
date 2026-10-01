@@ -23058,6 +23058,57 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-170",
+      "unit_id": "OLP-0673",
+      "classification": "normalization-cut-length-measure-precision",
+      "reporting_lane": "source_erratum_small",
+      "source_path": "content/proof-theory/normalization/normalization-thm.tex",
+      "source_sha256": "ec1fd2839474750e88e272f8e90be4d8001f328b03f666b39e7a36518d2d12e6",
+      "source_locator": "content/proof-theory/normalization/normalization-thm.tex:26",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/normalization-thm.tex",
+      "target_sha256": "3ffd6d1b41901e8d5bded32a16165e09548c2d7987a8f27c6e35d259b63f5b77",
+      "target_line_1based": 26,
+      "disclosure_line_1based": 31,
+      "mode": "د سرچينې د لنډې اندازې کره پښتو وضاحت",
+      "translation_change": "استقرا لومړے د پرېکون رتبه او په عين رتبه کښې د پرېکون اوږدوالے کاروي۔ ۱۷۰ د سرچينې لنډ اوږدوالے د تر ټولو لوړې رتبې د برخو د اوږدوالو د جمع په توګه څرګندوي، نۀ د ټول ثبوت په توګه۔",
+      "reason": "استقرا لومړے د پرېکون رتبه او په عين رتبه کښې د پرېکون اوږدوالے کاروي۔ ۱۷۰ د سرچينې لنډ اوږدوالے د تر ټولو لوړې رتبې د برخو د اوږدوالو د جمع په توګه څرګندوي، نۀ د ټول ثبوت په توګه۔",
+      "exact_original_text": "By induction on the cut rank and length of~$\\delta$.",
+      "exact_proposed_source_text": "By induction on the cut rank and cut length of~$\\delta$.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The formal segment definition sets cut length as the sum of lengths of maximal-rank cuts, and the next induction hypothesis/base/step explicitly use cut length. The opening bare length could instead suggest whole-proof length, which conversions may increase. Restore the intended cut-length qualifier; no mathematical bytes change.",
+      "formula_policy": "ټول فورمولونه او شمېرونه عين دي؛ يوازې د استقرا د دويمې اندازې نوم واضح دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B247-NORMALIZATION-MEASURES-COMPUTABLE-LAMBDA",
+      "audit_artifacts": [
+        "B247_SOURCE_AUDIT.json",
+        "B247_FINAL_DRAFT_QA.json",
+        "B247_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د برخو د رسمي تعريف له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ کوچنے د اندازې وضاحت دے، د قضیې ناسم‌والے نۀ دعوه کېږي۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

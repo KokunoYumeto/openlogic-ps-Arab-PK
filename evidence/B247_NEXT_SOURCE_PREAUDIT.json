@@ -1,0 +1,55 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-10-01T07:47:32.175928+00:00",
+  "unit_id": "OLP-0673",
+  "status": "complete673 and whole350 checked; dualQA/acceptance pending",
+  "source_sha256": "ec1fd2839474750e88e272f8e90be4d8001f328b03f666b39e7a36518d2d12e6",
+  "target_sha256": "3ffd6d1b41901e8d5bded32a16165e09548c2d7987a8f27c6e35d259b63f5b77",
+  "paired_source_blocks": 13,
+  "source_proof_trees": 0,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-170",
+      "unit_id": "OLP-0673",
+      "block": 8,
+      "exact_original_text": "By induction on the cut rank and length of~$\\delta$.",
+      "exact_proposed_source_text": "By induction on the cut rank and cut length of~$\\delta$.",
+      "reason": "The formal segment definition sets cut length as the sum of lengths of maximal-rank cuts, and the next induction hypothesis/base/step explicitly use cut length. The opening bare length could instead suggest whole-proof length, which conversions may increase. Restore the intended cut-length qualifier; no mathematical bytes change.",
+      "classification": "normalization-cut-length-measure-precision",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 26
+    }
+  ],
+  "primary_contexts": [
+    {
+      "unit_id": "OLP-0673",
+      "source_path": "content/proof-theory/normalization/normalization-thm.tex",
+      "sha256": "ec1fd2839474750e88e272f8e90be4d8001f328b03f666b39e7a36518d2d12e6",
+      "actually_read_scope": "entire actual source"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "source_path": "content/proof-theory/normalization/segments.tex",
+      "sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+      "actually_read_scope": "entire actual source"
+    },
+    {
+      "unit_id": "OLP-0350",
+      "source_path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "sha256": "dc8ed2fba6b292e6a4e46bd081300c14b388a8109cbe617cee7a4e513d73743c",
+      "actually_read_scope": "entire actual source"
+    },
+    {
+      "source_path": "content/proof-theory/normalization/permutations.tex",
+      "sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+      "actually_read_scope": "lines13–22,80–85,401–423: exact cut-length decrease and topmost-maximal selection, not a whole-file audit"
+    },
+    {
+      "source_path": "content/proof-theory/normalization/reductions.tex",
+      "sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+      "actually_read_scope": "lines13–70,301–344: shorter-rank cuts and exfalso handling, not a whole-file audit"
+    }
+  ],
+  "source_any_order_statement": "Retained source assertion; above displayed proof is an existence/selected-strategy proof, no new proof of arbitrary-order termination claimed.",
+  "next_action": "DualQA/replay/accept673, coherent checkpoint with prior672Churchpublicreceipt; later natural bounded attempt for accumulatedreader, no slot polling."
+}
