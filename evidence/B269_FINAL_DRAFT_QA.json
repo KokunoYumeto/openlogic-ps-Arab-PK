@@ -1,0 +1,99 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-10T00:53:29.359532+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0694",
+      "source_path": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+      "source_sha256": "44525323721b70654bc19c745388c1ea8196fa4a2fe82c355799018bdeb6d705",
+      "source_bytes": 4223,
+      "target_sha256": "740f0e1f36c79232cefb268b5a020cf24d3739fce675ee0e6e7b9fa1d6901e1e",
+      "target_bytes": 5258,
+      "paired_blocks": 15,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "all_protected_gather_environments_exact_except_adjudicated_changes": true
+      },
+      "source_correction_ids": [
+        "OLCMP-218"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0371",
+      "source_path": "content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex",
+      "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+      "target_sha256_before": "bff24863c8610da8de33dc6fa25e181ad481cd29e745994432af14bde75a61d7",
+      "target_sha256": "1cc59a01bc2760e2049269ca2a855d70dadbb7c8bceac83f38d4ff1f972f4762",
+      "target_sha256_after": "1cc59a01bc2760e2049269ca2a855d70dadbb7c8bceac83f38d4ff1f972f4762",
+      "target_bytes": 5102,
+      "paired_blocks": 20,
+      "source_correction_ids": [
+        "OLLAM-061"
+      ],
+      "reverified_existing_source_ids": [
+        "OLLAM-041",
+        "OLLAM-042"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0694": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_protected_gather_environments_exact_except_adjudicated_changes": true
+    },
+    "OLP-0371": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 2,
+  "source_adjudication_sha256": "cbf92bf44a893960e18116c540b2f7978d290dc3cedf29ef79ee437903d3d0d5",
+  "registration_helper_sha256": "46f38503c96644b68865168e2cc931b31008ac43b67c8c8314c3e64acbfff850",
+  "writer_spec_sha256": "41e1707676d11ae8561887ef3bef5dbec4ac7e886919d8b0119cb7f6b08c77fa",
+  "previous_writer_spec_sha256": "4ffb6f991178fdcda49e04af7f7d0c66b21465722e3f65924cbd48fed7e5dc6d",
+  "existing_terminology_link_repair": "B269_TERM_LINK_REPAIR.json"
+}

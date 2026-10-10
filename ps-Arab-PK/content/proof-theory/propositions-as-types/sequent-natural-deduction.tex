@@ -1,0 +1,144 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: sequent-natural-deduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{snd}
+
+\olsection{سېکوېنټي فطري استنتاج}
+
+که داسې فطري استنتاجي !!{derivation} وي چې
+!!{undischarged} فرضونه ئې $\Gamma$ او پايله ئې
+$!A$ وي، نو $\Gamma \Sequent !A$ ليکو؛ که
+$\Gamma$ تش وي، $\Sequent !A$ ليکو۔
+
+د $\Gamma \cup \{!A_1, \dots, !A_n\}$ دپاره
+$\Gamma, !A_1, \dots, !A_n$، او د
+$\Gamma \cup \Delta$ دپاره $\Gamma, \Delta$ ليکو۔
+
+پام وکړئ: که $\Gamma \Sequent !A \land !A$
+ولرو، معنا ئې دا ده چې !!a{derivation} شته چې
+!!{undischarged} فرضونه ئې $\Gamma$ او وروستے
+!!{formula} ئې $!A \land !A$ دے۔ په پاې کښې د
+$\Elim{\land}$ په کارولو سره !!a{derivation}
+اخيستلے شو چې !!{undischarged} فرضونه ئې عين
+وي او پايله ئې $!A$ وي۔ په بله وينا، که
+$\Gamma \Sequent !A \land !B$ وي، نو
+$\Gamma \Sequent !A$ هم وي۔
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof\qquad\bottomAlignProof
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !B$
+\end{prooftree}
+د $\Elim{\land}$ نښه په فطري استنتاج کښې د
+همدغه نوم له قاعدې سره تړاو ښيي۔
+
+په همدې ډول، فرض کړئ $\Gamma, !A \Sequent !B$
+لرو؛ يعنې !!a{derivation} شته چې
+!!{undischarged} فرضونه ئې $\Gamma, !A$ او وروستے
+!!{formula} ئې~$!B$ دے۔ که د $\Intro{\lif}$ قاعده
+وکاروو، !!a{derivation} ترلاسه کېږي چې
+!!{undischarged} فرضونه ئې $\Gamma$ او وروستے
+!!{formula} ئې $!A \lif !B$ وي؛ يعنې
+$\Gamma \Sequent !A \lif !B$۔ پام وکړئ چې د
+فرضونو !!{discharge} ئې څومره څرګند کړل۔
+\begin{prooftree}
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+\end{prooftree}
+
+په همدې طريقه له نورو قواعدو هم پايلې راځي؛
+تفصيل ئې دا دے:
+\begin{gather*}
+  \Axiom $\Gamma \fCenter !A$
+  \Axiom $\Delta \fCenter !B$
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInf $\Gamma,\Delta \fCenter !A \land !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_1$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+  \qquad
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_2$}
+  \UnaryInf $\Gamma \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Intro{\lor}_1$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\qquad
+  \Axiom $\Gamma \fCenter !B$
+  \RightLabel{$\Intro{\lor}_2$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \lor !B$
+  \Axiom $\Delta, !A \fCenter !C$
+  \Axiom $\Delta', !B \fCenter !C$
+  \RightLabel{$\Elim{\lor}$}
+  \TrinaryInf $\Gamma, \Delta, \Delta' \fCenter !C$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+  \DisplayProof
+  \qquad
+  \Axiom $\Delta \fCenter !A \lif !B$
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInf $\Gamma, \Delta \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter \lfalse$
+  \RightLabel{$\FalseInt$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+\end{gather*}
+
+هر فرض په خپله له~$!A$ څخه د $!A$
+!!a{derivation} دے؛ يعنې تل $!A \Sequent !A$ لرو۔
+
+\begin{prooftree}
+  \AxiomC{$ $}
+  \UnaryInfC{$!A \fCenter !A$}
+\end{prooftree}
+
+دغه قواعد يوځاے د هغو فطري استنتاجي
+!!{derivation}s د شتون حساب ګڼلے شو چې شته۔ د
+فطري استنتاج د نښو يوه بله بڼه ئې هم ګڼلے شو،
+چې هر ګام ئې يوازې !!{derive}d شوے !!{formula}
+نۀ، بلکې هغه !!{undischarged} فرضونه هم ثبتوي
+چې ترې !!{derive}d شوے دے۔
+
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \UnaryInf $!A \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom $!B \fCenter !B$
+  \BinaryInf$!A, !B \fCenter \lfalse$
+  \UnaryInf$!B \fCenter !A \lif \lfalse$
+  \UnaryInf$!B \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom$!B \fCenter !B$
+  \BinaryInf$!B \fCenter \lfalse$
+  \UnaryInf$\fCenter !B \lif \lfalse$
+\end{prooftree}
+دلته $!B$ د $(!A \lor (!A \lif \lfalse))\lif \lfalse$
+لنډ نوم دے۔ \textbf{د ژباړې د نسخې سمون (OLCMP-218):}
+د سرچينې په وروستي رسم کښې د سياق تر دويم فرض
+پسې يوه بې‌دويم آرګومېنټه د شرط نښه، او د
+همدغه فرض مخې ته څلور بې‌جوړې پرانيستې قوسونه
+وو۔ يوازې دغه پنځه نقل شوې نښې لرې شوې؛ د
+فرضونو سېټونه، د يا او شرط داخلول/ايستل او د
+وروستي فرض ايستل د اصلي رسم په عين ترتيب دي۔
+پايله او د لنډ نوم معنا عين ساتل شوي دي۔
+
+\end{document}

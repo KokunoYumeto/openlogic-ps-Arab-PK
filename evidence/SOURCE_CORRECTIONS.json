@@ -1,6 +1,6 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "Source corrections registered through OLP-0693; superseded historical entries retained, current acceptance separately hash-bound.",
+  "status": "Source corrections registered through OLP-0694; superseded historical entries retained, current acceptance separately hash-bound.",
   "adopted_utc": "2026-09-29T01:29:16.437921+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
@@ -9057,7 +9057,17 @@
         "ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:30"
       ],
       "decision_timing": "contemporaneous B073 owner source-proof review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B269",
+          "utc": "2026-10-10T00:53:29.359532+00:00",
+          "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+          "target_sha256": "1cc59a01bc2760e2049269ca2a855d70dadbb7c8bceac83f38d4ff1f972f4762",
+          "adjudication_receipt": "B269_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-042",
@@ -9099,7 +9109,17 @@
         "ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:61"
       ],
       "decision_timing": "contemporaneous B073 owner source-proof review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B269",
+          "utc": "2026-10-10T00:53:29.359532+00:00",
+          "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+          "target_sha256": "1cc59a01bc2760e2049269ca2a855d70dadbb7c8bceac83f38d4ff1f972f4762",
+          "adjudication_receipt": "B269_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-043",
@@ -26304,6 +26324,130 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-218",
+      "unit_id": "OLP-0694",
+      "classification": "sequent-example-copied-context-connective-and-unmatched-parentheses",
+      "counterexample": "LetD=A∨(A→false),B=D→false. Correct path A|-D;B|-B;A,B|-false;B|-A→false;B|-D;B|-B;B|-false;empty|-B→false. Every step matches rules in this exactsource, contexts are sets so B,B=B. Source A,B→ lacks a consequent and four unpaired opening parentheses corrupt the displayed contexts. Five minimal fragments restore the intended double-negated excluded-middle proof.",
+      "formal_changes": [
+        {
+          "source": "\\BinaryInf$!A, !B\\lif \\fCenter \\lfalse$",
+          "target": "\\BinaryInf$!A, !B \\fCenter \\lfalse$"
+        },
+        {
+          "source": "\\UnaryInf$(!B \\fCenter !A \\lif \\lfalse$",
+          "target": "\\UnaryInf$!B \\fCenter !A \\lif \\lfalse$"
+        },
+        {
+          "source": "\\UnaryInf$( !B \\fCenter !A \\lor (!A \\lif \\lfalse)$",
+          "target": "\\UnaryInf$!B \\fCenter !A \\lor (!A \\lif \\lfalse)$"
+        },
+        {
+          "source": "\\Axiom$(!B \\fCenter !B$",
+          "target": "\\Axiom$!B \\fCenter !B$"
+        },
+        {
+          "source": "\\BinaryInf$(!B \\fCenter \\lfalse$",
+          "target": "\\BinaryInf$!B \\fCenter \\lfalse$"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+      "source_sha256": "44525323721b70654bc19c745388c1ea8196fa4a2fe82c355799018bdeb6d705",
+      "source_line_1based": 115,
+      "source_locator": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex:block14",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+      "target_line_1based": 123,
+      "target_sha256": "740f0e1f36c79232cefb268b5a020cf24d3739fce675ee0e6e7b9fa1d6901e1e",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "په وروستي رسم کښې د سياق تر دويم فرض پسې يوه د شرط بې‌پايلې نښه او د همدغه فرض مخې ته څلور بې‌جوړې پرانيستې قوسونه وو۔ يوازې دغه پنځه نقل شوې نښې لرې شوې؛ د يا او شرط د قواعدو عين سلسله، فرضونه او وروستۍ پايله صحيح ساتل شوي۔",
+      "translation_change": "په وروستي رسم کښې د سياق تر دويم فرض پسې يوه د شرط بې‌پايلې نښه او د همدغه فرض مخې ته څلور بې‌جوړې پرانيستې قوسونه وو۔ يوازې دغه پنځه نقل شوې نښې لرې شوې؛ د يا او شرط د قواعدو عين سلسله، فرضونه او وروستۍ پايله صحيح ساتل شوي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B269_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "cbf92bf44a893960e18116c540b2f7978d290dc3cedf29ef79ee437903d3d0d5",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A,!B\\lif\\fCenter\\lfalse$",
+          "$(!B\\fCenter!A\\lif\\lfalse$",
+          "$(!B\\fCenter!A\\lor(!A\\lif\\lfalse)$",
+          "$(!B\\fCenter!B$",
+          "$(!B\\fCenter\\lfalse$"
+        ],
+        "target_only": [
+          "$!B\\fCenter!B$",
+          "$!A,!B\\fCenter\\lfalse$",
+          "$!B\\fCenter!A\\lif\\lfalse$",
+          "$!B\\fCenter!A\\lor(!A\\lif\\lfalse)$",
+          "$!B\\fCenter\\lfalse$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-218",
+      "qa_math_exception_group_members": [
+        "OLCMP-218"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLLAM-061",
+      "unit_id": "OLP-0371",
+      "classification": "beta-eta-common-development-proof-omits-eta-overlap-cases",
+      "counterexample": "Abstractioncase M=Mprime=lambda x.fx withxfresh. Copiedbetaargument yields lambda x.fx whereas eta-priority complete-development isf; extraetarule needed. Applicationcase M=(lambda x.fx)q,Mprime=fq: leftabstraction eta-reduces tovariablef, contrary to copiedbetaproof premise that leftreduct staysabstraction. Both desiredgoals hold in these examples; witnesses show omittedproofcases, not falselemma.",
+      "formal_changes": [],
+      "source_path": "content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex",
+      "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+      "source_line_1based": 85,
+      "source_locator": "content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:block17",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex",
+      "target_line_1based": 93,
+      "target_sha256": "1cc59a01bc2760e2049269ca2a855d70dadbb7c8bceac83f38d4ff1f972f4762",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د اېټا د لومړيتوب له مخې د تجريد او تطبيق په لومړيو څلورو حالتونو کښې اضافي تداخلي حالتونه پکار دي؛ يوازې د پخواني بېټا دليل نقل دا حالتونه نۀ څېړي۔ لږ نږدې يادښت د سرچينې دغه پاتې حد ښکاره کوي؛ رسمي لمه او قضيه نۀ ردوي او نوی بشپړ ثبوت نۀ جوړوي۔",
+      "translation_change": "د اېټا د لومړيتوب له مخې د تجريد او تطبيق په لومړيو څلورو حالتونو کښې اضافي تداخلي حالتونه پکار دي؛ يوازې د پخواني بېټا دليل نقل دا حالتونه نۀ څېړي۔ لږ نږدې يادښت د سرچينې دغه پاتې حد ښکاره کوي؛ رسمي لمه او قضيه نۀ ردوي او نوی بشپړ ثبوت نۀ جوړوي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B269_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "cbf92bf44a893960e18116c540b2f7978d290dc3cedf29ef79ee437903d3d0d5",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -26311,7 +26455,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "د۶۹۳ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه يي خپرونه؛ بيا بشپړ OLP0694 او OLP0371۔ ژباړه د TeX ځای پر اشغال نۀ درېږي۔",
+  "next_action": "د۶۹۴ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه يي خپرونه؛ بيا بشپړ OLP0695 او OLP0372۔ ژباړه د TeX ځای پر اشغال نۀ درېږي۔",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -26441,7 +26585,7 @@
       "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
     }
   ],
-  "current_registration_batch": "B268",
-  "current_registered_source_boundary": "OLP-0693",
-  "registered_utc": "2026-10-10T00:42:21.501205+00:00"
+  "current_registration_batch": "B269",
+  "current_registered_source_boundary": "OLP-0694",
+  "registered_utc": "2026-10-10T00:53:29.359532+00:00"
 }
