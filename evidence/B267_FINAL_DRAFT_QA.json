@@ -1,0 +1,85 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-10T00:36:11.023514+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0692",
+      "source_path": "content/proof-theory/propositions-as-types/rules-tN2.tex",
+      "source_sha256": "028e19b146423187a4a0057fee449ac084cdfc3c987f0a366787784aa64a2ee2",
+      "source_bytes": 2056,
+      "target_sha256": "5ff97b9bb8c89aa384d97b08c5871329e10f694d152c5f819d534130fda7359e",
+      "target_bytes": 2110,
+      "paired_blocks": 5,
+      "changed_blocks": [
+        4
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "all_original_diagrams_byte_exact": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0369",
+      "source_path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+      "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+      "target_sha256_before": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "target_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "target_sha256_after": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "target_bytes": 8012,
+      "paired_blocks": 22,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-037",
+        "OLLAM-038"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0692": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_original_diagrams_byte_exact": true
+    },
+    "OLP-0369": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 0,
+  "source_adjudication_sha256": "f101ea5bfac82a0bcf816399676d32c4fc1608af98c8a6efe21ce60ba0927cb6",
+  "registration_helper_sha256": "46f38503c96644b68865168e2cc931b31008ac43b67c8c8314c3e64acbfff850",
+  "writer_spec_sha256": "4728b0d533feca3b05c848fd858f539c570e0d46d6390ce1eefd3b2d9bc1621f"
+}

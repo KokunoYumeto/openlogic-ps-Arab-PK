@@ -1,6 +1,6 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0536; historical OLINT-011 and OLINT-017 proof gaps remain disclosed",
+  "status": "Source corrections registered through OLP-0692; superseded historical entries retained, current acceptance separately hash-bound.",
   "adopted_utc": "2026-09-29T01:29:16.437921+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
@@ -8841,7 +8841,17 @@
         "ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:27"
       ],
       "decision_timing": "contemporaneous B072 owner source-proof review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B267",
+          "utc": "2026-10-10T00:36:11.023514+00:00",
+          "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+          "target_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+          "adjudication_receipt": "B267_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-038",
@@ -8887,7 +8897,17 @@
         "ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:98"
       ],
       "decision_timing": "contemporaneous B072 owner source-proof review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B267",
+          "utc": "2026-10-10T00:36:11.023514+00:00",
+          "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+          "target_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+          "adjudication_receipt": "B267_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-039",
@@ -26261,7 +26281,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0400 onward; continue corrected reader validation at natural TeX checkpoints.",
+  "next_action": "د۶۹۲ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه، منل او سرچينه‌يي خپرونه؛ بيا بشپړ OLP0693 او OLP0370۔ ژباړه د TeXځای پر اشغال نۀ درېږي۔",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -26390,5 +26410,8 @@
       "manifest": "C:\\interlanguage-task-state\\openlogic-internationalization\\new-language-lanes\\source\\SOURCE_MANIFEST.jsonl",
       "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
     }
-  ]
+  ],
+  "current_registration_batch": "B267",
+  "current_registered_source_boundary": "OLP-0692",
+  "registered_utc": "2026-10-10T00:36:11.023514+00:00"
 }

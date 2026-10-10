@@ -1,0 +1,68 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-10T00:36:11.023514+00:00",
+  "status": "د هممهاله بېټا ټول دوه‌ويشت بلاکونه او شپاړس ژباړې خپلواک کتل شوي؛ پخواني037/038صحيح دي او ټول پخواني هدف بايټونه عين پاتې دي۔ د تعويض تازګي د اصل364 explicitclassاستازو شرطونه دي، نو نوی عيب/محدودول نۀ دي ورزيات شوي۔ اصلي مشقونه، recursioneditorialحد، بشپړراکمولو lemmasاو نښې عين دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0369",
+      "source_path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+      "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+      "target_sha256_before": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "target_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "target_sha256_after": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "target_bytes": 8012,
+      "paired_blocks": 22,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-037",
+        "OLLAM-038"
+      ],
+      "wording_choice_ids": [],
+      "translated_blocks_reviewed": 16,
+      "target_retained_unchanged": true,
+      "changed_prior_blocks": [],
+      "all_prior_math_bytes_retained": true,
+      "all_other_prior_math_bytes_retained": true,
+      "adjudicated_prior_math_changes": []
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "په همدې فعال بهير کښې پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ د parallel/full-development/typedruleعين پاکستاني مرکبونه خپلواک چاپي شاهد نۀ لري، موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "په همدې فعال بهير کښې پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ د parallel/full-development/typedruleعين پاکستاني مرکبونه خپلواک چاپي شاهد نۀ لري، موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    }
+  ],
+  "segment_entries_added": 16,
+  "new_source_correction_ids": [],
+  "wording_choice_ids": [],
+  "old_source_corrections_independently_reverified": [
+    "OLLAM-037",
+    "OLLAM-038"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0369.jsonl",
+  "whole_unit_segment_snapshot_sha256": "1d026906637f72640551cfb77725144b34e63036e4dcbf8b96f54bcd42ef03a5",
+  "source_adjudication_sha256": "f101ea5bfac82a0bcf816399676d32c4fc1608af98c8a6efe21ce60ba0927cb6",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د۶۹۲ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه، منل او سرچينه‌يي خپرونه؛ بيا بشپړ OLP0693 او OLP0370۔ ژباړه د TeXځای پر اشغال نۀ درېږي۔"
+}
