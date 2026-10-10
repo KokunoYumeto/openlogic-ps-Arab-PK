@@ -1,0 +1,27 @@
+{
+  "schema": "ps-protected-source-path-qa-repair/1",
+  "utc": "2026-10-10T01:30:29.663099+00:00",
+  "status": "PASS; subfile paths are protected identifiers, ordinary English remains checked",
+  "trigger": "Both697corpus runs falsely reported rules from the unchanged subfile filename as ordinary untranslated prose. No acceptance attempted.",
+  "modified_files": [
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\qa_batch.py",
+      "before_sha256": "e7af63f128bb956f0c76e89198f4918282e8282655192bef847aff74d1e4b8c3",
+      "after_sha256": "30929e1e6388ce46206ee5e4f84fdaeb545d4fc0accad55356a8b847bbe487fe"
+    },
+    {
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\tools\\check_translation.py",
+      "before_sha256": "225dd0b66074124b6120fbf75e372e68366d16b6df93ad9ef7cbcf61eb6330c2",
+      "after_sha256": "0b525f1dfe9920b5180948591131b323b2fad6db63ed31b3a6222086c6cbc64d"
+    }
+  ],
+  "concrete_checks": {
+    "mutated_subfile_path_detected_by_identifier_parity": true,
+    "protected_filename_not_ordinary_prose": true,
+    "ordinary_rules_word_still_retained_for_language_check": true
+  },
+  "translation_target_changed": false,
+  "source_changed": false,
+  "generic_English_allowance_added": false,
+  "validator_strengthened": "Add subfile to identifier parity and structural macros while excluding its filename from ordinary prose, as already done for olimport."
+}

@@ -1,6 +1,6 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "Source corrections registered through OLP-0696; superseded historical entries retained, current acceptance separately hash-bound.",
+  "status": "Source corrections registered through OLP-0697; superseded historical entries retained, current acceptance separately hash-bound.",
   "adopted_utc": "2026-09-29T01:29:16.437921+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
@@ -9377,7 +9377,17 @@
         "ps-Arab-PK/content/lambda-calculus/lambda-definability/introduction.tex:76"
       ],
       "decision_timing": "contemporaneous B074 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B272",
+          "utc": "2026-10-10T01:29:09.029442+00:00",
+          "source_sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2",
+          "target_sha256": "3f24e8034268b71829ee4c579907399f8cccbaee63e74439cad9fa4142228990",
+          "adjudication_receipt": "B272_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-048",
@@ -26478,6 +26488,164 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-219",
+      "canonical_source_issue_id": "OLCMP-210",
+      "unit_id": "OLP-0697",
+      "classification": "sum-typing-clause-copied-unbound-argument",
+      "counterexample": "N=x:P and M=y:Q, P distinct Q: source incorrectly derives the injection of y from typing x. tN3 injection consumes the premise N.",
+      "formal_changes": [
+        {
+          "source": "\\inj[!B]{i}{!M}",
+          "target": "\\inj[!B]{i}{N}"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/types.tex",
+      "source_sha256": "8e3fa53eb78ebc918ee94e0eead7724d931e5a27b75d714bca1db80f04ba9152",
+      "source_line_1based": 28,
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex:block9",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/types.tex",
+      "target_line_1based": 30,
+      "target_sha256": "5f8eb6c6747eb2b099736524db341f226079a5f39dde5a63416e7d1109bb7ac2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "مقدمه N د ټايپ A ترم فرضوي، خو پايله بل بې‌تعريفه فورمولي !M کاروي۔ يوازې د يا جوړوونکي آرګومېنټ هماغه N ته سم شو؛ دا د 210 تکرار دے، نوی ځانګړے عيب نۀ دے۔",
+      "translation_change": "مقدمه N د ټايپ A ترم فرضوي، خو پايله بل بې‌تعريفه فورمولي !M کاروي۔ يوازې د يا جوړوونکي آرګومېنټ هماغه N ته سم شو؛ دا د 210 تکرار دے، نوی ځانګړے عيب نۀ دے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B272_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "ef81c7cac40f332f4d0fc9283e48a32b8f0947b1a2c1d03e8d6469246e655ba1",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\inj[!B]{i}{!M}$",
+          "$\\dcase{M}{x_1}{N_1}{x_2}{N_2}$"
+        ],
+        "target_only": [
+          "$\\inj[!B]{i}{N}$",
+          "$\\dcase{M}{x}{N_1}{y}{N_2}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-219",
+      "qa_math_exception_group_members": [
+        "OLCMP-219",
+        "OLCMP-220"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-220",
+      "unit_id": "OLP-0697",
+      "classification": "case-typing-binders-disagree-with-branch-contexts",
+      "counterexample": "Gamma={m:P or P}; case m of x1.x1 or x2.x2 has typeP with x1:P/x2:P branches, not unrelated x:P/y:P contexts. The corrected x/y clause matches tN3.",
+      "formal_changes": [
+        {
+          "source": "\\dcase{M}{x_1}{N_1}{x_2}{N_2}",
+          "target": "\\dcase{M}{x}{N_1}{y}{N_2}"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/types.tex",
+      "source_sha256": "8e3fa53eb78ebc918ee94e0eead7724d931e5a27b75d714bca1db80f04ba9152",
+      "source_line_1based": 28,
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex:block9",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/types.tex",
+      "target_line_1based": 30,
+      "target_sha256": "5f8eb6c6747eb2b099736524db341f226079a5f39dde5a63416e7d1109bb7ac2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د حالتونو دواړه فرعي ترمونه د x:A او y:B له سياقونو ټايپ اخلي، خو ترم x_1/x_2 تړل۔ د ترم يوازې دوه تړونکي د همدغو مقدماتي متغيرونو سره x/y شول؛ هماغه C پايله او نور شرطونه عين دي۔",
+      "translation_change": "د حالتونو دواړه فرعي ترمونه د x:A او y:B له سياقونو ټايپ اخلي، خو ترم x_1/x_2 تړل۔ د ترم يوازې دوه تړونکي د همدغو مقدماتي متغيرونو سره x/y شول؛ هماغه C پايله او نور شرطونه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B272_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "ef81c7cac40f332f4d0fc9283e48a32b8f0947b1a2c1d03e8d6469246e655ba1",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-219",
+      "qa_math_exception_group_members": [
+        "OLCMP-219",
+        "OLCMP-220"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-221",
+      "unit_id": "OLP-0697",
+      "classification": "raw-proof-term-type-existence-confused-with-uniqueness",
+      "counterexample": "Closed lambda x:A.xx has empty context but no type for any finite formulaA; typingxxwould requireA=A->B, contradicting proper-subformula finiteness. The source itself supplies this counterexample.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/types.tex",
+      "source_sha256": "8e3fa53eb78ebc918ee94e0eead7724d931e5a27b75d714bca1db80f04ba9152",
+      "source_line_1based": 50,
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex:block10",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/types.tex",
+      "target_line_1based": 65,
+      "target_sha256": "5f8eb6c6747eb2b099736524db341f226079a5f39dde5a63416e7d1109bb7ac2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "هر خام ثبوت ترم ټايپ نۀ لري؛ همدغه باب د تړلي ځان‌تطبيق ښکاره مخالفه بېلګه ورکوي۔ د کټ مټ يو ټايپ پر ځای تر ډېره يو ټايپ صحيح مشروطه يکتايي ده۔ موجود ټايپ يکتا دے؛ سياق يوازې وجود نۀ تضمينوي۔",
+      "translation_change": "هر خام ثبوت ترم ټايپ نۀ لري؛ همدغه باب د تړلي ځان‌تطبيق ښکاره مخالفه بېلګه ورکوي۔ د کټ مټ يو ټايپ پر ځای تر ډېره يو ټايپ صحيح مشروطه يکتايي ده۔ موجود ټايپ يکتا دے؛ سياق يوازې وجود نۀ تضمينوي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B272_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "ef81c7cac40f332f4d0fc9283e48a32b8f0947b1a2c1d03e8d6469246e655ba1",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -26485,7 +26653,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "د۶۹۶ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه يي خپرونه؛ بيا بشپړ OLP0697 او OLP0374۔ ژباړه د TeX ځای پر اشغال نۀ درېږي۔",
+  "next_action": "د ۶۹۷ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه‌يي خپرونه؛ بيا بشپړ OLP-0698 او OLP-0375۔ ژباړه د TeX ځای پر اشغال نۀ درېږي۔",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -26615,7 +26783,7 @@
       "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
     }
   ],
-  "current_registration_batch": "B271",
-  "current_registered_source_boundary": "OLP-0696",
-  "registered_utc": "2026-10-10T01:18:35.249313+00:00"
+  "current_registration_batch": "B272",
+  "current_registered_source_boundary": "OLP-0697",
+  "registered_utc": "2026-10-10T01:29:09.029442+00:00"
 }

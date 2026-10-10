@@ -67,8 +67,8 @@ def math_spans(s):
 def math(s):
  return Counter(re.sub(r'\s+','',localize_text(x)) for x in math_spans(s))
 def ids(s):
- return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|Olref|olimport|olasset|olphoto|cite\w*|label|cref|ref|url|oliflabeldef|printtoken|Cref)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s)+re.findall(r'\\tagrefs\{(?:[^{}]|\{[^{}]*\})*\}',s))
-STRUCTURAL_MACRO_NAMES=set('documentclass iftag olchapter olpart olsection subsection subsubsection olfileid olimport OLEndChapterHook Article Axiom AxiomC Deduce DeduceC UnaryInf UnaryInfC BinaryInf BinaryInfC TrinaryInf TrinaryInfC QuaternaryInf QuaternaryInfC RightLabel LeftLabel DischargeRule DisplayProof noLine doubleLine bottomAlignProof Intro Elim FalseInt FalseCl LeftR RightR tagprob tagitem tagtrue tagfalse tagrefs item footnote caption olasset olphoto includegraphics href url cite citep citet ollabel label olref Olref ref cref Cref'.split())
+ return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|Olref|olimport|subfile|olasset|olphoto|cite\w*|label|cref|ref|url|oliflabeldef|printtoken|Cref)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s)+re.findall(r'\\tagrefs\{(?:[^{}]|\{[^{}]*\})*\}',s))
+STRUCTURAL_MACRO_NAMES=set('documentclass iftag olchapter olpart olsection subsection subsubsection olfileid olimport subfile OLEndChapterHook Article Axiom AxiomC Deduce DeduceC UnaryInf UnaryInfC BinaryInf BinaryInfC TrinaryInf TrinaryInfC QuaternaryInf QuaternaryInfC RightLabel LeftLabel DischargeRule DisplayProof noLine doubleLine bottomAlignProof Intro Elim FalseInt FalseCl LeftR RightR tagprob tagitem tagtrue tagfalse tagrefs item footnote caption olasset olphoto includegraphics href url cite citep citet ollabel label olref Olref ref cref Cref'.split())
 def optional_tags(s):
  return Counter(re.findall(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{([^{}]+)\}',s)+re.findall(r'\\begin\{probtag\}\{([^{}]+)\}',s))
 def structural_macros(s):
@@ -151,7 +151,7 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF|OLSQ|OLND|OLTAB|OLAX|OLCOM|OLFOL|OLMOD|OLCMP|OLPRV|OLSOL|OLSTH)-\d+','',residual)
  residual=re.sub(r'(?s)\$\$.*?\$\$|\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}','',residual)
  residual=re.sub(r'\\crefrange\{[^{}]*\}\{[^{}]*\}','',residual)
- residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|Olref|oliflabeldef|begin|end|ollabel|label|cref|Cref|ref|cite\w*|printtoken|tagprob|setcounter|Article)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
+ residual=re.sub(r'\\(?:documentclass|olfileid|olimport|subfile|olasset|olref|Olref|oliflabeldef|begin|end|ollabel|label|cref|Cref|ref|cite\w*|printtoken|tagprob|setcounter|Article)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
  residual=re.sub(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{[^{}]*\}','',residual)
  residual=re.sub(r'\\begin\{(?:tagblock|tagenumerate)\}\{[^{}]*\}','',residual)
  residual=re.sub(r'!!\^?a?\{[^{}]+\}s?|\\[A-Za-z]+','',token_text(residual))
