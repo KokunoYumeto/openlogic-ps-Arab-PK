@@ -1,6 +1,6 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "Source corrections registered through OLP-0698; superseded historical entries retained, current acceptance separately hash-bound.",
+  "status": "Source corrections registered through OLP-0699; superseded historical entries retained, current acceptance separately hash-bound.",
   "adopted_utc": "2026-09-29T01:29:16.437921+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
@@ -27024,6 +27024,153 @@
         "OLLAM-062"
       ],
       "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-226",
+      "formal_changes": [
+        {
+          "source": "\\RightLabel{\\RightR{\\oplus}}\n\\BinaryInf$!A \\oplus !B, \\Gamma \\fCenter \\Delta$",
+          "target": "\\RightLabel{\\LeftR{\\oplus}}\n\\BinaryInf$!A \\oplus !B, \\Gamma \\fCenter \\Delta$"
+        }
+      ],
+      "unit_id": "OLP-0699",
+      "classification": "exclusive-or-left-rule-labelled-right",
+      "counterexample": "Bothpremises express equaltruthvalues, so they validate a left XOR conclusion; the displayedRightRname incorrectly identified that rule.",
+      "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+      "source_line_1based": 31,
+      "source_locator": "content/proof-theory/sequent-calculus/interpretation-rules.tex:block7",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "target_line_1based": 33,
+      "target_sha256": "86936e46995689868b20348b8e17c1176e0452b4ea365b3b987df0339fb6bb73",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د دويمې انحصاري يا قاعدې پايله په کيڼ اړخ کښې ده، خو ښۍ پېژندنه ئې لرله۔ يوازې د قاعدې کيڼ نوم سم شو؛ دواړه صحيح مقدمې او پايله عين دي۔",
+      "translation_change": "د دويمې انحصاري يا قاعدې پايله په کيڼ اړخ کښې ده، خو ښۍ پېژندنه ئې لرله۔ يوازې د قاعدې کيڼ نوم سم شو؛ دواړه صحيح مقدمې او پايله عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B274_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "2c5bdd3ff3e550fa9b529ebfe6aec8d90542bbcf91f48eb7e457a9e053319c43",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}&\\Axiom$\\Gamma\\fCenter\\Delta,!A,!B$\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\oplus}}\\BinaryInf$\\Gamma\\fCenter\\Delta,!A\\oplus!B$\\DisplayProof\\\\&\\Axiom$!A,\\Gamma\\fCenter\\Delta,!B$\\Axiom$!B,\\Gamma\\fCenter\\Delta,!A$\\RightLabel{\\RightR{\\oplus}}\\BinaryInf$!A\\oplus!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}&\\Axiom$\\Gamma\\fCenter\\Delta,!A,!B$\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\oplus}}\\BinaryInf$\\Gamma\\fCenter\\Delta,!A\\oplus!B$\\DisplayProof\\\\&\\Axiom$!A,\\Gamma\\fCenter\\Delta,!B$\\Axiom$!B,\\Gamma\\fCenter\\Delta,!A$\\RightLabel{\\LeftR{\\oplus}}\\BinaryInf$!A\\oplus!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [
+          "RightR"
+        ],
+        "target_only": [
+          "LeftR"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-226",
+      "qa_math_exception_group_members": [
+        "OLCMP-226"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-227",
+      "formal_changes": [],
+      "unit_id": "OLP-0699",
+      "classification": "sequent-truth-weakening-prose-reverses-left-right",
+      "counterexample": "P|-Q withPtrue/Qfalse satisfies both erroneous prose features but isfalse. The opening semantics correctly saysfalseleft ortrueright.",
+      "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+      "source_line_1based": 84,
+      "source_locator": "content/proof-theory/sequent-calculus/interpretation-rules.tex:block10",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "target_line_1based": 103,
+      "target_sha256": "86936e46995689868b20348b8e17c1176e0452b4ea365b3b987df0339fb6bb73",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د سېکوېنټ رښتينولۍ لپاره دروغ فورمول په کيڼ يا رښتينے فورمول په ښي اړخ کښې پکار دے؛ د کمزوري کولو دليل دواړه اړخونه سرچپه ليکل۔ يوازې عادي نثر سم شو؛ قاعده او ټول فورمولونه صحيح دي۔",
+      "translation_change": "د سېکوېنټ رښتينولۍ لپاره دروغ فورمول په کيڼ يا رښتينے فورمول په ښي اړخ کښې پکار دے؛ د کمزوري کولو دليل دواړه اړخونه سرچپه ليکل۔ يوازې عادي نثر سم شو؛ قاعده او ټول فورمولونه صحيح دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B274_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "2c5bdd3ff3e550fa9b529ebfe6aec8d90542bbcf91f48eb7e457a9e053319c43",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-228",
+      "formal_changes": [],
+      "unit_id": "OLP-0699",
+      "classification": "intuitionistic-system-restriction-omits-implication-left-modification",
+      "counterexample": "Literalrestriction makes shared-contextG1cimplication-left unusable for nonempty succedents, blocking expectedP->Q,P|-Q. ActualG1itable firstpremiseGamma|-A andsecondB,Gamma|-Delta supplies the required modification.",
+      "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+      "source_line_1based": 67,
+      "source_locator": "content/proof-theory/sequent-calculus/interpretation-rules.tex:block9",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "target_line_1based": 78,
+      "target_sha256": "86936e46995689868b20348b8e17c1176e0452b4ea365b3b987df0339fb6bb73",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "G1iيوازې د G1cد هر تالي په يوه فورمول محدودولو نۀ ترلاسه کېږي۔ د شرط کيڼې قاعدې لومړۍ مقدمه بايد خپل يوازينے مقدماتي فورمول په تالي کښې ولري، نه د پايلې پاتې تالي۔ اصلي G1iجدول همدغه بدلون لري؛ عادي بيان او څرګند يادښت ورسره برابر شول۔",
+      "translation_change": "G1iيوازې د G1cد هر تالي په يوه فورمول محدودولو نۀ ترلاسه کېږي۔ د شرط کيڼې قاعدې لومړۍ مقدمه بايد خپل يوازينے مقدماتي فورمول په تالي کښې ولري، نه د پايلې پاتې تالي۔ اصلي G1iجدول همدغه بدلون لري؛ عادي بيان او څرګند يادښت ورسره برابر شول۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B274_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "2c5bdd3ff3e550fa9b529ebfe6aec8d90542bbcf91f48eb7e457a9e053319c43",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -27031,7 +27178,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "د ۶۹۸ دوه ګونې کتنه، عين بايټه بياجوړونه، منل، د 375 د بدلو پاراګرافونو په يوه طبيعي پړاو کښې TeX کتنه او سرچينه‌يي خپرونه؛ بيا بشپړ OLP-0699 او OLP-0376۔ د TeX اشغال ژباړه نۀ دروي۔",
+  "next_action": "د ۶۹۹ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه‌يي خپرونه؛ د 375 د بدلو پاراګرافونو جوړونه په راتلونکي طبيعي پړاو کښې يوه محدوده هڅه لري۔ ژباړه سمدستي OLP-0700 او OLP-0377 ته ځي۔",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -27161,7 +27308,7 @@
       "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
     }
   ],
-  "current_registration_batch": "B273",
-  "current_registered_source_boundary": "OLP-0698",
-  "registered_utc": "2026-10-10T01:51:54.560527+00:00"
+  "current_registration_batch": "B274",
+  "current_registered_source_boundary": "OLP-0699",
+  "registered_utc": "2026-10-10T02:08:53.804909+00:00"
 }

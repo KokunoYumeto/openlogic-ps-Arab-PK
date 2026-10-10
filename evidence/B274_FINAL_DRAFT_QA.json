@@ -1,0 +1,91 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-10T02:08:53.804909+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0699",
+      "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+      "source_bytes": 6617,
+      "target_sha256": "86936e46995689868b20348b8e17c1176e0452b4ea365b3b987df0339fb6bb73",
+      "target_bytes": 10864,
+      "paired_blocks": 14,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-226",
+        "OLCMP-227",
+        "OLCMP-228"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0376",
+      "source_path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "source_sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb",
+      "target_sha256_before": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "target_sha256": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "target_sha256_after": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "target_bytes": 2211,
+      "paired_blocks": 10,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0699": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true
+    },
+    "OLP-0376": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 3,
+  "source_adjudication_sha256": "2c5bdd3ff3e550fa9b529ebfe6aec8d90542bbcf91f48eb7e457a9e053319c43",
+  "registration_helper_sha256": "b85c532db31e5f25b0061f9ac315e68ef497c60cca380b426a6c586aa6c74b06",
+  "writer_spec_sha256": "bc0cca63078750e60a5eb3defeaf296ac86213233f854baed43c5ecbaa4ee688"
+}

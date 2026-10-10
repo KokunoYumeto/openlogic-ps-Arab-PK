@@ -1,0 +1,43 @@
+{
+  "schema": "ps-canonical-replay/1",
+  "utc": "2026-10-10T02:12:59.447870+00:00",
+  "status": "PASS",
+  "decisions": 1006,
+  "occurrences": 33195,
+  "terminology_decisions": 333,
+  "source_correction_decisions": 622,
+  "priority_decisions": 602,
+  "reader_pages_available": 18219,
+  "reader_pages_pending": 14976,
+  "frozen_inputs": {
+    "ALIGNMENT.jsonl": "8c1c6fdf3fe5b397a166b495dc9e2bcd70dcd39ec21d0336b78825ecea2e1e8a",
+    "CANON_PASSAGES.jsonl": "b23ca801dbf495cabd63d8ff4dfaf90977a81d7dac63b7ebef07d3ae6584a19c",
+    "CANON_SOURCES.jsonl": "607688facb12cfd89f9afb9cdc233a3fedad4cd09fabfea9482fca6e38c3beab",
+    "EXPERT_REVIEW_LOG.jsonl": "d91d0bf8a3f074209ce336f10262987110880ed1f8abe57d506b658c96f2bbc9",
+    "QA.json": "ffa62d299d08628afd4c4841efbbb705b563f0f8e0cf628a2e58612da67758eb",
+    "READER_OCCURRENCE_PAGES.json": "be81baa051a8f6e77eb8db9c528c8cb06f6ce96ac021629113e71a8214e3ed2b",
+    "SEGMENT_CANON_USE.jsonl": "ad91245d39280f17348c1a6bef41c28d2a15a39dea78bb4485d87b996eb19aca",
+    "SOURCE_CORRECTIONS.json": "1f99e64e5b7865e114e71c5ef52aa92d8e8ec4dfad2b99fe9b94072dbd620540",
+    "SOURCE_MANIFEST.jsonl": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "TERM_DECISIONS.jsonl": "06e7d1a0d1ebdd5affcb39744178643ee26867f2871990e30351be7a5a67d4e2",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+  },
+  "builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "storage_loader_sha256": "3d0837f587c65d6f22ef27884545c399a0f9d5fd7e15271c4459bc500bad1ab9",
+  "byte_identical_surfaces": {
+    "DECISIONS-001.json": "37d8a118fd0491203688144d025c2445c897cca26cb41baa94e60ac23fa6f20a",
+    "DECISIONS-002.json": "5ab35574a0099c2b8a08c6c44426b4744e39bad97e444c5accd894fd4aad6722",
+    "DECISIONS-003.json": "127cbe19e490d4a34ba6186395796ab3115fd6fb896f7652eaa033f36bbf6c93",
+    "DECISIONS-004.json": "a50c0e7fab225ca314a79ff711d60d0d49c6c73c933eacbf99504aa673cd3c8c",
+    "DECISIONS.json": "d3e69e4ea2c94936434545db9a517109e7b7604cb878a02efc729d8848ba42f1",
+    "DECISION_OCCURRENCES.csv": "1b1257408e50be8bc4a33c77ea2433c9f0488c457158bb16de3b2051269a034f",
+    "PRIORITY_REVIEW.md": "a45c4d04631a9df0c64e7352feda82bb52043d5362f7fe4a2e0aba6612ded7f1",
+    "START_HERE.md": "c8480e2dff4d88f7c2f86689988cdf184eecc4f32a710e012bc757739d9ba9a1",
+    "TRANSLATION_DECISIONS_FULL.md": "a64d52df234665bbe2cf4a0337657d1437eeccec487d02b9c63a68c19cc36b26",
+    "TRANSLATION_DECISION_QA.json": "cc3ce8924b5e7c343eedceac859a84b3a025c77ee24134acb773b7f3ab31646a",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+  },
+  "qa_sha256": "ffa62d299d08628afd4c4841efbbb705b563f0f8e0cf628a2e58612da67758eb",
+  "reader_mapping_hash_bound": true,
+  "historical_reader_units": 321
+}

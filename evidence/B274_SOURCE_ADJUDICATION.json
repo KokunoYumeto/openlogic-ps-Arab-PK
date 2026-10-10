@@ -1,0 +1,58 @@
+{
+  "new_unique_defects": [
+    "OLCMP-226",
+    "OLCMP-227",
+    "OLCMP-228"
+  ],
+  "all_prior376_bytes_retained": true,
+  "both_XOR_formulas_correct_label_only_changed": true,
+  "weakening_sound_false_left_true_right": true,
+  "G1i_modified_implication_left_needed": true,
+  "whole376_predecessor_invariant": "H^n pair(C0,C0) reduces to pair(Cmax(n-1,0),Cn), so Pred0=0, positivePredn=n-1.",
+  "whole376_subtraction": "b iterations of predecessor on a givesmax(a-b,0); no reversed arguments/negativeoutput claim.",
+  "whole376_plain_pair0_not_new_defect": true,
+  "all_exercises_retained_unsolved": true,
+  "independent_workflows": "Owner checked whole sources, integrated complete private writer and independent review; actual child metadata unavailable, assignedmodel/Ultra unchanged",
+  "writer_receipt_sha256": "444a25e775f14f1e9b500342967b676445794af97ffe83b4e962b9b311f91f9d",
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-10T02:08:53.804909+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "actually_read_scope": "entire actual frozen source and writer/currenttarget; owner fully checked interpretation and pair iteration",
+      "sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "actually_read_scope": "entire actual frozen source and writer/currenttarget; owner fully checked interpretation and pair iteration",
+      "sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G1i.tex",
+      "actually_read_scope": "actual implication-left and implication-right rows70–86; first premise excludesDelta",
+      "sha256": "b16548e594dc5a0a414c919e26078d474488c3186487c7cbdce170fb23035b7b"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G1c.tex",
+      "actually_read_scope": "entire actual table inB273; shared contexts and primitive weakening/contraction",
+      "sha256": "42798a4af1070b1707e4824968544a1e71608c43c54a4068014872c78e571150"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "actually_read_scope": "entire actual table inB273; logical shared-context rules",
+      "sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G2c.tex",
+      "actually_read_scope": "actual first95lines including allbinary logical rows; independentGamma1/2Delta1/2 contexts",
+      "sha256": "893ca1fbed732661a22f9c3f1bb68c3d39e38174af37fb1a316fc20a62facb75"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

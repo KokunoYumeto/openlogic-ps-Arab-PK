@@ -1,0 +1,121 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-10T02:08:53.804909+00:00",
+  "status": "بشپړ نوے واحد او بشپړه خپلواکه پخوانۍ بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0699",
+      "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+      "source_bytes": 6617,
+      "target_sha256": "86936e46995689868b20348b8e17c1176e0452b4ea365b3b987df0339fb6bb73",
+      "target_bytes": 10864,
+      "paired_blocks": 14,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-226",
+        "OLCMP-227",
+        "OLCMP-228"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0376",
+      "source_path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "source_sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb",
+      "target_sha256_before": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "target_sha256": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "target_sha256_after": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "target_bytes": 2211,
+      "paired_blocks": 10,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [],
+      "wording_choice_ids": []
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "په همدې فعال بهير کښې مالک او خصوصي ليکونکي پاکستاني۱ او افغان۳۹/۱۴۷ واقعي PNGمخونه په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ د انحصاري يا، NOR، مجازي قواعدو او چرچ جوړو عين تخصصي مرکبونه پاکستاني مستقيم چاپي شاهد نۀ لري او موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "په همدې فعال بهير کښې مالک او خصوصي ليکونکي پاکستاني۱ او افغان۳۹/۱۴۷ واقعي PNGمخونه په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ د انحصاري يا، NOR، مجازي قواعدو او چرچ جوړو عين تخصصي مرکبونه پاکستاني مستقيم چاپي شاهد نۀ لري او موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "په همدې فعال بهير کښې مالک او خصوصي ليکونکي پاکستاني۱ او افغان۳۹/۱۴۷ واقعي PNGمخونه په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ د انحصاري يا، NOR، مجازي قواعدو او چرچ جوړو عين تخصصي مرکبونه پاکستاني مستقيم چاپي شاهد نۀ لري او موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [
+    "TERM-TRUTH-FUNCTION"
+  ],
+  "new_source_correction_ids": [
+    "OLCMP-226",
+    "OLCMP-227",
+    "OLCMP-228"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLCMP-226",
+    "DEC-OLCMP-227",
+    "DEC-OLCMP-228"
+  ],
+  "revised_review_entry_ids": [
+    "TERM-TRUTH-FUNCTION"
+  ],
+  "semantic_samples_added": 14,
+  "focused_qa_sha256": "04afd5e8e01848c9b19a9d4d254b95361860ffebfba55cf9541e46cf19a28f10",
+  "source_adjudication_sha256": "2c5bdd3ff3e550fa9b529ebfe6aec8d90542bbcf91f48eb7e457a9e053319c43",
+  "model_provenance_sha256": "fd0c542afa66c3992798fcbfe4cb5c7ad3a8dbb367059bdccd0f4b8358c47c77",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0376.json",
+  "related_reaudit_sha256": "59663fcdfd43f5114e6dcdf296d2c89d6f92014c9ea7ad5f2a9e3b81be5c95cb",
+  "unresolved": "۲۳ عمومي واحدونه، ۲۳۳ بشپړ پخواني واحدونه، د ثبوتونو پاتې حدود، بشپړ تجربوي باب او بديلې برخې، EPUB، بشپړه پښتو او چاپي کتنه او وروستۍ خپرونه پاتې دي۔",
+  "next_executable_action": "د ۶۹۹ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه‌يي خپرونه؛ د 375 د بدلو پاراګرافونو جوړونه په راتلونکي طبيعي پړاو کښې يوه محدوده هڅه لري۔ ژباړه سمدستي OLP-0700 او OLP-0377 ته ځي۔"
+}
