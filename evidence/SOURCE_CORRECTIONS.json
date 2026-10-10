@@ -1,6 +1,6 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "Source corrections registered through OLP-0697; superseded historical entries retained, current acceptance separately hash-bound.",
+  "status": "Source corrections registered through OLP-0698; superseded historical entries retained, current acceptance separately hash-bound.",
   "adopted_utc": "2026-09-29T01:29:16.437921+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
@@ -9433,7 +9433,17 @@
         "ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:34"
       ],
       "decision_timing": "contemporaneous B074 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B273",
+          "utc": "2026-10-10T01:51:54.560527+00:00",
+          "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+          "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+          "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-049",
@@ -9475,7 +9485,17 @@
         "ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:88"
       ],
       "decision_timing": "contemporaneous B074 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B273",
+          "utc": "2026-10-10T01:51:54.560527+00:00",
+          "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+          "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+          "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-050",
@@ -9521,7 +9541,17 @@
         "ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133"
       ],
       "decision_timing": "contemporaneous B074 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B273",
+          "utc": "2026-10-10T01:51:54.560527+00:00",
+          "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+          "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+          "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-051",
@@ -26646,6 +26676,354 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-222",
+      "formal_changes": [
+        {
+          "source": "\\UnaryInf$!A \\land !B \\Gamma \\fCenter \\Delta$",
+          "target": "\\UnaryInf$!A \\land !B, \\Gamma \\fCenter \\Delta$"
+        }
+      ],
+      "unit_id": "OLP-0698",
+      "classification": "missing-context-separator-after-principal-conjunction",
+      "counterexample": "G1c conjunction contraction removes two identical principal formulas, retaining the Gamma multiset as a separate context.",
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "source_line_1based": 27,
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex:block8",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "target_line_1based": 27,
+      "target_sha256": "b057d116afc08b2626b9dc2614dbc3d386e9d423790a73c41f62db62682095f7",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د انقباض په پايله کښې د اصلي او تړنې او پاتې سياق ترمنځ کامه ورکه وه۔ يوازې دا بېلوونکې نښه زياته شوه؛ پاتې تمثيلي ګامونه صحيح دي۔",
+      "translation_change": "د انقباض په پايله کښې د اصلي او تړنې او پاتې سياق ترمنځ کامه ورکه وه۔ يوازې دا بېلوونکې نښه زياته شوه؛ پاتې تمثيلي ګامونه صحيح دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_1$}\\UnaryInf$!A\\land!B,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_2$}\\UnaryInf$!A\\land!B,!A\\land!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!A\\land!B\\Gamma\\fCenter\\Delta$\\DisplayProof\\]",
+          "$\\Gamma\\fCenter\\Delta,!A\\liff!B$"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_1$}\\UnaryInf$!A\\land!B,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_2$}\\UnaryInf$!A\\land!B,!A\\land!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!A\\land!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]",
+          "$!A\\liff!B,\\Gamma\\fCenter\\Delta$",
+          "$\\Gamma$",
+          "$\\lfalse$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-222",
+      "qa_math_exception_group_members": [
+        "OLCMP-222",
+        "OLCMP-223",
+        "OLCMP-225"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-223",
+      "formal_changes": [
+        {
+          "source": "\\RightLabel{\\LeftR{\\liff}}\n\\BinaryInf$\\Gamma \\fCenter \\Delta, !A \\liff !B$",
+          "target": "\\RightLabel{\\LeftR{\\liff}}\n\\BinaryInf$!A \\liff !B, \\Gamma \\fCenter \\Delta$"
+        }
+      ],
+      "unit_id": "OLP-0698",
+      "classification": "biconditional-left-rule-conclusion-on-wrong-side",
+      "counterexample": "Gamma={A},Delta={B},AtrueBfalse: both premises are derivable tautological sequents, original A|-B,AiffB false. Correct left rule follows via two implication-left inferences and conjunction-left.",
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "source_line_1based": 108,
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex:block15",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "target_line_1based": 114,
+      "target_sha256": "b057d116afc08b2626b9dc2614dbc3d386e9d423790a73c41f62db62682095f7",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د کيڼې دوه‌شرطي قاعدې پايله غلط ښي اړخ کښې وه او ناسم سېکوېنټ ئې ورکاوۀ۔ همدغه اصلي فورمول کيڼ اړخ ته سم شو؛ نورې مقدمې او ښۍ قاعده صحيح دي۔",
+      "translation_change": "د کيڼې دوه‌شرطي قاعدې پايله غلط ښي اړخ کښې وه او ناسم سېکوېنټ ئې ورکاوۀ۔ همدغه اصلي فورمول کيڼ اړخ ته سم شو؛ نورې مقدمې او ښۍ قاعده صحيح دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-222",
+      "qa_math_exception_group_members": [
+        "OLCMP-222",
+        "OLCMP-223",
+        "OLCMP-225"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-224",
+      "formal_changes": [],
+      "repeated_clarification_blocks": [
+        18,
+        22,
+        23
+      ],
+      "unit_id": "OLP-0698",
+      "classification": "weakening-context-extension-omits-eigenvariable-freshening",
+      "counterexample": "Proof of |-forallx(Px->Px) uses eigena; addingQ(a) to every succedent violates forall-right. Rename eigena to freshb before extending contexts.",
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "source_line_1based": 128,
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex:block16",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "target_line_1based": 138,
+      "target_sha256": "b057d116afc08b2626b9dc2614dbc3d386e9d423790a73c41f62db62682095f7",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د نوي فورمول په سياق کښې زياتول د کمي قواعدو د ځانګړي متغير شرط ماتولے شي۔ لومړے ټول ځانګړي متغيرونه له ټولو ورزياتېدونکو فورمولونو تازه شي؛ بيا کيڼ او ښي سياقونه پراخ شي۔ نوم بدلول او سياق پراخول لوړوالے ساتي؛ مجازتيا صحيح پاتې ده۔",
+      "translation_change": "د نوي فورمول په سياق کښې زياتول د کمي قواعدو د ځانګړي متغير شرط ماتولے شي۔ لومړے ټول ځانګړي متغيرونه له ټولو ورزياتېدونکو فورمولونو تازه شي؛ بيا کيڼ او ښي سياقونه پراخ شي۔ نوم بدلول او سياق پراخول لوړوالے ساتي؛ مجازتيا صحيح پاتې ده۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-225",
+      "formal_changes": [
+        {
+          "source": "(i.e., some\n  atomic $!C$ occurs in both $\\Gamma$ and~$\\Delta$)",
+          "target": "(i.e., some\n  atomic $!C$ occurs in both $\\Gamma$ and~$\\Delta$, or $\\lfalse$ occurs in $\\Gamma$)"
+        }
+      ],
+      "unit_id": "OLP-0698",
+      "classification": "height-zero-axiom-case-omits-bottom-left",
+      "counterexample": "Bottom|-empty is a height0G3caxiom with no shared atom; Bottom|-A remains height0. Actual G3c rule table explicitly lists both axiom forms.",
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "source_line_1based": 206,
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex:block22",
+      "target_path": "ps-Arab-PK/content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "target_line_1based": 229,
+      "target_sha256": "b057d116afc08b2626b9dc2614dbc3d386e9d423790a73c41f62db62682095f7",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د صفر لوړوالي دليل يوازې ګډ اتومي فورمول بديهي اصل بيانولو، خو G3cد تشې نښې کيڼ بديهي اصل هم لري۔ همدغه دويم حالت ورزيات شو؛ دواړه له کمزوري کولو وروسته د صفر لوړوالي بديهي اصول دي۔",
+      "translation_change": "د صفر لوړوالي دليل يوازې ګډ اتومي فورمول بديهي اصل بيانولو، خو G3cد تشې نښې کيڼ بديهي اصل هم لري۔ همدغه دويم حالت ورزيات شو؛ دواړه له کمزوري کولو وروسته د صفر لوړوالي بديهي اصول دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-222",
+      "qa_math_exception_group_members": [
+        "OLCMP-222",
+        "OLCMP-223",
+        "OLCMP-225"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLLAM-063",
+      "canonical_source_issue_id": "OLLAM-049",
+      "unit_id": "OLP-0375",
+      "classification": "addition-curried-one-step-arrows-incomplete-prior-correction",
+      "counterexample": "Each outer application contractsa thenb; each inner Cn f x contractsf thenx. C0 f x -> (lambda x.x)x -> x requires two beta contractions.",
+      "formal_changes": [
+        {
+          "source": "(\\lambd[{a}{b}][\\lambd[fx][{a} f ({b} f x)]])\\num n\\,\\num m & \\redone",
+          "target": "(\\lambd[{a}{b}][\\lambd[fx][{a} f ({b} f x)]])\\num n\\,\\num m & \\red"
+        },
+        {
+          "source": "& \\redone \\lambd[fx][\\num{n}\\, f (f^m x)]",
+          "target": "& \\red \\lambd[fx][\\num{n}\\, f (f^m x)]"
+        },
+        {
+          "source": "& \\redone \\lambd[fx][f^n (f^m x)] \\ident \\num {n+m}.",
+          "target": "& \\red \\lambd[fx][f^n (f^m x)] \\ident \\num {n+m}."
+        },
+        {
+          "source": "& \\redone \\num{n}\\, \\fn{Succ}\\, \\num{m}.",
+          "target": "& \\red \\num{n}\\, \\fn{Succ}\\, \\num{m}."
+        }
+      ],
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "source_line_1based": 61,
+      "source_locator": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex:block10",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "target_line_1based": 64,
+      "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "049 د جمع دوه بهرني دوه‌متغيره تطبيقونه صحيح يادول، خو غشي ئې عين پرېښودل او د دواړو دننيو عددنښو دوه‌متغيره تطبيقونه ئې نۀ رانغاړل۔ څلور غشي په څوګامي بدل شول؛ دا د 049 هماغه عيب بشپړول دي، نوی ځانګړے عيب نۀ دے۔",
+      "translation_change": "049 د جمع دوه بهرني دوه‌متغيره تطبيقونه صحيح يادول، خو غشي ئې عين پرېښودل او د دواړو دننيو عددنښو دوه‌متغيره تطبيقونه ئې نۀ رانغاړل۔ څلور غشي په څوګامي بدل شول؛ دا د 049 هماغه عيب بشپړول دي، نوی ځانګړے عيب نۀ دے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\fn{Add}&\\ident\\lambd[{a}{b}][\\lambd[fx][{a}f({b}fx)]]\\intertext{LOCALIZED}\\fn{Add}'&\\ident\\lambd[{a}{b}][{a}\\,\\fn{Succ}\\,{b}].\\intertext{LOCALIZED$\\fn{Add}$${a}$${b}$$f$$x$$af(bfx)$$a$$b$$\\num{n}$$\\num{m}$$f^{n+m}(x)$$f^{n}(f^{m}(x))$}(\\lambd[{a}{b}][\\lambd[fx][{a}f({b}fx)]])\\numn\\,\\numm&\\redone\\lambd[fx][\\num{n}\\,f(\\num{m}\\,fx)]\\\\&\\redone\\lambd[fx][\\num{n}\\,f(f^mx)]\\\\&\\redone\\lambd[fx][f^n(f^mx)]\\ident\\num{n+m}.\\intertext{LOCALIZED$\\fn{Add'}$$\\num{n}$$\\num{m}$}\\fn{Add}'\\numn\\,\\numm&\\redone\\num{n}\\,\\fn{Succ}\\,\\num{m}.\\intertext{LOCALIZED$\\num{n}fx$$f^n(x)$}\\num{n}\\,\\fn{Succ}\\,\\num{m}&\\red\\fn{Succ}^n(\\num{m}).\\end{align*}",
+          "\\[\\fn{Exp}\\ident\\lambd[be][eb].\\]"
+        ],
+        "target_only": [
+          "\\begin{align*}\\fn{Add}&\\ident\\lambd[{a}{b}][\\lambd[fx][{a}f({b}fx)]]\\intertext{LOCALIZED}\\fn{Add}'&\\ident\\lambd[{a}{b}][{a}\\,\\fn{Succ}\\,{b}].\\intertext{LOCALIZED$\\fn{Add}$${a}$${b}$$f$$x$$af(bfx)$$a$$b$$\\num{n}$$\\num{m}$$f^{n+m}(x)$$f^{n}(f^{m}(x))$}(\\lambd[{a}{b}][\\lambd[fx][{a}f({b}fx)]])\\numn\\,\\numm&\\red\\lambd[fx][\\num{n}\\,f(\\num{m}\\,fx)]\\\\&\\red\\lambd[fx][\\num{n}\\,f(f^mx)]\\\\&\\red\\lambd[fx][f^n(f^mx)]\\ident\\num{n+m}.\\intertext{LOCALIZED$\\fn{Add'}$$\\num{n}$$\\num{m}$}\\fn{Add}'\\numn\\,\\numm&\\red\\num{n}\\,\\fn{Succ}\\,\\num{m}.\\intertext{LOCALIZED$\\num{n}fx$$f^n(x)$}\\num{n}\\,\\fn{Succ}\\,\\num{m}&\\red\\fn{Succ}^n(\\num{m}).\\end{align*}",
+          "\\[\\fn{Exp}\\ident\\lambd[be][\\lambd[fx][ebfx]].\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLLAM-063",
+      "qa_math_exception_group_members": [
+        "OLLAM-063",
+        "OLLAM-062"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLLAM-062",
+      "unit_id": "OLP-0375",
+      "classification": "exponent-zero-fails-actual-Church-numeral-under-beta",
+      "counterexample": "Exp C2 C0 reduces by beta to lambda x.x, beta normal and distinct from C1=lambda fx.fx. Definition374 demands actual Church numeral under beta, not eta equivalence.",
+      "formal_changes": [
+        {
+          "source": "\\fn{Exp} \\ident \\lambd[be][e b].",
+          "target": "\\fn{Exp} \\ident \\lambd[be][\\lambd[fx][e b f x]]."
+        }
+      ],
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "source_line_1based": 125,
+      "source_locator": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex:block16",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "target_line_1based": 142,
+      "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصلي توان ترم په صفر توان کښې د يووالي يو متغيره تابع ته بېټا راکمېږي، چې د چرچ يو عددنښه نۀ ده۔ د عددنښې د f/x اوږده بڼه د صفر په ګډون صحيح عددنښې ته رسېږي؛ د صفر توان يو د تکراري ضرب له اصلي بديل سره برابر دے۔ معيار صحيح عددنښې ته بېټا راکمول دے، نه اېټا برابري۔",
+      "translation_change": "اصلي توان ترم په صفر توان کښې د يووالي يو متغيره تابع ته بېټا راکمېږي، چې د چرچ يو عددنښه نۀ ده۔ د عددنښې د f/x اوږده بڼه د صفر په ګډون صحيح عددنښې ته رسېږي؛ د صفر توان يو د تکراري ضرب له اصلي بديل سره برابر دے۔ معيار صحيح عددنښې ته بېټا راکمول دے، نه اېټا برابري۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B273_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLLAM-063",
+      "qa_math_exception_group_members": [
+        "OLLAM-063",
+        "OLLAM-062"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
     }
   ],
   "external_upstream_report_submitted": false,
@@ -26653,7 +27031,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "د ۶۹۷ دوه ګونې کتنه، عين بايټه بياجوړونه، منل او سرچينه‌يي خپرونه؛ بيا بشپړ OLP-0698 او OLP-0375۔ ژباړه د TeX ځای پر اشغال نۀ درېږي۔",
+  "next_action": "د ۶۹۸ دوه ګونې کتنه، عين بايټه بياجوړونه، منل، د 375 د بدلو پاراګرافونو په يوه طبيعي پړاو کښې TeX کتنه او سرچينه‌يي خپرونه؛ بيا بشپړ OLP-0699 او OLP-0376۔ د TeX اشغال ژباړه نۀ دروي۔",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -26783,7 +27161,7 @@
       "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
     }
   ],
-  "current_registration_batch": "B272",
-  "current_registered_source_boundary": "OLP-0697",
-  "registered_utc": "2026-10-10T01:29:09.029442+00:00"
+  "current_registration_batch": "B273",
+  "current_registered_source_boundary": "OLP-0698",
+  "registered_utc": "2026-10-10T01:51:54.560527+00:00"
 }

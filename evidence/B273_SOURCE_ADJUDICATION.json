@@ -1,0 +1,74 @@
+{
+  "new_unique_defects": [
+    "OLCMP-222",
+    "OLCMP-223",
+    "OLCMP-224",
+    "OLCMP-225",
+    "OLLAM-062"
+  ],
+  "canonical_recurrence": {
+    "OLLAM-063": "OLLAM-049"
+  },
+  "new_general_source_corrections_owner_checked": true,
+  "general698_writer_receipt_sha256": "a47a062ca9cef26f3777ceb08464948a4fb1aa4ab84e1e495b1517631948de56",
+  "owner_general_receipt_sha256": "4ebfd2e7d18935518bb9c7769eae5a3191b3554f947e0154c9f3d8c34451420c",
+  "all_other_prior375_math_bytes_retained": true,
+  "whole375_changed_prior_blocks": [
+    10,
+    16
+  ],
+  "beta_exponent_finite_check": {
+    "path": "work/b273-exponent-check.json",
+    "sha256": "2d667dcbfc7bce799f4a6d698586cc9de45697a2d3e2949400d0db1059c700ba",
+    "samples": 16,
+    "general_reasoning_separate": true
+  },
+  "corrected_left_biconditional_derivable": "Use the two leftimplications and shared contexts, then conjunction-left; GammaA/DeltaB refutes original right placement.",
+  "freshen_then_weaken_preserves_height": true,
+  "bottom_left_base_case_verified": true,
+  "non_derivability_argument_sound": true,
+  "source_end_formula_wording_retained_with_explicit_sequent_explanation": true,
+  "source707_next_obligation": {
+    "path": "work/b273-next-source-obligation.json",
+    "sha256": "f4336de0423d43ef8885d36b41c65743567eb60892e2432c46655ff3d7742c76",
+    "registered": false
+  },
+  "independent_workflows": "Owner integrated complete private writer and independent source reviews; actual child metadata unavailable, assigned model/Ultra unchanged",
+  "source_exercises_solved": false,
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-10T01:51:54.560527+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "actually_read_scope": "entire actual frozen source and current/private target, all proofs and formulas",
+      "sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "actually_read_scope": "entire actual frozen source and current/private target, all proofs and formulas",
+      "sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/introduction.tex",
+      "actually_read_scope": "entire actual frozen source and current/private target, all proofs and formulas",
+      "sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G1c.tex",
+      "actually_read_scope": "entire actual rule table; logical/structural rules and eigenvariable conditions",
+      "sha256": "42798a4af1070b1707e4824968544a1e71608c43c54a4068014872c78e571150"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "actually_read_scope": "entire actual rule table; both axiom forms and all quantifier eigenvariable conditions;707missing separator privately recorded",
+      "sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

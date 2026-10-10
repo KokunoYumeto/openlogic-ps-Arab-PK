@@ -1,0 +1,112 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-10-10T01:53:22.982046+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0698",
+  "draft_units": 698,
+  "remaining_unaccepted_units": 24,
+  "unit_ids": [
+    "OLP-0698"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "72118c9091762e79015b3ed8572323bd51748f0977b57a477d4ec11fc5fb7a8e",
+  "corpus_qa_sha256": "2ad2d2bf956ee7f6dbcc6ecf78dafedde6d87eeb926f20b2c779e7c65a40f32a",
+  "canonical_replay_sha256": "8dcab36aa30d4580d81d65768f5a6ede0e24f4b08878963bb07f96055f5993b6",
+  "qa_sha256": "fd73dc0236695e7d5c1e79898a5b3182969c7152e06012d62ad2f2f5d540dd45",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0698",
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "source_bytes": 9990,
+      "target_sha256": "b057d116afc08b2626b9dc2614dbc3d386e9d423790a73c41f62db62682095f7",
+      "target_bytes": 15531,
+      "paired_blocks": 24,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-222",
+        "OLCMP-223",
+        "OLCMP-224",
+        "OLCMP-225"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0375",
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "target_sha256_before": "af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e",
+      "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "target_sha256_after": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "target_bytes": 7745,
+      "paired_blocks": 18,
+      "source_correction_ids": [
+        "OLLAM-063",
+        "OLLAM-062"
+      ],
+      "reverified_existing_source_ids": [
+        "OLLAM-048",
+        "OLLAM-049",
+        "OLLAM-050"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "aligned_blocks": 10307,
+  "segment_canon_uses": 6530,
+  "semantic_samples": 3622,
+  "canonical_counts": {
+    "decisions": 1003,
+    "occurrences": 33152,
+    "terminology_decisions": 333,
+    "source_correction_decisions": 619,
+    "priority_decisions": 599,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 14933
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0699 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0376; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

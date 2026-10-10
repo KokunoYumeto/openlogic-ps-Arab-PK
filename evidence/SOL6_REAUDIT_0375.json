@@ -1,0 +1,105 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-10T01:51:54.560527+00:00",
+  "status": "د حسابي تابعو ټول اتلس بلاکونه او څوارلس ژباړې خپلواک کتل شوي۔ 048 او 050 صحيح دي؛ 063 د 049 پاتې دوه دننني حالتونه هم رانغاړي او څلور يوګامي غشي څوګامي کوي۔ 062 د صفر توان لپاره د صحيح چرچ عددنښې بڼه سموي۔ د دوو بدلو بلاکونو پرته ټول پخواني بايټونه او تمرينونه عين دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0375",
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "target_sha256_before": "af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e",
+      "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "target_sha256_after": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "target_bytes": 7745,
+      "paired_blocks": 18,
+      "source_correction_ids": [
+        "OLLAM-063",
+        "OLLAM-062"
+      ],
+      "reverified_existing_source_ids": [
+        "OLLAM-048",
+        "OLLAM-049",
+        "OLLAM-050"
+      ],
+      "wording_choice_ids": [],
+      "translated_blocks_reviewed": 14,
+      "target_retained_unchanged": false,
+      "changed_prior_blocks": [
+        10,
+        16
+      ],
+      "all_prior_math_bytes_retained": false,
+      "all_other_prior_math_bytes_retained": true,
+      "adjudicated_prior_math_changes": [
+        {
+          "issue_id": "OLLAM-063",
+          "source": "(\\lambd[{a}{b}][\\lambd[fx][{a} f ({b} f x)]])\\num n\\,\\num m & \\redone",
+          "target": "(\\lambd[{a}{b}][\\lambd[fx][{a} f ({b} f x)]])\\num n\\,\\num m & \\red"
+        },
+        {
+          "issue_id": "OLLAM-063",
+          "source": "& \\redone \\lambd[fx][\\num{n}\\, f (f^m x)]",
+          "target": "& \\red \\lambd[fx][\\num{n}\\, f (f^m x)]"
+        },
+        {
+          "issue_id": "OLLAM-063",
+          "source": "& \\redone \\lambd[fx][f^n (f^m x)] \\ident \\num {n+m}.",
+          "target": "& \\red \\lambd[fx][f^n (f^m x)] \\ident \\num {n+m}."
+        },
+        {
+          "issue_id": "OLLAM-063",
+          "source": "& \\redone \\num{n}\\, \\fn{Succ}\\, \\num{m}.",
+          "target": "& \\red \\num{n}\\, \\fn{Succ}\\, \\num{m}."
+        },
+        {
+          "issue_id": "OLLAM-062",
+          "source": "\\fn{Exp} \\ident \\lambd[be][e b].",
+          "target": "\\fn{Exp} \\ident \\lambd[be][\\lambd[fx][e b f x]]."
+        }
+      ]
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "د مالک او خصوصي ليکونکي په همدې فعال بهير کښې پاکستاني۱ او افغان۳۹/۱۴۷ واقعي PNGمخونه په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ مجازتيا، د لوړوالي ساتونکې مجازتيا او د چرچ توان عين تخصصي مرکبونه مستقل پاکستاني چاپي شاهد نۀ لري او موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "د مالک او خصوصي ليکونکي په همدې فعال بهير کښې پاکستاني۱ او افغان۳۹/۱۴۷ واقعي PNGمخونه په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے۔ مجازتيا، د لوړوالي ساتونکې مجازتيا او د چرچ توان عين تخصصي مرکبونه مستقل پاکستاني چاپي شاهد نۀ لري او موقتي دي؛ نور مخونه نوې کتنه نۀ لري۔"
+    }
+  ],
+  "segment_entries_added": 14,
+  "new_source_correction_ids": [
+    "OLLAM-063",
+    "OLLAM-062"
+  ],
+  "wording_choice_ids": [],
+  "old_source_corrections_independently_reverified": [
+    "OLLAM-048",
+    "OLLAM-049",
+    "OLLAM-050"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0375.jsonl",
+  "whole_unit_segment_snapshot_sha256": "6ae6140b437b2b5767d7be6fb38670fc49d3e86d8e61d5aa558ca8fd0587541d",
+  "source_adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د ۶۹۸ دوه ګونې کتنه، عين بايټه بياجوړونه، منل، د 375 د بدلو پاراګرافونو په يوه طبيعي پړاو کښې TeX کتنه او سرچينه‌يي خپرونه؛ بيا بشپړ OLP-0699 او OLP-0376۔ د TeX اشغال ژباړه نۀ دروي۔"
+}

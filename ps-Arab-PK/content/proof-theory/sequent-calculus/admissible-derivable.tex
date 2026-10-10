@@ -1,0 +1,301 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: admissible-derivable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{adm}
+
+\olsection{مجازې او د اشتقاق وړ قاعدې}
+
+د ثبوت د تيورۍ ډېرې پايلې د دې پوښتنې په اړه دي، يا د هغې په اړه
+پايلې کاروي، چې آيا هر څۀ چې د يوې ځانګړې قاعدې په کارولو سره
+!!{prove}d کېدے شي، له هغې قاعدې پرته هم !!{prove}d کېدے شي۔
+د پرېکون د له منځه وړلو قضيه ئې تر ټولو پېژندلے مثال دے۔ دا ښيي
+چې هر سېکوېنټ چې د يو سېکوېنټي نظام د قواعدو او~\Cut{} په
+کارولو سره !!{prove}d کېدے شي، له~\Cut پرته هم !!{prove}d کېدے شي۔
+ځکه چې دا ډول خاصيت ډېر مهم دے، خپل نوم لري۔
+
+\begin{defn}
+قاعده~$R$ په يو سېکوېنټي نظام کښې \emph{مجاز} ده، که هر هغه
+سېکوېنټ چې په دغه نظام کښې له قاعدې~$R$ سره ثابتېدے شي،
+له~$R$ پرته هم ثابتېدے شي۔
+\end{defn}
+
+\begin{ex}\ollabel{ex:land-deriv}
+قاعده $\LeftR{\land}$ په \Log{G1c} او
+\Log{G3c} کښې بېلابېلې بڼې لري۔ په \Log{G1c} کښې د دې قاعدې
+دوه بڼې دي: په يوه کښې د او تړنې کيڼ غړے $!A$ د اصلي
+!!{formula}~$!A \land !B$ په مقدمه کښې دے، او په بله کښې ئې ښے
+د او تړنې غړے~$!B$ دے:
+\[
+\Axiom$ !A, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+په مقابل کښې، \Log{G3c} يوازې يوه قاعده لري:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_3$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+اوس دا پوښتنه کولے شو: «آيا د \Log{G3c} قاعده
+$\LeftR{\land}_3$ په \Log{G1c} کښې مجاز ده؟» هو، ده:
+هر هغه استنتاج چې $\LeftR{\land}_3$ کاروي، يوازې د~\Log{G1c}
+د قواعدو په کارولو سره نېغ په نېغه تمثيلولے شو۔ د
+$\LeftR{\land}_1$ او $\LeftR{\land}_2$ ترڅنګ به جوړښتي
+قاعدې~$\LeftR{\Contraction}$ ته هم اړتيا ولرو:
+\[
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\textbf{د سرچينې سمون (OLCMP-222):} په وروستۍ نتيجه کښې
+د اصلي او تړنې او پاتې سياق ترمنځ ورکه کامه ورزياته شوه؛
+د انقباض قاعده او نور ټول فورمولونه عين دي۔
+\end{ex}
+
+د يوې قاعدې په کارولو سره شوي استنتاجونه د نورو قواعدو په وسيله
+تمثيلول د دې ښودلو يوه لاره ده چې قاعده مجاز ده۔ خو دا يوازينۍ
+لاره نۀ ده؛ ځينې قاعدې مجازې دي، خو داسې نۀ شي تمثيلېدې۔
+هغه قاعدې چې داسې تمثيلېدې شي، \emph{د اشتقاق وړ} بلل کېږي۔
+
+\begin{defn}
+قاعده~$R$،
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+په يو نظام کښې \emph{د اشتقاق وړ} بلل کېږي، که د سېکوېنټ~$S$
+يو سکيماتي !!{proof} موجود وي چې د نظام قواعد او بديهيات
+او د~$S_1$، \dots،~$S_n$ د بڼو اضافي ابتدايي سېکوېنټونه کاروي۔
+\end{defn}
+
+په \olref{ex:land-deriv} کښې ورکړے شوے !!{proof} ښيي چې
+$\LeftR{\land}_3$ په~\Log{G1c} کښې د اشتقاق وړ قاعده ده؛ ځکه
+دا !!{proof} د $\LeftR{\land}_3$ د پايلې يو سکيماتي !!{proof} دے
+چې د $\LeftR{\land}_3$ له مقدماتو څخه، د ابتدايي سېکوېنټونو په
+توګه، يوازې د \Log{G1c} د قواعدو په کارولو جوړ شوے دے۔
+(د \Log{G1c} هېڅ بديهيه ئې نۀ ده کارولې۔)
+
+\begin{prop}\ollabel{prop:lor-G3-adm}
+د~\Log{G3c} قاعدې $\LeftR{\land}$ او $\RightR{\lor}$
+په~\Log{G1c} کښې د اشتقاق وړ دي۔
+\end{prop}
+
+\begin{proof}
+  د $\LeftR{\land}$ ثبوت په \olref{ex:land-deriv} کښې ورکړے شوے دے۔
+  د $\RightR{\lor}$ ثبوت د تمرين په توګه پرېښودل شوے دے۔
+\end{proof}
+
+\begin{prob}
+وښيئ چې د \Log{G3c} قاعده $\RightR{\lor}$
+په~\Log{G1c} کښې د اشتقاق وړ ده۔
+\end{prob}
+
+\begin{prob}
+فرض کړئ $\liff$ يو تعريف شوے !!{operator} دے: $!A \liff !B$
+د $(!A \lif !B) \land (!B \lif !A)$ لنډه ليکنه ده۔ وښيئ چې
+لاندې قاعدې
+\begin{enumerate}
+\item \Axiom$\Gamma, !A, !B \fCenter \Delta$
+\Axiom$\Gamma \fCenter \Delta, !A, !B$
+\RightLabel{\LeftR{\liff}}
+\BinaryInf$!A \liff !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\textbf{د سرچينې سمون (OLCMP-223):} د کيڼې دوه‌شرطي
+قاعدې اصلي پايله په غلطۍ ښي اړخ کښې وه؛ همدغه
+دوه‌شرطي فورمول کيڼ اړخ ته سم شوے۔ دواړه مقدمې،
+د ښۍ قاعدې صحيح پايله او د دواړو نظامونو تمرين عين دي۔
+\item
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\RightR{\liff}}
+\BinaryInf$\Gamma \fCenter \Delta, !A \liff !B$
+\DisplayProof
+\end{enumerate}
+په (a)~\Log{G1c} او (b)~\Log{G3c} کښې د اشتقاق وړ دي۔
+\end{prob}
+
+\begin{ex}\ollabel{ex:weak-adm}
+د \Log{G1c} قاعده $\RightR{\Weakening}$،
+\[
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\]
+په~\Log{G3c} کښې مجاز ده۔ د ثبوت نظر ساده دے: فرض کړئ يو
+!!a{proof}~$\pi$ د مقدمې $\Gamma \Sequent \Delta$ دپاره په~\Log{G3c}
+کښې موجود دے۔ \textbf{د سرچينې سپيناوی (OLCMP-224):} لومړے د ټول
+ثبوت ځانګړي متغيرونه داسې تازه نومونو ته واړوئ چې
+په ورزياتېدونکي فورمول کښې نۀ راځي۔ بيا سياق پراخ
+کړئ؛ ګنې د کمي قواعدو د ځانګړي متغير شرط ماتېدلے شي۔
+دا نوم بدلول د ثبوت لوړوالے نۀ بدلوي۔
+!!{formula}~$!A$ په~$\pi$ کښې د هر سېکوېنټ ښۍ
+خوا ته ورزيات کړئ۔
+بديهيات بديهيات پاتې کېږي، او سم استنتاجونه لا هم سم استنتاجونه
+دي۔ د نوي !!{proof} وروستنے سېکوېنټ، چې اصل ئې وروستۍ !!{formula} بولي، دا دے: $\Gamma \Sequent
+\Delta, !A$۔
+
+خو قاعده $\RightR{\Weakening}$ په~\Log{G3c} کښې د اشتقاق وړ
+نۀ ده۔ ځکه فرض کړئ چې د اشتقاق وړ وه؛ يعنې فرض کړئ د
+$\Gamma \Sequent
+\Delta, !A$ يو !!a{proof} موندل کېدے شو چې يوازې د~\Log{G3c}
+بديهيات او قواعد او، ښايي، اضافي ابتدايي سېکوېنټ~$\Gamma \Sequent \Delta$
+کاروي۔ که دا !!{proof} په بشپړه توګه سکيماتي وي، لکه د
+$\RightR{\Weakening}$ د اشتقاق وړ کېدو دپاره چې اړين دي، نو دا په
+يو !!a{proof} بدلولے شو چې د~$\Sequent !A$ دپاره وي، که
+$\Gamma$ او~$\Delta$ لرې کړو۔ په دې سره اضافي ابتدايي
+سېکوېنټونه~$\Gamma \Sequent \Delta$ په تش
+سېکوېنټ~$\quad \Sequent \quad$ بدلېږي۔ ځکه چې تش سېکوېنټ هېڅ
+!!{formula}s نۀ لري، خو د~\Log{G3c} ټول قواعد په خپلو مقدماتو کښې
+لږ تر لږه يوه فعاله !!{formula} غواړي، نو تش سېکوېنټ په دې سکيماتي
+!!{proof} کښې د هېڅ استنتاج مقدمه نۀ شي کېدے۔ په نتيجه کښې،
+!!{proof} يوازې هغه وخت سکيماتي کېدے شي چې په رښتيا اضافي
+سېکوېنټ $\Gamma \Sequent \Delta$ د ابتدايي سېکوېنټ په توګه نۀ کاروي۔
+په بله وينا، دا به د $\Gamma \Sequent
+\Delta, !A$ يو سکيماتي اشتقاق وي چې يوازې د~\Log{G3c} بديهيات
+او قواعد کاروي؛ او موږ به ښودلې وي چې د دې بڼې هر سېکوېنټ
+په~\Log{G3c} کښې يو !!a{proof} لري۔ خو دا ناشونې ده، ځکه \Log{G3c}
+سم دے او نو يوازې هغه سېکوېنټونه !!{prove} کولے شي چې په هر
+!!{structure} کښې رښتيني وي۔ که $\Gamma = \Delta
+= \emptyset$ او $!A \ident \lfalse$ واخلو، \Log{G3c} به د بېلګې
+په توګه سېکوېنټ $\quad \Sequent \lfalse$ !!{prove} کولے شي، حال دا
+چې داسې نۀ شي کولے۔
+\end{ex}
+
+راځئ د دې پايلې يو ښکلے استقرايي ثبوت ورکړو چې کمزوري کول
+په~\Log{G3c} کښې يوه مجازه قاعده ده۔ په حقيقت کښې، لکه شهودي دليل
+چې ښيي، يو څۀ قوي پايله هم سمه ده: که $!A$ د~$\pi$ د هر
+سېکوېنټ ښۍ خوا ته ورزيات کړو، نو د !!{proof} جوړښت نۀ بدلوو؛
+په ځانګړې توګه، د ثبوت لوړوالے نۀ زياتوو۔ ځکه چې دا مهمه ده،
+خپل تعريف غواړي۔
+\textbf{د ځانګړي متغير شرط (OLCMP-224):} د سياقونو له
+پراخولو مخکې ځانګړي متغيرونه له ټولو ورزياتېدونکو
+فورمولونو څخه تازه کړئ؛ کيڼ او ښي کمزوري کول د دې
+نوم بدلولو وروسته د ثبوت لوړوالے ساتي۔
+
+\begin{defn}
+قاعده~$R$،
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+په يو نظام کښې \emph{!!{height} ساتونکې مجازه} (يا
+\emph{!!{hp}-مجازه}) ده، که هر کله $\Proves[h_i] S_i$ د
+$i = 1$، \dots،~$n$ دپاره وي، نو $\Proves_m S$ هم وي، چې
+$m = \max(h_1, \dots,
+h_n)$ دے۔
+\end{defn}
+
+په ياد ولرئ چې د يوې قاعدې د !!{height} ساتونکې مجازې کېدو دپاره
+دومره بس دي چې، هر کله مقدمې~$S_i$ !!{proof}s~$\pi_i$ ولري
+چې !!{height}~$h_i = \pheight{\pi_i}$ لري،
+د پايلې يو !!a{proof}~$\pi$ موجود وي چې !!{height}~$\pheight{\pi}$
+ئې د~$h_i$ له اعظمي ارزښت څخه زيات نۀ وي۔ په ځانګړې توګه،
+که يوازې يوه مقدمه~$S_1$ وي، نو دومره بس دي چې
+$\pheight{\pi} \le \pheight{\pi_1}$ وي۔ د $\RightR{\Weakening}$
+او $\LeftR{\Weakening}$ په صورت کښې په رښتيا
+$\pheight{\pi} = \pheight{\pi_1}$ لرو، خو دا اړينه نۀ ده۔
+
+\begin{prop}\ollabel{prop:weak-G3c-adm}
+د \Log{G1c} قاعدې $\RightR{\Weakening}$ او $\LeftR{\Weakening}$
+په~\Log{G3c} کښې !!{height} ساتونکې مجازې دي۔
+\end{prop}
+
+\begin{proof}
+  بايد وښيو چې که $\Log{G3c} \Proves \Gamma \Sequent \Delta$
+  له يو !!{proof}~$\pi$ سره وي چې !!{height}~$\pheight{\pi} = n$ لري،
+  نو يو \Log{G3c}-!!{proof} $\pi'$ د $\Gamma \Sequent \Delta, !A$ دپاره
+  موجود دے چې $\pheight{\pi'} = n$ وي۔ دا پر~$n$ د استقرا په
+  وسيله ثابتوو۔ که $n=0$ وي، نو $\pi$ يوازې بديهيه
+  $\Gamma \Sequent \Delta$ ده (يعنې يو اتومي $!C$ په دواړو
+  $\Gamma$ او~$\Delta$ کښې راځي، يا $\lfalse$ په $\Gamma$ کښې راځي)، او $\Gamma
+  \Sequent \Delta, !A$ هم بديهيه ده۔ که $n = \pheight{\pi} >0$
+  وي، نو !!{proof}~$\pi$ يو وروستے استنتاج لري۔ د کارول شوې
+  قاعدې له مخې بېلابېل صورتونه جلا کوو۔ يوازې يوه بېلګه ورکوو:
+  فرض کړئ وروستے استنتاج $\RightR{\land}$ و۔ نو
+  $\Delta = \Delta', !B \land !C$ دے، او د وروستي استنتاج
+  نېغې فرعي !!{proof}s $\pi_1$ او~$\pi_2$ په ترتيب سره وروستي
+  سېکوېنټونه $\Gamma \Sequent \Delta', !B$ او $\Gamma \Sequent
+  \Delta', !C$ لري۔ په بله وينا، $\pi$ داسې ښکاري:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma \fCenter \Delta', !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma \fCenter \Delta', !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C$
+  \DisplayProof
+  \]
+  همداراز $n =
+  \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$ لرو۔ نو $\pheight{\pi_1} <
+  n$ او $\pheight{\pi_2} < n$ دي، او د استقرا فرضيه تطبيقېږي:
+  !!{proof}s $\pi_1'$ او~$\pi_2'$ د $\Gamma \Sequent
+  \Delta', !B, !A$ او $\Gamma \Sequent \Delta', !C, !A$ دپاره موجود دي۔
+  د $\RightR{\land}$ قاعدې په کارولو سره يو !!a{proof}~$\pi'$ د
+  $\Gamma
+  \Sequent \Delta', !B \land !C, !A$ دپاره ترلاسه کوو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta', !B, !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta', !C, !A$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+  \DisplayProof
+  \]
+  موږ $\pheight{\pi'} =
+  \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1 = \max(\pheight{\pi_1},
+  \pheight{\pi_2}) + 1 = \pheight{\pi}$ لرو۔
+\end{proof}
+\textbf{د ځانګړي متغير شرط (OLCMP-224):} د سياقونو له
+پراخولو مخکې ځانګړي متغيرونه له ټولو ورزياتېدونکو
+فورمولونو څخه تازه کړئ؛ کيڼ او ښي کمزوري کول د دې
+نوم بدلولو وروسته د ثبوت لوړوالے ساتي۔
+\textbf{د سرچينې سمون (OLCMP-225):} د صفر لوړوالي
+د بديهي اصل په حالت کښې د تشې نښې کيڼ بديهي اصل هم
+شامل دے؛ اصل يوازې د ګډ اتومي فورمول حالت يادولو۔
+د دواړو بديهي اصولو په سياق کښې کمزوري کول لوړوالے
+صفر ساتي۔
+
+\olref{prop:weak-G3c-adm} ډېر ګټور دے۔ د دې د تکراري تطبيق دپاره
+يوه ليکنښه معرفي کوو: که $\pi$ د~$\Gamma \Sequent \Delta$
+يو !!a{proof} وي، نو $\pi[\Pi \Sequent \Lambda]$ هغه پايله ده
+چې د~$\Pi$ له ټولو !!{formula}s سره په کيڼ اړخ کښې د کمزوري کولو
+مجازتيا او د~$\Lambda$ له ټولو !!{formula}s سره په ښي اړخ کښې
+د کمزوري کولو مجازتيا تطبيق کړو۔ دا د $\Gamma, \Pi
+\Sequent \Delta, \Lambda$ يو !!a{proof} دے۔
+\textbf{د ځانګړي متغير شرط (OLCMP-224):} د سياقونو له
+پراخولو مخکې ځانګړي متغيرونه له ټولو ورزياتېدونکو
+فورمولونو څخه تازه کړئ؛ کيڼ او ښي کمزوري کول د دې
+نوم بدلولو وروسته د ثبوت لوړوالے ساتي۔
+
+\end{document}

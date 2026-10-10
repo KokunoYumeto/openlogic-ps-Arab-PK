@@ -1,0 +1,110 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-10T01:51:54.560527+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0698",
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "source_bytes": 9990,
+      "target_sha256": "b057d116afc08b2626b9dc2614dbc3d386e9d423790a73c41f62db62682095f7",
+      "target_bytes": 15531,
+      "paired_blocks": 24,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-222",
+        "OLCMP-223",
+        "OLCMP-224",
+        "OLCMP-225"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0375",
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "target_sha256_before": "af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e",
+      "target_sha256": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "target_sha256_after": "ab33fc1128961be2cbd26c4293762ab0f1bb3e7765d62f0c8e4dea2c8236558d",
+      "target_bytes": 7745,
+      "paired_blocks": 18,
+      "source_correction_ids": [
+        "OLLAM-063",
+        "OLLAM-062"
+      ],
+      "reverified_existing_source_ids": [
+        "OLLAM-048",
+        "OLLAM-049",
+        "OLLAM-050"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0698": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true
+    },
+    "OLP-0375": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_exact_except_adjudicated_changes": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 6,
+  "source_adjudication_sha256": "b65cc9ae407cc3eeae4b78112272788df6645da0901eb9825f719d2203c20795",
+  "registration_helper_sha256": "b85c532db31e5f25b0061f9ac315e68ef497c60cca380b426a6c586aa6c74b06",
+  "writer_spec_sha256": "88d38ddbc96605bf7b3c3647e7a6a857e0c67b7d411b8f33d88eee63b6edb3a8"
+}
