@@ -1,0 +1,122 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: type-preservation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tpr}
+
+\olsection{د ټايپ ساتنه}
+
+هغه راکموونکي او ترتيبي بدلونونه چې ومو کتل، د
+\Log{tN2i} او \Log{tN3i} نظامونو دپاره هم نېغ په نېغه
+تعريفېدلے شي۔ د \Log{tN3i} نظام د سياق~$\Gamma$ په
+نسبت د $\lambd$-ترم~$N$ ټايپ هغه !!{formula}~$!A$
+تعريفوي چې $\Gamma \Sequent N : !A$ په \Log{tN3i}
+کښې !!a{proof} ولري۔ دا چې د $\lambd$-ترمونو د
+$\beta$-راکمول قواعد د !!{proof}s راکموونکي او ترتيبي
+بدلونونه کټ مټ منعکسوي، يوه مهمه پايله لري: د سياق~$\Gamma$
+په نسبت د $\lambd$-ترم ټايپ له $\beta$-بدلون وروسته
+هم هماغه پاتې کېږي۔ دې خاصيت ته \emph{د ټايپ ساتنه} وايي۔
+
+\begin{prop}
+که $N$ د $\Gamma$ په نسبت ټايپ~$!A$ ولري او
+$N \redone N'$ وي، نو $N'$ هم د~$\Gamma$ په نسبت
+ټايپ~$!A$ لري۔
+\end{prop}
+
+\begin{proof}
+  پر~$N$ او د $\Gamma \Sequent N : !A$ د !!{proof}s~$\delta$
+  پر لوړوالي په استقرا دا خبره په اسانه ثابتولے شو: که $M$
+  د~$N$ يو فرعي ترم وي، نو $\delta$ يو فرعي !!{proof}~$\delta_1$
+  لري چې په $\Gamma' \Sequent M : !B$ پاې ته رسېږي۔
+  که $M$ رېډکس وي، نو پر~$\delta_1$ يو بدلون پلي کېږي۔
+  پر $\delta_1$ د راکمول په پلي کولو د $\Gamma' \Sequent M' : !B$
+  !!a{proof}~$\delta_1'$ ترلاسه کوو۔ د \Log{tN3i} د بدلونونو
+  له کتنې څرګندېږي چې $M'$ د~$M$ راکم شوے ترم دے۔
+  په~$\delta$ کښې د $\delta_1$ پر ځای د $\delta_1'$ په ايښودلو
+  د $\Gamma \Sequent N' : !A$ !!a{proof}~$\delta'$ جوړېږي؛
+  دلته $N'$ په~$N$ کښې د فرعي ترم~$M$ پر ځای د~$M'$
+  په ايښودلو ترلاسه کېږي۔
+
+  مثلاً د~\Intro{\land} هغه راکموونکے بدلون وګورئ
+  چې ورپسې \Elim{\land} راځي:
+\[
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_1 : !B_1$
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_2 : !B_2$
+  \RightLabel{\Intro{\land}}
+  \BinaryInf$\Gamma \fCenter \pair{N_1}{N_2} : !B_1 \land !B_2$
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInf$\Gamma \fCenter \proj{i}{\pair{N_1}{N_2}} : !B_i$
+  \DisplayProof
+  \quad\redone\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_i : !B_i$
+  \DisplayProof
+  \]
+  وينو چې د ښي‌لاس !!{proof} ثبوت ترم، يعنې
+  $\delta_1'$، $N_i$ دے۔ دا کټ مټ هغه پايله ده چې د
+  کيڼ‌لاس !!{proof}~($\delta_1$) پر ثبوت ترم
+  $\proj{i}{\pair{N_1}{N_2}}$ د $\beta$-بدلون له
+  پلي کولو ترلاسه کېږي۔
+
+  يا د \Intro{\lif} هغه استنتاج وګورئ چې ورپسې
+  د \Elim{\lif} استنتاج راځي، او دا پرې پلي کېدونکے
+  راکموونکے بدلون:
+\begin{multline*}
+  \bottomAlignProof
+  \AxiomC{$\delta_2$}
+  \Deduce$x: !B_1, \Gamma \fCenter N : !B_2$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{!B_1}][N] : !B_1 \lif !B_2$
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma \fCenter (\lambd[\typeof{x}{!B_1}][N] M) : !B_2$
+  \DisplayProof
+  \quad\redone\\
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{$\Subst{\delta_2}{\delta_3}{x:!B_1}$}
+  \Deduce$\Gamma \fCenter \Subst{N}{M}{x} : !B_2$
+  \DisplayProof
+  \end{multline*}
+  يو ځل بيا د ښي‌لاس !!{proof} ثبوت ترم کټ مټ د
+  کيڼ‌لاس !!{proof} د ثبوت ترم د $\beta$-راکمول پايله ده۔
+  البته، دا خبره به په احتياط سره، د~$\delta_2$ پر لوړوالي
+  په استقرا، کتل پکار وي: که په~$\delta_2$ کښې د
+  $\Gamma' \Sequent x:!B_1$ په بڼه د ټولو اکسيومونو
+  پر ځای د $\Gamma \Sequent M:!B_1$ !!{proof}~$\delta_3$
+  واچوو، نو په رښتيا د $\Gamma \Sequent \Subst{N}{M}{x} : !B_2$
+  !!a{proof} $\Subst{\delta_2}{\delta_3}{x:!B_1}$ جوړېږي۔
+\end{proof}
+
+د !!{proof}s او $\lambd$-ترمونو ترمنځ ټينګه مطابقت
+بله پايله هم لري۔ که $N$ د سياق~$\Gamma$ په نسبت
+د ټايپ $!A$ يو $\lambd$-ترم وي او رېډکس~$M$ ولري
+ـ يعنې عادي بڼه نۀ وي ـ نو د $\Gamma \Sequent N : !A$
+اړوند \Log{tN3i} ثبوت~$\delta$ يو فرعي !!{proof}
+لري چې په $\Gamma' \Sequent M: !B$ پاې ته رسېږي
+او بدلون پرې پلي کېدلے شي۔ که $N \redone N'$ د
+$M$ پر ځای د هغه د راکم شوي ترم په ايښودلو وي، نو
+پر~$\delta$ د راکمول د پلي کولو اړونده پايله د
+$\Gamma \Sequent N' : !A$ !!a{proof} ده۔ نو هر
+$\lambd$-ترم چې په عادي بڼه کښې نۀ وي، په $\beta$
+يو بل ترم ته راکمېږي۔ دې خاصيت ته \emph{پرمختګ} وايي۔
+
+پرمختګ او د ټايپ ساتنه په ګډه دا خبره باوري کوي چې
+د $\lambd$-ترمونو $\beta$-راکمول هېڅکله ``نۀ بندېږي'':
+که يو ترم صحيح ټايپ ولري او په عادي بڼه کښې نۀ وي، نو
+بل صحيح ټايپ لرونکي ترم ته راکمېږي، او د هغه ترم ټايپ
+هم هماغه وي۔
+
+\end{document}

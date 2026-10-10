@@ -1,0 +1,38 @@
+{
+  "new_unique_defects": [],
+  "all_prior373_bytes_retained": true,
+  "696_original_induction_verification_caveat_retained": true,
+  "696_context_alignment_required": "A grafted argument derivation must be weakened to the branch context and all dependent contexts consistently updated; source explicitly leaves verification by induction.",
+  "696_directed_subject_reduction_not_symmetric_expansion": true,
+  "696_progress_not_closed_value_progress": true,
+  "four_original_trees_exact": true,
+  "373_nine_active_imports_and_commented_lists_exact": true,
+  "independent_read_only_review": "Owner verified actual source and tN3 rules; child actual model metadata unavailable, assigned model/Ultra unchanged",
+  "source_exercises_solved": false,
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-10T01:18:35.249313+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/propositions-as-types/type-preservation.tex",
+      "actually_read_scope": "entire actual frozen source and target;696 directed proof/caveat and373 complete driver",
+      "sha256": "45707be51e3f9c94199c7d8ac0656d402a50f99b12504c33b217bfe86f040d8f"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/lambda-definability.tex",
+      "actually_read_scope": "entire actual frozen source and target;696 directed proof/caveat and373 complete driver",
+      "sha256": "42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708"
+    },
+    {
+      "source_path": "content/proof-theory/propositions-as-types/rules-tN3.tex",
+      "actually_read_scope": "entire actual source; context axiom and all9typing trees; weakening under fresh binders checked",
+      "sha256": "948804549f0622cc616399743fa6fc6680b1b061763d292d7c5e2106fd583656"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}
