@@ -8738,7 +8738,17 @@
         "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:26"
       ],
       "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B266",
+          "utc": "2026-10-10T00:27:08.265608+00:00",
+          "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+          "target_sha256": "f8bff3b74c92ab51776a429eb0cb32b4a4c462a4776daa14816952191d28aaf0",
+          "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-036",
@@ -8780,7 +8790,12 @@
         "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82"
       ],
       "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "status": "superseded",
+      "superseded_by": "B266_ENDPOINT_FALSE_ALERT_RETRACTION.json",
+      "retracted_utc": "2026-10-10T00:27:07.325553+00:00",
+      "retraction_reason": "د جال د ثبوت وروستۍ جمله پخپله PاوQد وروستيو ترمونو نومونه ورکوي۔ په همدې جمله کښې محلي نومول صحيح دي؛ مخکې بېل تعريف نۀ غوښتل کېږي او فورمول/ثبوت نۀ خرابېږي۔ پخوانے036د ناوخته نومولو رياضيکي عيب غلط بللے و؛ اضافي يادښت لرې شو او ټول رسمي بايټونه عين دي۔",
+      "replacement_source_defect": null
     },
     {
       "id": "OLLAM-037",
@@ -25890,6 +25905,334 @@
       "reader_disclosure_language": "ps-Arab-PK",
       "adjudication_receipt": "B265_SOURCE_ADJUDICATION.json",
       "adjudication_sha256": "117d8c9eb5aa6f7fe8220eabccba27a84e4ebce38b48a591f6e2ba59f1e1d0ed",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "independent_revalidation_history": [
+        {
+          "batch": "B266",
+          "utc": "2026-10-10T00:27:08.265608+00:00",
+          "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+          "target_sha256": "b11102d313b2e12af1a1fccbc09f2479f4230e2a3c9c0b1d7f370a1240fc03a7",
+          "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
+    },
+    {
+      "id": "OLCMP-212",
+      "unit_id": "OLP-0691",
+      "classification": "pair-constructor-missing-second-macro-argument",
+      "counterexample": "Actual pair{m m} expands tuple{#1,#2}; pair{N1,N2} supplies only one argument and lets the following closing delimiter be consumed as the second argument. Correct tuple(N1,N2) projects to Ni.",
+      "formal_changes": [
+        {
+          "source": "\\pair{N_1, N_2}",
+          "target": "\\pair{N_1}{N_2}"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+      "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+      "source_line_1based": 44,
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex:block7",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/reduction.tex",
+      "target_line_1based": 45,
+      "target_sha256": "f0181ca28195a2572d672e40283ba6e839b68aa17a5429ecd59f81dc4c7ed670",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د اصلي pairماکرو دوه mandatoryآرګومېنټونه غواړي۔ يوې ډلې کښې کامه دواړه آرګومېنټونه نۀ جوړوي؛ يوازې د اصل عين دوو ترمونو جلا ډلې ورکړل شوې۔",
+      "translation_change": "د اصلي pairماکرو دوه mandatoryآرګومېنټونه غواړي۔ يوې ډلې کښې کامه دواړه آرګومېنټونه نۀ جوړوي؛ يوازې د اصل عين دوو ترمونو جلا ډلې ورکړل شوې۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\proj{i}{\\pair{N_1,N_2}}\\redoneN_i\\]",
+          "$\\inj{i}{!A}{N}$",
+          "$M=M_1\\redoneM_2\\redoneM_2\\redone\\dots\\redoneM_k=M'$"
+        ],
+        "target_only": [
+          "\\[\\proj{i}{\\pair{N_1}{N_2}}\\redoneN_i\\]",
+          "$\\inj[!A]{i}{N}$",
+          "$M=M_1\\redoneM_2\\redone\\dots\\redoneM_k=M'$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-212",
+      "qa_math_exception_group_members": [
+        "OLCMP-212",
+        "OLCMP-213",
+        "OLCMP-214",
+        "OLCMP-215"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-213",
+      "unit_id": "OLP-0691",
+      "classification": "injection-optional-annotation-and-mandatory-arguments-misordered",
+      "counterexample": "Actual inj{o m m} makes inj{i}{A}{N} an unannotated injection with indexi and argumentA, leaving N outside; the actual typed rule uses inj[B]{1}{N}.",
+      "formal_changes": [
+        {
+          "source": "\\inj{i}{!A}{N}",
+          "target": "\\inj[!A]{i}{N}"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+      "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+      "source_line_1based": 55,
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex:block8",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/reduction.tex",
+      "target_line_1based": 61,
+      "target_sha256": "f0181ca28195a2572d672e40283ba6e839b68aa17a5429ecd59f81dc4c7ed670",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصلي inj{optional mandatory mandatory}ټايپ په اختياري بڼه او شاخص/ثبوت ترم په دوو اصلي آرګومېنټونو اخلي۔ ناسم پخوانے ترتيب ټايپ د ترم په ځای او اصلي ترم له ماکرو دباندې پرېښود؛ لږ ترتيب سم شو۔",
+      "translation_change": "اصلي inj{optional mandatory mandatory}ټايپ په اختياري بڼه او شاخص/ثبوت ترم په دوو اصلي آرګومېنټونو اخلي۔ ناسم پخوانے ترتيب ټايپ د ترم په ځای او اصلي ترم له ماکرو دباندې پرېښود؛ لږ ترتيب سم شو۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-212",
+      "qa_math_exception_group_members": [
+        "OLCMP-212",
+        "OLCMP-213",
+        "OLCMP-214",
+        "OLCMP-215"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-214",
+      "unit_id": "OLP-0691",
+      "classification": "sum-redex-injection-uses-own-summand-annotation",
+      "counterexample": "A1=P,A2=Q,i=1,M=p:P. Source inj[P]{1}{p} has typeP∨P, but displayed branches expectP∨Q. Actual tN2i rules annotate with the other summand; A3-i givesQfor1 andPfor2.",
+      "formal_changes": [
+        {
+          "source": "\\inj[!A_i]{i}{M}",
+          "target": "\\inj[!A_{3-i}]{i}{M}"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+      "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+      "source_line_1based": 65,
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex:block9",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/reduction.tex",
+      "target_line_1based": 78,
+      "target_sha256": "f0181ca28195a2572d672e40283ba6e839b68aa17a5429ecd59f81dc4c7ed670",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د يا د داخلولو ټايپي نښه بل summandښيي؛ premiseMخپله Aiټايپ لري۔ يوازې annotationپه بشپړه A1/A2يا کښې د مقابل جز په ټايپ بدل شو۔",
+      "translation_change": "د يا د داخلولو ټايپي نښه بل summandښيي؛ premiseMخپله Aiټايپ لري۔ يوازې annotationپه بشپړه A1/A2يا کښې د مقابل جز په ټايپ بدل شو۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-212",
+      "qa_math_exception_group_members": [
+        "OLCMP-212",
+        "OLCMP-213",
+        "OLCMP-214",
+        "OLCMP-215"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-215",
+      "unit_id": "OLP-0691",
+      "classification": "multistep-path-duplicate-one-step-self-loop",
+      "counterexample": "proj1(pair(x,y)) contracts to normal x, but x has no one-step contraction to itself. DuplicatedM2 imposes an unwarranted self-loop, whereas the reflexive-transitive closure already allows zero steps.",
+      "formal_changes": [
+        {
+          "source": "M = M_1\n\\redone M_2 \\redone M_2 \\redone \\dots \\redone M_k = M'",
+          "target": "M = M_1\n\\redone M_2 \\redone \\dots \\redone M_k = M'"
+        }
+      ],
+      "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+      "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+      "source_line_1based": 183,
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex:block12",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/reduction.tex",
+      "target_line_1based": 212,
+      "target_sha256": "f0181ca28195a2572d672e40283ba6e839b68aa17a5429ecd59f81dc4c7ed670",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "يوګامي اړيکه عامه انعکاسي نۀ ده؛ د منځنيM2خپل ځان ته زيات ګام لرې شو۔ د څوګامي تعريف صفرګاميk1حالت عين پاتې دے۔",
+      "translation_change": "يوګامي اړيکه عامه انعکاسي نۀ ده؛ د منځنيM2خپل ځان ته زيات ګام لرې شو۔ د څوګامي تعريف صفرګاميk1حالت عين پاتې دے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-212",
+      "qa_math_exception_group_members": [
+        "OLCMP-212",
+        "OLCMP-213",
+        "OLCMP-214",
+        "OLCMP-215"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-216",
+      "unit_id": "OLP-0690",
+      "classification": "experimental-editorial-permutation-coverage-absence-overstated",
+      "counterexample": "The imported reduction source explicitly discusses permutation conversions and gives a projection commuting with dcase. One example refutes absolute noncoverage; it does not establish a general treatment or simplification coverage.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+      "source_line_1based": 10,
+      "source_locator": "content/proof-theory/propositions-as-types/propositions-as-types.tex:block5",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "target_line_1based": 10,
+      "target_sha256": "b11102d313b2e12af1a1fccbc09f2479f4230e2a3c9c0b1d7f370a1240fc03a7",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصل691په بشپړ رسم او ترمي قاعده کښې د پروجکشن او د يا د ايستلو يو permutationمثال لري؛ د690تاريخي يادښت بالکل نۀ پوښښ وينا ناسم حد دے۔ يوازې يو محدود مثال او پاتې عمومي کتنه بېله شوه؛ simplificationنۀ پوښښ او نور اخطارونه عين دي۔",
+      "translation_change": "اصل691په بشپړ رسم او ترمي قاعده کښې د پروجکشن او د يا د ايستلو يو permutationمثال لري؛ د690تاريخي يادښت بالکل نۀ پوښښ وينا ناسم حد دے۔ يوازې يو محدود مثال او پاتې عمومي کتنه بېله شوه؛ simplificationنۀ پوښښ او نور اخطارونه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-217",
+      "unit_id": "OLP-0691",
+      "classification": "permutation-case-scrutinee-assigned-to-summand-subproof",
+      "counterexample": "For i1, delta concludesA1 and its term has typeA1, while dcase(M,x1,N1,x2,N2) requiresM:A1∨A2. Assign M to the full displayed sum derivation including introduction; the unchanged projection/case commuting equation then has the intended scrutinee.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+      "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+      "source_line_1based": 132,
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex:block11",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/reduction.tex",
+      "target_line_1based": 151,
+      "target_sha256": "f0181ca28195a2572d672e40283ba6e839b68aa17a5429ecd59f81dc4c7ed670",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "په رسم کښې deltaدA_iيوه برخه ثابتوي او ورپسې د يا داخلول شته۔ وروستۍ dcaseقاعده دMڅخه بشپړsumټايپ غواړي، نوMدdeltaسره د داخلولو بشپړ ثبوت کوډ کوي؛ نثري رول سم شو، رسمونه/معادله عين دي۔",
+      "translation_change": "په رسم کښې deltaدA_iيوه برخه ثابتوي او ورپسې د يا داخلول شته۔ وروستۍ dcaseقاعده دMڅخه بشپړsumټايپ غواړي، نوMدdeltaسره د داخلولو بشپړ ثبوت کوډ کوي؛ نثري رول سم شو، رسمونه/معادله عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B266_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
       "upstream_reporting": "owner local ledger; no new external issue",
       "qa_math_exception": {
         "source_only": [],

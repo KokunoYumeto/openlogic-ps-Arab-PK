@@ -1,0 +1,68 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-10T00:27:08.265608+00:00",
+  "status": "د تعريف/خاصيتونو ټول شپاړس بلاکونه او يوولس ژباړې خپلواک کتل شوي؛ د035موجوديت شرط صحيح دے۔ د036د وروستيو نومونو غلط سرچينه‌يي عيب او اضافي يادښت بېرته اخيستل شوي؛ اصل خپله وروستۍ جمله نومونه ورکوي۔ ټول پخواني رياضي بايټونه، gridحدونه، غشي، عددي مثالونه او د انتقالي تړون ثبوت عين دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0368",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "target_sha256_before": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "target_sha256": "f8bff3b74c92ab51776a429eb0cb32b4a4c462a4776daa14816952191d28aaf0",
+      "target_sha256_after": "f8bff3b74c92ab51776a429eb0cb32b4a4c462a4776daa14816952191d28aaf0",
+      "target_bytes": 4481,
+      "paired_blocks": 16,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-035"
+      ],
+      "wording_choice_ids": [],
+      "translated_blocks_reviewed": 11,
+      "target_retained_unchanged": false,
+      "changed_prior_blocks": [
+        15
+      ],
+      "all_prior_math_bytes_retained": true,
+      "all_other_prior_math_bytes_retained": true,
+      "adjudicated_prior_math_changes": []
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د دې مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔ د term/contractum/permutation/projectionعين پاکستاني تخصصي مرکبونه مستقل چاپي تصديق نۀ لري او موقتي دي۔ grammar166او regional138دلته نوې کتنه نۀ لري او نۀ ادعا کېږي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د دې مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔ د term/contractum/permutation/projectionعين پاکستاني تخصصي مرکبونه مستقل چاپي تصديق نۀ لري او موقتي دي۔ grammar166او regional138دلته نوې کتنه نۀ لري او نۀ ادعا کېږي۔"
+    }
+  ],
+  "segment_entries_added": 11,
+  "new_source_correction_ids": [],
+  "wording_choice_ids": [],
+  "old_source_corrections_independently_reverified": [
+    "OLLAM-035"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0368.jsonl",
+  "whole_unit_segment_snapshot_sha256": "7e6ad2c0ec9d760692caa2da5bfce160550a28109e8649ea32037ac99051b17a",
+  "source_adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د۶۹۱ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه، منل او د368/690لږ سمون ګډه سرچينه‌يي خپرونه؛ بيا بشپړ OLP0692 او OLP0369۔ ژباړه د TeXځای پر اشغال نۀ درېږي۔"
+}

@@ -1,0 +1,156 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-10T00:27:08.265608+00:00",
+  "status": "بشپړ نوے واحد او بشپړه خپلواکه پخوانۍ بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0691",
+      "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+      "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+      "source_bytes": 6249,
+      "target_sha256": "f0181ca28195a2572d672e40283ba6e839b68aa17a5429ecd59f81dc4c7ed670",
+      "target_bytes": 9303,
+      "paired_blocks": 14,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "all_protected_gather_environments_exact_except_adjudicated_changes": true
+      },
+      "source_correction_ids": [
+        "OLCMP-212",
+        "OLCMP-213",
+        "OLCMP-214",
+        "OLCMP-215",
+        "OLCMP-217"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0368",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "target_sha256_before": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "target_sha256": "f8bff3b74c92ab51776a429eb0cb32b4a4c462a4776daa14816952191d28aaf0",
+      "target_sha256_after": "f8bff3b74c92ab51776a429eb0cb32b4a4c462a4776daa14816952191d28aaf0",
+      "target_bytes": 4481,
+      "paired_blocks": 16,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-035"
+      ],
+      "wording_choice_ids": []
+    },
+    {
+      "unit_id": "OLP-0690",
+      "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+      "target_sha256_before": "decd39c9b62fb39d853af70d8ba43d1624239f8f3de7c01be19773b743d49e15",
+      "target_sha256": "b11102d313b2e12af1a1fccbc09f2479f4230e2a3c9c0b1d7f370a1240fc03a7",
+      "target_sha256_after": "b11102d313b2e12af1a1fccbc09f2479f4230e2a3c9c0b1d7f370a1240fc03a7",
+      "target_bytes": 2480,
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLCMP-216"
+      ],
+      "reverified_existing_source_ids": [
+        "OLCMP-211"
+      ],
+      "changed_prior_blocks": [
+        5
+      ],
+      "accepted_backup_checkpoint": {
+        "path": "B265_ACCEPTED_690.json",
+        "sha256": "ded4f2c186aba4a25adac1ebe7d119e3d6d1b7da91be06a741c172c14bff6069"
+      },
+      "wording_choice_ids": []
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د دې مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔ د term/contractum/permutation/projectionعين پاکستاني تخصصي مرکبونه مستقل چاپي تصديق نۀ لري او موقتي دي۔ grammar166او regional138دلته نوې کتنه نۀ لري او نۀ ادعا کېږي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د دې مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔ د term/contractum/permutation/projectionعين پاکستاني تخصصي مرکبونه مستقل چاپي تصديق نۀ لري او موقتي دي۔ grammar166او regional138دلته نوې کتنه نۀ لري او نۀ ادعا کېږي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني۱او افغان۳۹/۱۴۷واقعي PNGمخونه د دې مسودې مخکې بيا په سترګو کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔ د term/contractum/permutation/projectionعين پاکستاني تخصصي مرکبونه مستقل چاپي تصديق نۀ لري او موقتي دي۔ grammar166او regional138دلته نوې کتنه نۀ لري او نۀ ادعا کېږي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-212",
+    "OLCMP-213",
+    "OLCMP-214",
+    "OLCMP-215",
+    "OLCMP-216",
+    "OLCMP-217"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLCMP-212",
+    "DEC-OLCMP-213",
+    "DEC-OLCMP-214",
+    "DEC-OLCMP-215",
+    "DEC-OLCMP-216",
+    "DEC-OLCMP-217"
+  ],
+  "revised_review_entry_ids": [
+    "DEC-OLLAM-035",
+    "DEC-OLCMP-211"
+  ],
+  "semantic_samples_added": 22,
+  "focused_qa_sha256": "89c0b338447065ce6c84fe5fb9b7e7abf093e7b4f3aafbab9142c4b7b5810ba8",
+  "source_adjudication_sha256": "e91789507b314e94b7961eecc28a60dfbde4313c2ada9e0a1af66c11c6fb4ffb",
+  "model_provenance_sha256": "018640591d44202fbee32d0c02f561f75f9cd31ae2e4d596810b361eaab87bdb",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0368.json",
+  "related_reaudit_sha256": "8099a3ded6b82503fb9b7e4fe6b76b6fff752dc2e63a1394cc9bdc601cae94d2",
+  "unresolved": "۳۱ عمومي واحدونه،۲۴۱ بشپړ پخواني واحدونه، بشپړ تجربوي باب، د نورو ثبوتونو پاتې حدود، EPUB، بشپړه پښتو/چاپي کتنه او وروستۍ خپرونه پاتې دي۔",
+  "next_executable_action": "د۶۹۱ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه، منل او د368/690لږ سمون ګډه سرچينه‌يي خپرونه؛ بيا بشپړ OLP0692 او OLP0369۔ ژباړه د TeXځای پر اشغال نۀ درېږي۔"
+}

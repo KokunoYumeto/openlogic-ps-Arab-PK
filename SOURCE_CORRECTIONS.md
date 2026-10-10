@@ -2630,14 +2630,14 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Treatment: The introductory statement that lambda x.fx is the same function as f needs x not free in f; the following definition supplies this condition..
 - Disclosure: `literal-formulas-plus-adjacent-Pashto-source-clarification`.
 
-## OLLAM-034
+## OLLAM-034 — بېرته اخيستل شوے غلط عيب
 
 - Unit: `OLP-0366`
 - Frozen source: `content/lambda-calculus/syntax/eta.tex` (a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978) at `content/lambda-calculus/syntax/eta.tex:69-83`
 - Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:76`
 - Audit: `PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER`
-- Treatment: Disclose the source's bare ext notation in two proof math spans while retaining the formulas literally..
-- Disclosure: `literal-formulas-plus-adjacent-Pashto-source-clarification`.
+- اوسنے حالت: د extنوم په خپل سياق کښې څرګند دے؛ د اصلي ماکرو اېټاليک ليک او عادي نامي توري د رياضيکي عيب دليل نۀ دي۔ غلط يادښت لرې شو؛ ټول رسمي بايټونه عين دي۔
+- [د بېرته اخيستلو رسيد](evidence/B264_ETA_FALSE_ALERT_RETRACTION.json)؛ تاريخي ثبت ساتل شوے، د فعال سرچينه‌يي عيب په توګه نۀ شمېرل کېږي۔
 
 ## OLLAM-035
 
@@ -2648,14 +2648,14 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Treatment: Qualify the computational gloss: any reachable normal result is unique only if it exists..
 - Disclosure: `literal-formulas-plus-adjacent-Pashto-source-clarification`.
 
-## OLLAM-036
+## OLLAM-036 — بېرته اخيستل شوے غلط عيب
 
 - Unit: `OLP-0368`
 - Frozen source: `content/lambda-calculus/church-rosser/definitions-and-properties.tex` (8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f) at `content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83`
 - Pashto target: `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82`
 - Audit: `PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER`
-- Treatment: Explain that P and Q name the endpoints of the two displayed paths, first named in the proof's final sentence..
-- Disclosure: `literal-formulas-plus-adjacent-Pashto-source-clarification`.
+- اوسنے حالت: د ثبوت وروستۍ جمله پخپله وروستي ترمونه نوموي؛ همدغه محلي نومول صحيح دي۔ غلط سرچينه‌يي عيب او اضافي يادښت بېرته اخيستل شوي؛ ټول رسمي بايټونه عين دي۔
+- [د بېرته اخيستلو رسيد](evidence/B266_ENDPOINT_FALSE_ALERT_RETRACTION.json)؛ تاريخي ثبت ساتل شوے، د فعال سرچينه‌يي عيب په توګه نۀ شمېرل کېږي۔
 
 ## OLLAM-037
 
@@ -4208,14 +4208,14 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 
 OLAX-013 د پخواني بديل اصولي سياق توپير څرګندوي؛ OLAX-014 د نفي د راايستلو په دليل کښې د فرض او پايلې بل جهت؛ OLAX-015 د عطف څخه د لومړۍ برخې پر ځاے چاپ شوے فصل؛ OLAX-016 د استقرا په اصولي حالت کښې ورک شاخص؛ OLAX-017 د تعويض لومړۍ ناسم بدلېدونکې نښه؛ OLAX-018 د عمومي کمیت ټاکونکي ناسم دامن؛ او OLAX-019 د ترم د تړلتيا يا ازاد تعويض لازم شرط ښيي۔ دا محدودې سرچينه‌يي مسئلې د اصلي صحيحو قضيو رد نۀ دے۔ چاپي ښودنې ساتل شوې او اړوند پښتو يادښتونه ورسره دي۔
 
-## د ۶۹۰ واحدونو اوسنے متن او بشپړ ثبت
+## د ۶۹۱ واحدونو اوسنے متن او بشپړ ثبت
 
-۶۹۰ له ۷۲۲ سرچينه‌يي واحدونو څخه منل شوې سمون وړ مسودې لري؛ ۳۲ پاتې دي۔ د بيانونو-په-ټايپونو د باب ټول اته بلاکونه او دوه ژباړې بشپړې دي؛ اته فعال واردات، يو تبصره شوے واردات، ترتيب او هوک عين دي۔ د ډېرو تجربوي حدودو، عادي کولو د ثبوت پراخولو او پاتې بدلونونو ټول اخطارونه ساتل شوي۔۲۱۱ يوازې د ضرب ټايپ د بېلګو بالکل نشتوالے د موجود جوړه/پروجکشن مثال په رڼا کښې محدودوي؛ نورې تفصيلي بېلګې لا پکار دي۔ [د اوسني متن رسيد](evidence/B265_ACCEPTED_690.json) او [بشپړه سرچينه‌يي پرتله](evidence/B265_SOURCE_AUDIT.json) وګورئ۔
+۶۹۱ له ۷۲۲ سرچينه‌يي واحدونو څخه منل شوې سمون وړ مسودې لري؛ ۳۱ پاتې دي۔ د راکمول ټول څوارلس بلاکونه او نهۀ ژباړې بشپړې دي؛۲۱۲–۲۱۵د جوړې د آرګومېنټ، د يا ماکرو/بل ټايپ او د زيات يوګامي نقل لږ رسمي سمونونه دي۔۲۱۷د permutationپه قاعده کښې بشپړ يا-ثبوت د ترم رول صحيح کوي۔ ټول پاتې رسمونه/فورمولونه/ټوکنونه عين دي؛ په پنځوgatherډلو کښې هم عين لږ رسمي سمون جلا بايټ‌په‌بايټ تړلے دے۔ د منل شوي690تاريخي يادښت216د يو محدود مثال پوښښ او پاتې عمومي کتنه بېلوي، نور اخطارونه او211عين دي۔ [د اوسني متن رسيد](evidence/B266_ACCEPTED_691.json) او [بشپړه سرچينه‌يي پرتله](evidence/B266_SOURCE_AUDIT.json) وګورئ۔
 
-د GPT-6 Sol خپلواکه بياکتنه ۵۷ بشپړ واحدونه رانغاړي؛ ۲۴۲ پاتې دي۔ د چرچ-روسر باب ټول اووه اصلي/پخواني بلاکونه او يوازينے سرليک خپلواک کتل شوي؛ پنځه واردات، ترتيب، رسمي نښې، هوک او ټول پخواني بايټونه عين دي۔ نوی عيب نشته؛ د واردو شوو ثبوتونو کتنه دلته نۀ ادعا کېږي۔ [بشپړه بياکتنه](evidence/SOL6_REAUDIT_0367.json) او [اوسنے اعتبار](evidence/SOL6_REAUDIT_0367_VALIDATION.json) وګورئ۔
+د GPT-6 Sol خپلواکه بياکتنه ۵۸ بشپړ واحدونه رانغاړي؛ ۲۴۱ پاتې دي۔ د تعريف/خاصيتونو ټول شپاړس بلاکونه او يوولس ژباړې خپلواک کتل شوي؛035د موجودې عادي پايلې يکتا والي شرط صحيح دے۔036د وروستيو نومونو غلط عيب بېرته اخيستل شو؛ اصلي وروستۍ جمله پخپله نومونه ورکوي۔ ټول پخواني رياضي بايټونه، غشي، gridحدونه او عددي مثالونه عين دي۔ [بشپړه بياکتنه](evidence/SOL6_REAUDIT_0368.json) او [اوسنے اعتبار](evidence/SOL6_REAUDIT_0368_VALIDATION.json) وګورئ۔
 
-ټولې ۹۸۶ پرېکړې او ۳۲٬۹۹۴ جوړې پېښې په [شاخص](evidence/DECISIONS.json) او څلورو هش‌تړلو بشپړو برخو کښې شته۔ دواړو خپلواکو جوړونو عين بايټونه ورکړل؛ ټول ۱۰۲۰۶ برابر شوي بلاکونه او ۶۴۶۹ د پښتو شاهدانو د استعمال ثبتونه کتل شوي دي۔ [عين‌بايټه بياجوړونه](evidence/B265_CANONICAL_REPLAY.json)، [ټوليزه کتنه](evidence/B265_CORPUS_QA.json) او [پښتو د پيل مخ](evidence/START_HERE.md) وګورئ۔ د زړو تفصيلي دليلونو بشپړه پښتو کول لا پاتې دي؛ د کارپوه ځواب د توليد شرط نۀ دے۔
+ټولې ۹۹۲ پرېکړې او ۳۳٬۰۱۴ جوړې پېښې په [شاخص](evidence/DECISIONS.json) او څلورو هش‌تړلو بشپړو برخو کښې شته۔ دواړو خپلواکو جوړونو عين بايټونه ورکړل؛ ټول ۱۰۲۲۰ برابر شوي بلاکونه او ۶۴۷۸ د پښتو شاهدانو د استعمال ثبتونه کتل شوي دي۔ [عين‌بايټه بياجوړونه](evidence/B266_CANONICAL_REPLAY.json)، [ټوليزه کتنه](evidence/B266_CORPUS_QA.json) او [پښتو د پيل مخ](evidence/START_HERE.md) وګورئ۔ د زړو تفصيلي دليلونو بشپړه پښتو کول لا پاتې دي؛ د کارپوه ځواب د توليد شرط نۀ دے۔
 
-د ۶۵۴ واحدونو اوسنے چمتو لوستونکی د B264 واقعي جوړ شوي ۸۱۱ مخيز کتاب له متن، ترتيب، ټولو سرچينو/هدفونو، تړلو موادو، کتابياتو او TeX سره عين بايټونه لري؛ [د بيا کارونې رسيد](evidence/B265_READER_UNCHANGED_654.json) ئې ټول هشونه تړي۔ نوې TeX هڅه، PDF يا چاپي کتنه نۀ ده شوې۔ د B264 چاپي۴۸۸،۴۸۹/PDF۴۸۹،۴۹۰ محدود پاراګراف کتنه يوازې د اېټا د نوې قاعدې نږدې تازګي، د غلط034يادښت نشتوالے او په هغو دوو مخونو کښې د فورمولونو/پښتو ليک څرګندوالے رانغاړي؛ د ټول کتاب تصويب نۀ دے۔ د ۶۵۵–۶۹۰ تجربوي واحدونو بشپړ باب ورګډول، پراخ PDF او EPUB لا پاتې دي۔
+د ۶۵۴ واحدونو اوسنے ۸۱۱ مخيز چمتو لوستونکی د368له وروستي پاراګراف څخه د غلط036يادښت له لرې کولو سره جوړ شو۔ د TeX په يوه محدوده هڅه کښې څلور XeLaTeX او يو BibTeX ټولې چلونې په صفر پاے ته رسېدلې، نيول شوي بهيرونه پاتې نۀ دي۔ په واقعي چاپي۴۹۱/PDF۴۹۲ مخ کښې د جال اصلي معادلې، وروستۍ لارې، د پایونو محلي نومول او د ثبوت ختم ښکاره، لوستلي او د څنډو دننه دي؛ غلط036يادښت نشته۔ [د محدودې کتنې رسيد](evidence/B266_RENDERED_SAMPLE_654.json) يوازې دغه پاراګراف/مخ تصديقوي، د ټول کتاب يا نوي۶۹۱ چاپي تصويب نۀ دے۔ د۶۵۵–۶۹۱ بشپړ تجربوي باب ورګډول، پراخ PDFاو EPUBلا پاتې دي۔
 
-پراخ PDF، EPUB او وروستۍ خپرونه لا نۀ دي منل شوي؛ خپور ۳۲۱ واحديز لوستونکی موجود دے۔ راتلونکے عمومي واحد OLP-0691 او د بياکتنې واحد OLP-0368 دے۔ ټول ۷۲۲ واحدونه، بشپړه تجربوي د ثبوت تيوري، پښتو تشريح او يو بشپړ لوستونکی د فعال هدف برخې دي۔ اوسنے کار **OpenAI Codex — gpt-6.1-sol، Ultra هڅه** کوي؛ د انسان تصويب نۀ ادعا کېږي۔ د واقعي ماډل راپور د موجود بهير څخه اخيستل کېږي؛ د کوم ماډل نوم د کار شرط نۀ دے۔ د TeX ځای اشغال ژباړه نۀ دروي۔
+پراخ PDF، EPUB او وروستۍ خپرونه لا نۀ دي منل شوي؛ خپور ۳۲۱ واحديز لوستونکی موجود دے۔ راتلونکے عمومي واحد OLP-0692 او د بياکتنې واحد OLP-0369 دے۔ ټول ۷۲۲ واحدونه، بشپړه تجربوي د ثبوت تيوري، پښتو تشريح او يو بشپړ لوستونکی د فعال هدف برخې دي۔ اوسنے کار **OpenAI Codex — gpt-6.1-sol، Ultra هڅه** کوي؛ د انسان تصويب نۀ ادعا کېږي۔ د واقعي ماډل راپور د موجود بهير څخه اخيستل کېږي؛ د کوم ماډل نوم د کار شرط نۀ دے۔ د TeX ځای اشغال ژباړه نۀ دروي۔

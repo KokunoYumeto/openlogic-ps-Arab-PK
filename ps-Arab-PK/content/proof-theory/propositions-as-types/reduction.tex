@@ -1,0 +1,236 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{red}
+
+\olsection{راکمول}
+
+د فطري استنتاج په !!{derivation}s کښې د
+!!a{introduction} قاعدې پسې !!a{elimination} قاعده
+داسې تاو راتاو دے چې «راکمېدل» ئې شوني دي۔ مثلاً
+د $\Intro{\land}$ پسې $\Elim{\land}$ يو بل «لرې
+کوي»، ځکه د $\Elim{\land}$ پايله تل د هغه او د
+دواړو برخو يوه وي چې \Intro{\land} ئې جوړوي، او
+د $\Intro{\land}$ دواړه مقدمې هماغه دواړه برخې
+دي۔ نو که د يوې برخې !!a{derivation} پکار وي،
+هماغه !!{derivation} نېغ کارولے شو، د او د
+داخلولو او بيا ايستلو اړتيا نشته۔ داسې لرو:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInfC{$!A_1 \land !A_2$}
+  \RightLabel{$\Elim{\land}_i$}
+  \UnaryInfC{$!A_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!A_i$}
+  \DisplayProof
+\end{gather*}
+
+د دې ساده کولو له مخې په اړوندو ثبوت ترمونو
+کښې هم د راکمول ورته اړيکه اخيستلے شو۔ که $N_1$
+د~$\delta_1$ ثبوت ترم وي او $N_2$ د~$\delta_2$
+وي، نو ويلے شو چې د کيڼ ثبوت ثبوت ترم په يو ګام
+کښې د ښي ثبوت ثبوت ترم ته راکمېږي:
+\[
+  \proj{i}{\pair{N_1}{N_2}} \redone N_i
+\]
+په ټايپ‌لرونکي لامبډا حساب کښې دا د ضرب ټايپ
+\emph{د بېټا راکمول} قاعده ده۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-212):} د
+جوړې ماکرو دوه آرګومېنټونه غواړي؛ د سرچينې دواړه
+ترمونه په يو آرګومېنټ کښې وو۔ اوس په دوو جلا
+آرګومېنټونو کښې دي، څو پروجکشن هماغه ټاکلے جز
+راوباسي۔
+
+په فطري استنتاج کښې د استنتاجونو داسې جوړه،
+لکه د \Intro{\land} پسې \Elim{\land}، چې راکمېدل
+پرې عملي کېږي، \emph{پرېکون} بلل کېږي۔ په
+ټايپ‌لرونکي لامبډا حساب کښې د $\redone$ کيڼ ترم
+\emph{رېډکس} او ښي ترم ئې \emph{راکم شوے ترم}
+بلل کېږي۔ په بې‌ټايپه لامبډا حساب کښې يوازې
+$(\lambd[x][N])Q$ رېډکس ګڼل کېږي؛ په ټايپ‌لرونکي
+حساب کښې نحو داسې ترمونه هم رانغاړي چې
+$\pair{N}{M}$، $\proj{i}{N}$، $\inj[!A]{i}{N}$،
+$\dcase{N}{x_1}{M_1}{x_2}{M_2}$ او $\abort{!A}{N}$
+پکې وي، او خپل اړوند رېډکسونه لري۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-213):} د يا
+په جوړوونکي کښې بل ټايپ اختياري ټايپي نښه دے،
+شاخص او ثبوت ترم ئې دوه اصلي آرګومېنټونه دي؛ د
+سرچينې ناسم ماکرو ترتيب دلته د اصلي تعريف په
+ترتيب برابر شو۔
+
+په همدې ډول د يا دپاره راکمول لرو:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!C$}
+  \DisplayProof
+\end{gather*}
+دې ته د ثبوت ترمونو لاندې راکمول برابر دي:
+\begin{gather*}
+  \dcase{\inj[!A_{3-i}]{i}{M}}{x_1}{N_1}{x_2}{N_2} \redone \Subst{N_i}{M}{x_i}
+\end{gather*}
+دلته $M$ د~$\delta$ ثبوت ترم او $N_i$ د~$\delta_i$
+ثبوت ترم دے۔ دا د مجموعې ټايپونو د بېټا راکمول
+قاعده ده۔ په عمومي نښه کښې $\Subst{M}{N_i}{x}$
+دا معنا لري چې په $M$ کښې د متغير~$x$ ټول آزاد
+موردونه په~$N_i$ بدل کړو۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-214):} د
+ورګډ شوي ترم خپل ټايپ د مقدمې ټاکلې برخه ده؛ د
+يا د جوړوونکي ټايپي نښه د بلې برخې ټايپ ښيي۔
+نو په يوې/دوې څانګې کښې د بلې برخې ټايپ کارول
+پکار دي؛ د سرچينې عين برخې نقل دلته برابر شو۔
+
+د تابعې ټايپ راکمول د $\Intro\lif$ پسې د
+$\Elim\lif$ د تاو راتاو لرې کولو سره برابر دي۔
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!A}{x}$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DischargeRule{$\Intro{\lif}$}{x}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInfC{$!B$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DisplayProof
+\end{gather*}
+د ثبوت ترمونو دپاره دا هماغه عادي بېټا راکمول دي:
+\begin{gather*}
+  (\lambd[\typeof{x}{!A}][N]M)
+  \redone \Subst{N}{M}{x}
+\end{gather*}
+
+په !!{proof}s کښې د راکمول د بدلونونو ترڅنګ
+د ځاے بدلولو بدلونونه هم اخيستلے شو۔ دا پر هغو
+(فرعي-)!!{proof}s عملي کېږي چې په \Elim{\lor}
+پاې ته رسېږي او ورپسې د !!{elimination} بله
+قاعده وي؛ مثلاً:
+\begin{multline*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \\
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_i$}
+  \DisplayProof
+\end{multline*}
+که $M$ د هغه بشپړ يا-ثبوت ثبوت ترم وي چې
+د~$\delta$ پسې د يا د داخلولو ګام هم پکې شامل
+وي، او $N_1$ او $N_2$ په ترتيب د $\delta_1$ او
+$\delta_2$ ثبوت ترمونه وي، نو د ثبوت ترمونو،
+يعنې $\lambd$ ترمونو، اړوند راکمول قاعده دا ده:
+\[
+  \proj{i}{\dcase{M}{x_1}{N_1}{x_2}{N_2}} \redone 
+\dcase{M}{x_1}{\proj{i}{N_1}}{x_2}{\proj{i}{N_2}}
+\]
+\textbf{د ژباړې د نسخې سمون (OLCMP-217):} په
+رسم کښې د لومړني ثبوت پايله د يا يوه برخه ده،
+خو د وروستي د يا د ايستلو ترم آرګومېنټ د يا بشپړ ثبوت
+کوډ کوي۔ نو د هغه ترم ټاکنه د يا د داخلولو
+ګام هم رانغاړي؛ اصلي رسمونه او د ځاے بدلولو
+رسمي معادله عين دي۔
+
+تاو راتاو يوازې د !!{proof}s له پاې څخه نۀ،
+بلکې د !!{proof}s له منځه هم لرې کولے شو: په
+داسې فرعي-!!{proof} د راکمول بدلون عملي کوو چې
+په تاو راتاو پاې ته رسېږي۔ همدغه شان
+$\beta$-راکمول د $\lambd$-ترمونو په فرعي ترمونو
+هم عملي کېږي۔ که $N$ د $M$ فرعي ترم وي او
+$N \redone N'$ وي، نو په~$M$ کښې فرعي ترم $N$
+په $N'$ بدلولے شو، څو $M'$ ترلاسه کړو۔ په دې
+حالت کښې $M \redone M'$ هم ليکو۔ که داسې لړۍ
+$M = M_1 \redone M_2 \redone \dots \redone M_k = M'$
+وي (د $k=1$، يعنې $M = M'$ حالت هم پکې شامل دے)،
+نو $M \red M'$ ليکو۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-215):} د
+سرچينې په لړۍ کښې منځنے ترم بې‌بدلونه يوګامي
+ځان ته ورغلے و؛ دغه زيات نقل لرې شو۔ د صفرګامي
+برابرۍ حالت د څوګامي اړيکې جلا شرط عين پاتې دے۔
+
+هغه !!{proof} چې په هېڅ فرعي-!!{proof} کښې
+ئې کوم بدلون نۀ شي عملي کېدے، \emph{عادي} بلل
+کېږي۔ په همدې ډول هغه $\lambd$-ترم چې په هېڅ
+فرعي ترم کښې ئې کوم بدلون نۀ شي عملي کېدے،
+\emph{عادي} دے۔ عادي $\lambd$-ترم ته
+\emph{عادي بڼه} هم وايي۔
+
+\end{document}

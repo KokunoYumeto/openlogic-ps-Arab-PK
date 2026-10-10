@@ -1,0 +1,137 @@
+{
+  "schema": "ps-endpoint-independent-false-alert-retraction/1",
+  "utc": "2026-10-10T00:27:07.325553+00:00",
+  "status": "false036retired; target registration pending",
+  "prior_values": {
+    "source_action": {
+      "id": "OLLAM-036",
+      "unit_id": "OLP-0368",
+      "classification": "grid-proof-endpoint-names-late",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "source_locator": "content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "target_line_1based": 82,
+      "target_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "mode": "literal-formulas-plus-adjacent-Pashto-source-clarification",
+      "translation_change": "Explain that P and Q name the endpoints of the two displayed paths, first named in the proof's final sentence.",
+      "reason": "The proof previously displays only P_m and Q_n, then calls N_m0 P and N_0n Q.",
+      "counterexample": "Without the endpoint identification, a reader could read P and Q as undefined independent terms.",
+      "formula_policy": "All math spans, bounds and arrows remain source-equivalent; an adjacent Pashto note explains the endpoint names.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B071_SOURCE_AUDIT.json",
+        "content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83",
+        "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82"
+      ],
+      "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    "review": {
+      "entry_id": "DEC-OLLAM-036",
+      "entry_type": "source-correction",
+      "source_target_locations": [
+        {
+          "unit_id": "OLP-0368",
+          "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+          "source_locator": "content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83",
+          "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+          "target_line_1based": 82,
+          "source_section_title": "Definition and Properties",
+          "target_section_title": "تعريف او خاصيتونه",
+          "exact_printed_page": null,
+          "exact_pdf_page": null,
+          "reader_artifact": null,
+          "published_reader_page_navigation": null,
+          "page_status": "pending stable pagination in a reader containing this unit"
+        }
+      ],
+      "chosen_treatment": "د سرچينې نښې او رياضيکي حدود په هماغه بڼه ساتل شوي او د متن تر څنګ پښتو سپيناوی ورزيات شوے دے.",
+      "actual_authorities_checked": [
+        {
+          "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+          "classification": "grid-proof-endpoint-names-late",
+          "frozen_source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+          "artifacts": [
+            "B071_SOURCE_AUDIT.json",
+            "content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83",
+            "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82"
+          ]
+        }
+      ],
+      "not_found_in_checked_sources": "دا د انګليسي اصلي متن د معنا ارزونه ده، نۀ د پښتو اصطلاح د موندلو ادعا.",
+      "rationale": "رياضيکي فورمولونه، پېژندونکي او ماخذونه يو شان ساتل شوي؛ سپيناوی د سرچينې د شاوخوا جملو او تعريفونو له مخې دے.",
+      "alternatives_for_expert_review": [
+        "يوازې لفظي ژباړه",
+        "د سرچينې له ثبوت سره څنګ ته سپيناوی"
+      ],
+      "uncertainty": "سپيناوی د سرچينې له متن سره سمون لري؛ د پښتو جوړښت د راتلونکي متخصص نظر ته پرانيستے دے.",
+      "review_question": "آيا د جال په ثبوت کښې د دوو وروستيو ترمونو نومونه بې له فورمول بدلولو څرګند شوي دي؟",
+      "entry_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "open_to_correction": true,
+      "human_review_gate": false,
+      "edition": "OpenLogic Pashto — Pakistan",
+      "locale": "ps-Arab-PK",
+      "script": "Arab",
+      "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+      "source_term_or_sense": "grid-proof-endpoint-names-late",
+      "chosen_rendering_or_treatment": "د سرچينې نښې او رياضيکي حدود په هماغه بڼه ساتل شوي او د متن تر څنګ پښتو سپيناوی ورزيات شوے دے.",
+      "review_priority": "high",
+      "confidence": "د سرچينې د ستونزې په تشخيص کښې لوړه؛ د پښتو عبارت په اړه موقتي",
+      "provisional": true,
+      "please_double_check": "مهرباني وکړئ بيا وڅېړئ: آيا د جال په ثبوت کښې د دوو وروستيو ترمونو نومونه بې له فورمول بدلولو څرګند شوي دي؟"
+    }
+  },
+  "retraction": {
+    "schema": "ps-source-audit-retraction/1",
+    "recorded_utc": "2026-10-10T00:27:07.325553+00:00",
+    "retracted_claim_id": "OLLAM-036",
+    "status": "false mathematical source-defect classification retracted; historical notation record retained",
+    "reason_native": "د جال د ثبوت وروستۍ جمله پخپله PاوQد وروستيو ترمونو نومونه ورکوي۔ په همدې جمله کښې محلي نومول صحيح دي؛ مخکې بېل تعريف نۀ غوښتل کېږي او فورمول/ثبوت نۀ خرابېږي۔ پخوانے036د ناوخته نومولو رياضيکي عيب غلط بللے و؛ اضافي يادښت لرې شو او ټول رسمي بايټونه عين دي۔",
+    "source": {
+      "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "actual_definition_sentence": "Note $N_{m,0}$ is $P$ and $N_{0,n}$ is $Q$."
+    },
+    "target": {
+      "path": "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "prior_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "private_sha256": "f8bff3b74c92ab51776a429eb0cb32b4a4c462a4776daa14816952191d28aaf0",
+      "false_note_removed": true,
+      "all_prior_math_preserved": true
+    },
+    "reviewer_runtime": {
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "ultra"
+    },
+    "receipt": "B266_ENDPOINT_FALSE_ALERT_RETRACTION.json",
+    "new_unique_defect": false
+  },
+  "focused_checks_sha256": "cdbfa0ddb536d003fbcb6ad35f068053ade239be0f64c14c614f925733b370a2",
+  "writer_spec_sha256": "13d21b1ea2af4daf8cc7567a54fb57b4d1f25180e3ec19e1fe7bd449b5126869",
+  "retractions_sha256": "019292b57408b3c606e56a5c13642441727d924ef5af6620d98195e81e2c8961",
+  "register_counts_unchanged": [
+    986,
+    333,
+    606
+  ]
+}
