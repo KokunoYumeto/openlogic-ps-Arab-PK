@@ -1,0 +1,103 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: terms-to-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tp}
+
+\olsection{له ثبوت ترمونو څخه \usetoken{P}{derivation} بېرته اخيستل}
+
+اوس بل لور ته ګورو: يو ثبوت ترم~$N$ بېرته
+په \Log{N2i} کښې !!a{proof} ته اړول۔ په عمومي
+ډول، دا يوازې د داسې سياق په نسبت شوني دي
+چې د ورکړي ثبوت ترم د هر آزاد متغير~$x$ دپاره
+د $x : !A$ جوړه ولري۔ خو لومړے داسې بېلګه
+اخلو چې آزاد متغيرونه نۀ لري؛ يعنې دا ترم:
+\[
+\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]
+\]
+دا د $\lambd[\typeof{x}{!A \land !B}][N_1]$ په
+بڼه دے۔ په \Log{tN2i} کښې يوازينۍ قاعده چې
+داسې ترم جوړوي،~\Intro{\lif} ده۔ نو پوهېږو چې
+د~$N$ کوډ شوے !!{proof} بايد په~\Intro{\lif}
+پاې ته ورسېږي؛ يعنې په دې پاې ته رسېږي:
+\[
+  \Axiom$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif !C$
+  \DisplayProof
+  \]
+تر اوسه نۀ پوهېږو چې $!C$ څه دے، خو دا پوهېږو
+چې مخکنۍ برخه $!A \land !B$ ده، او د مقدمې په
+سياق کښې $x:!A \land !B$ شاملېدل پکار دي۔
+
+اوس د مقدمې اړوند ثبوت ترم له مخه ټاکل شوے
+دے: $\pair{\proj{2}{x}}{\proj{1}{x}}$۔ هغه
+!!{proof} چې \emph{همدغه} ترم ئې کوډ کوي، بايد
+په \Intro{\land} پاې ته ورسېږي۔ لا نۀ پوهېږو
+چې $!C$ څه دے، خو څرنګه چې د~\Intro{\land}
+پايله ده، بايد د او تړنه وي؛ يعنې
+$!C \ident (!C_1 \land !C_2)$۔ بياجوړونه
+داسې پرمخ وړو:
+\[
+  \Axiom$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+ثبوت ترم $\pi_2(x)$ ښيي چې پاسنے کيڼ سېکوېنټ
+د \Elim{\land}[2] په وسيله ترلاسه شوے؛ يعنې
+مقدمه د $!D \land !C_1$ په بڼه ده۔ په ښي‌لاس
+اړخ کښې دا ټاکلے شو چې $!C_2$ ته رسوونکے
+استنتاج \Elim{\land}[1] دے، او مقدمه ئې د
+$!C_2 \land !E$ په بڼه ده۔
+\[
+  \Axiom$x : !A\land !B \fCenter x: !D\land !C_1$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter x: !C_2\land !E$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+څرنګه چې د تر ټولو پاسنيو سېکوېنټونو ثبوت
+ترمونه اوس متغيرونه دي، پوهېږو چې اکسيومونه
+دي۔ دا $!C_1$، $!C_2$، $!D$ او $!E$ ټاکي:
+$!D \ident !A$ او $!C_1 \ident !B$، کنه کيڼ
+سېکوېنټ اکسيوم نۀ وي؛ او $!C_2 \ident !A$ او
+$!E \ident !B$، کنه ښے سېکوېنټ اکسيوم نۀ وي۔
+ثبوت مو په بشپړ ډول بېرته ترلاسه کړ:
+\[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+
+\end{document}

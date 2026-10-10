@@ -1,0 +1,88 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-10T01:07:03.132085+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0695",
+      "source_path": "content/proof-theory/propositions-as-types/terms-to-proofs.tex",
+      "source_sha256": "0f91cc46f6a51b41d17bc3817c450ac73887d6114130365f9449ba7c7b4cc61d",
+      "source_bytes": 3832,
+      "target_sha256": "e0853550878911a21f84edd1572672e0574fd5a4353d94f2db4d293b4c6bc300",
+      "target_bytes": 4403,
+      "paired_blocks": 8,
+      "changed_blocks": [
+        5,
+        6,
+        7
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "all_original_diagrams_byte_exact": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0372",
+      "source_path": "content/lambda-calculus/church-rosser/beta-eta-reduction.tex",
+      "source_sha256": "2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4",
+      "target_sha256_before": "5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d",
+      "target_sha256": "5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d",
+      "target_sha256_after": "5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d",
+      "target_bytes": 2708,
+      "paired_blocks": 15,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-043",
+        "OLLAM-044",
+        "OLLAM-045"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0695": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_original_diagrams_byte_exact": true
+    },
+    "OLP-0372": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 0,
+  "source_adjudication_sha256": "ba876b77bf68afe0111fd09affa5cdc19ecf6bfdf634cbe85ebae862898fa4ba",
+  "registration_helper_sha256": "b85c532db31e5f25b0061f9ac315e68ef497c60cca380b426a6c586aa6c74b06",
+  "writer_spec_sha256": "ab6220433937444cb4776482c7a1251c564c90956f81295175b0ac3fee5101e9"
+}
