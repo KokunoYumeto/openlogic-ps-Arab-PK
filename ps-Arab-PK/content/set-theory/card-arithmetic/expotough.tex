@@ -26,7 +26,7 @@ $\cardexpo{(\cardexpo{\cardfont{a}}{\cardfont{b}})}{\cardfont{c}} =
 دا «ووېشئ»: $f_\cardfont{b}(\beta) = f(\beta, 0)$ د هر
 $\beta \in \cardfont{b}$ دپاره، او $f_\cardfont{c}(\gamma) = f(\gamma, 1)$
 د هر $\gamma \in \cardfont{c}$ دپاره تعريف کړئ۔ نقشه $f \mapsto
-(f_{\cardfont{b}} \times f_\cardfont{c})$ يوه !!a{bijection}
+\tuple{f_{\cardfont{b}}, f_\cardfont{c}}$ يوه !!a{bijection}
 $\funfromto{\cardfont{b} \disjointsum \cardfont{c}}{\cardfont{a}} \to
 (\funfromto{\cardfont{b}}{\cardfont{a}} \times
 \funfromto{\cardfont{c}}{\cardfont{a}})$ ده۔
@@ -41,7 +41,10 @@ $\tuple{\beta, \gamma} \in \cardfont{b} \times \cardfont{c}$
 دپاره تعريف کړئ۔ نقشه
 $f \mapsto f^*$ يوه !!a{bijection}
 $\funfromto{\cardfont{c}}{(\funfromto{\cardfont{b}}{\cardfont{a}})}
-\to \funfromto{\cardfont{b} \cardtimes \cardfont{c}}{\cardfont{a}}$ ده۔
+\to \funfromto{\cardfont{b} \times \cardfont{c}}{\cardfont{a}}$ ده۔
+دواړه لوري د مختصونو د يوځاے کولو او بېلولو له مخې يو د بل
+معکوس دي۔ د حاصل ضرب اصلي عدد د تعريف له مخې د همدغه
+کارتيزي حاصل ضرب اندازه ده۔
 \end{proof}
 
 اوس زموږ \emph{غوښتنه} دا ده چې د نامتناهي اصلي عددونو په حالت
@@ -65,11 +68,16 @@ $\funfromto{\cardfont{c}}{(\funfromto{\cardfont{b}}{\cardfont{a}})}
 	&= \cardexpo{2}{\cardfont{b}}
 	\text{، د \olref[simp]{cardplustimesmax} له مخې}
 \end{align*}
+که بنسټ متناهي وي، هماغه وروستۍ برابري بيا هم سمه ده:
+دوه يا زيات، خو متناهي، کاپۍ د نامتناهي ښي عامل په اندازه دي۔
+له يوې خوا يوه کاپي ورګډېږي؛ له بلې خوا ټولې کاپۍ د نامتناهي
+عامل د مربع فرعي سټ جوړوي۔
 \end{proof}
 
 له دې څخه نور ساده کول په رښتيا تمه نه شو کولے، ځکه
-$\cardfont{b} < \cardexpo{2}{\cardfont{b}}$ د
-\olref[card-arithmetic][opps]{lem:SizePowerset2Exp} له مخې۔
+$\cardfont{b} < \cardexpo{2}{\cardfont{b}}$ د کانتور د
+قضيې له مخې، د \olref[card-arithmetic][opps]{lem:SizePowerset2Exp}
+د تواني سټ د اندازې له برابرۍ سره يوځاے۔
 خو دا موږ ته د $\cardexpo{\cardfont{a}}{\cardfont{b}}$ په اړه
 نه وايي چې کله $\cardfont{b} < \cardfont{a}$ وي، څه ووايو۔
 البته که $\cardfont{b}$ \emph{متناهي} وي،
@@ -78,9 +86,8 @@ $\cardfont{b} < \cardexpo{2}{\cardfont{b}}$ د
 \begin{prop}
 که $\cardfont{a}$ نامتناهي وي او $n \in \omega$ وي، او نوموړے
 طبيعي عدد صفر نه وي، نو $\cardexpo{\cardfont{a}}{n} = \cardfont{a}$۔
-\textbf{د سرچينې يادښت (OLSTH-019):} چاپي شرط صفر هم رانغاړي؛
-په صفر توان کښې يوازې تشه تابع شته او حاصل يو دے، نو ادعا دلته
-يوازې د ناصفر متناهي توان دپاره اخيستل شوې ده۔
+د صفر توان ارزښت يو دے، ځکه پر تشه ساحه يوازې تشه
+تابعه شته۔
 \end{prop}
 
 \begin{proof}

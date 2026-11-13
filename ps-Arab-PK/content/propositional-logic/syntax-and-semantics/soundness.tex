@@ -1,0 +1,27 @@
+% Part: propositional-logic
+% Chapter: propositional-logic 
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{snd}
+
+\olsection{د قضيوي منطق سموالے}
+
+\begin{thm}[سموالے]
+\ollabel{thm:soundness}
+که $\Gamma\Proves!A$ نو $\Gamma \Entails !A$۔
+\end{thm}
+
+\begin{proof}
+د اشتقاق پر جوړښت استقرا کوو۔ که $!A$ بديهي اصل وي، نو $\Entails
+!A$ او له دې څخه $\Gamma \Entails!A$ هم راځي۔ همداسې که $!A \in \Gamma$، نو $\Gamma \Entails!A$۔ په استقرايي ګام کښې فرض کړئ $!A$ له $!C$ او $!C\lif!A$ څخه په \emph{مودوس پوننس} اخيستل شوے دے۔ د استقرا د فرضيې له مخې قضيه د $!C\lif !A$ او $!C$ دپاره سمه ده۔ د \olref[pl][syn][sem]{prop:semanticalfacts} دويم توکے مطلوبه پايله ورکوي۔
+\end{proof}
+
+\begin{cor}
+که $\Gamma$ د صدق وړ وي، نو $\Gamma$ سازګار دے۔ په نتيجه کښې قضيوي منطق سازګار دے۔
+\end{cor}
+
+\end{document}

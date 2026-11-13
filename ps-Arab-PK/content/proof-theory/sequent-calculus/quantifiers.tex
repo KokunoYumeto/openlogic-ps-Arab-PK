@@ -1,0 +1,109 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{qua}
+
+\olsection{منظم ثبوتونه او تعويض}
+
+د کميت‌ښودونکو قواعد د «ځانګړي متغير د شرطونو» له کبله ځينې ستونزې پيدا کوي۔ دغه شرطونه پر \LeftR{\lexists} او~\RightR{\lforall} تطبيقېږي۔ ډېرې ستونزې داسې لرې کولے شو چې په دغو استنتاجونو کښې !!{constant}~$a$ بيا ونۀ کاروو۔ لاندې تعريف دا خبره کره کوي۔
+
+\begin{defn}
+!!^a{proof}~$\pi$ په \Log{G1c} يا \Log{G3c} کښې \emph{منظم} دے که:
+\begin{enumerate}
+  \item هېڅ ځانګړے متغير~$a$ د \LeftR{\lexists} يا~\RightR{\lforall} تر يوه زياتو استنتاجونو کښې د ځانګړي متغير په توګه نۀ کارېږي؛ او
+  \item که $a$ د \LeftR{\lexists} يا~\RightR{\lforall} د کوم استنتاج ځانګړے متغير وي، نو په~$\pi$ کښې يوازې د هماغه استنتاج د پاسه راځي۔
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular}
+که $\pi$ منظم وي او په $\Gamma \Sequent \Delta$ پاے ته رسېږي، $c$ داسې !!a{constant} وي چې په~$\pi$ کښې د ځانګړي متغير په توګه نۀ کارېږي، او $t$ داسې تړلے ترم وي چې د~$\pi$ هېڅ ځانګړے متغير ونۀ لري، نو $\Subst{\pi}{t}{c}$ هم منظم !!{proof} دے۔ دا له~$\pi$ څخه داسې ترلاسه کېږي چې د~$c$ هره پېښه په~$t$ بدله کړو۔ تړلے بدل ترم ازاد متغير نۀ لري؛ نو د کميت‌ښودونکي تر تړون لاندې د ازاد متغير د نيولو ستونزه هم نشته۔ د عمومي کميت کيڼه او د وجودي کميت ښۍ قاعده د نمونې دپاره تړلے ترم غواړي؛ دا شرط د ځانګړي متغير له شرط څخه بېل دے۔
+د $\Subst{\pi}{t}{c}$ وروستے سېکوېنټ $\Subst{\Gamma}{t}{c}
+\Sequent \Subst{\Delta}{t}{c}$ دے، چې $\Subst{\Gamma}{t}{c} =
+\Setabs{!A(t)}{!A(c) \in \Gamma}$۔ په سياق کښې د هر فورمول هر نقل جلا بدلېږي؛ که بدل شوي فورمولونه يو شان شي، د هغو د نقلونو شمېر ساتل کېږي۔
+\end{lem}
+
+\begin{proof}
+  پر $\pheight{\pi}$ استقرا کوو۔ که $\pheight{\pi} = 0$ وي، نو ثبوت يوازې يو بديهي اصل دے۔ بيا $\Subst{\pi}{t}{c}$ هم بديهي اصل دے، ځکه په دې کښې هر !!{formula}~$!A(c)$ په $!A(t)$ بدلېږي۔
+
+  که $\pheight{\pi} > 0$ وي، د~$\pi$ د وروستي استنتاج له مخې صورتونه بېلوو۔ د جوړښتي قواعدو صورتونه (په \Log{G1c} کښې) او د قضيتي تړونکو د منطقي قواعدو صورتونه اسانه دي او تمرين ته پرېښودل کېږي۔ هغه صورتونه څېړو چې $\pi$ په يوه کمي استنتاج ختمېږي۔
+  \begin{enumerate}
+    \item که وروستے استنتاج $\RightR{\lforall}$ وي، نو $\pi$ داسې بڼه لري:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$\Gamma(c) \fCenter \Delta'(c), !A(a,c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(c) \fCenter \Delta'(c), \lforall[x][!A(x,c)]$
+    \DisplayProof
+    \]
+    د استقرا د فرضيې له مخې $\Subst{\pi'}{t}{c}$ د $\Gamma(t) \fCenter \Delta'(t), !A(a,t)$ منظم !!{proof} دے۔ څرنګه چې $a$ د~$\pi$ ځانګړے متغير دے، نو $a$ په~$t$ کښې نۀ راځي۔ له دې امله په $\Subst{\pi}{t}{c}$ کښې وروستے استنتاج
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$\Gamma(t) \fCenter \Delta'(t), !A(a,t)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(t) \fCenter \Delta'(t), \lforall[x][!A(x,t)]$
+    \DisplayProof
+    \]
+    صحيح دے: په پايله کښې~$a$ نشته۔
+    \item که وروستے استنتاج په \Log{G3c} کښې $\LeftR{\lforall}$ وي، نو $\pi$ داسې بڼه لري:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$!A(s(c),c), \lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \DisplayProof
+    \]
+    د استقرا د فرضيې له مخې $\Subst{\pi'}{t}{c}$ د $!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter
+    \Delta'(t)$ منظم !!{proof} دے۔ په $\Subst{\pi}{t}{c}$ کښې وروستے استنتاج
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \DisplayProof
+    \]
+    صحيح دے۔ په~\Log{G1c} کښې د \LeftR{\lforall} حالت هم ورته، خو لږ اسانه دے۔
+    \item که وروستے استنتاج \RightR{\lexists} يا \LeftR{\lexists} وي، د تمرين په توګه ئې وګورئ۔
+  \end{enumerate}
+  په هر صورت کښې مو د يوه منظم !!{proof} په پاې کښې يو سېکوېنټ ورزيات کړے (يا د دوو منظمو !!{proof}s په پاې کښې، که قاعده دوه مقدمې لري)۔ نوے سېکوېنټ د $\pi$ له وروستي سېکوېنټ څخه يوازې په دې کښې بېل دے چې $c$ په ترم~$t$ بدل شوے۔ د $\pi$ او $\Subst{\pi}{t}{c}$ ځانګړي متغيرونه هماغه دي۔ څرنګه چې $t$ د~$\pi$ هېڅ ځانګړے متغير نۀ لري، نو په نوي وروستي سېکوېنټ کښې د $\Subst{\pi}{t}{c}$ هېڅ ځانګړے متغير نۀ راځي۔ تعويض د څانګو ځانګړي متغيرونه هم نۀ يو شان کوي۔ له دې امله $\Subst{\pi}{t}{c}$ منظم دے۔
+\end{proof}
+
+\begin{prop}
+که $\pi$ په \Log{G1c} يا \Log{G3c} کښې !!a{proof} وي، نو يو منظم !!{proof}~$\pi'$ شته چې هماغه جوړښت، په تېره بيا هماغه !!{height}، لري او له $\pi$ څخه يوازې د ځانګړو متغيرونو د نومونو په بدلولو بېلېږي۔
+\end{prop}
+
+\begin{proof}
+يوازې د دې دليل دپاره د~$\pi$ د ځانګړي متغير يو استنتاج هغه وخت \emph{پاک} بولو چې ځانګړے متغير ئې د بل استنتاج ځانګړے متغير نۀ وي، او په~$\pi$ کښې د همدغه استنتاج له نېغ فرعي !!{proof} پرته بل ځاے رانۀ شي۔ که داسې نۀ وي، \emph{ناپاک} ئې بولو۔ د $n$ په وسيله په~$\pi$ کښې د ناپاکو ځانګړي‌متغيري استنتاجونو شمېر ښيو۔ پر~$n$ په قوي استقرا ښيو چې $\pi$ په غوښتلي منظم !!{proof}~$\pi'$ بدلېدے شي۔ که $n=0$ وي، په~$\pi$ کښې ټول د ځانګړي متغير استنتاجونه پاک دي؛ نو $\pi$ منظم دے او بل کار نشته۔
+که نۀ وي، داسې ناپاک استنتاج وټاکئ چې د پاسه ئې بل ناپاک استنتاج نۀ وي۔ د بېلګې په توګه د \RightR{\lforall} حالت ليکو؛ د کيڼ وجودي کميت صورت هم په همدې ډول دے۔ د~$\pi$ هغه فرعي !!{proof}~$\pi_1$ چې په دې استنتاج ختمېږي، داسې بڼه لري:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !A(c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+څرنګه چې $c$ ځانګړے متغير دے، په~$\Gamma$، $\Delta$ يا $\lforall[x][!A(x)]$ کښې نۀ راځي۔ فرعي ثبوت $\pi_2$ منظم دے، ځکه د ټاکلي استنتاج د پاسه ټول ځانګړي‌متغيري استنتاجونه پاک دي۔ د ټاکلي استنتاج ځانګړے متغير په دغه فرعي ثبوت کښې د بل استنتاج ځانګړے متغير نۀ دے؛ که داسې وے، هغه بل استنتاج به هم ناپاک و۔ داسې !!a{constant}~$a$ واخلو چې په~$\pi$ کښې نۀ راځي۔ د \olref{lem:subst-regular} له مخې $\Subst{\pi_2}{a}{c}$ د $\Gamma \fCenter \Delta,
+!A(a)$ منظم ثبوت دے چې پرې~$\RightR{\lforall}$ تطبيقولے شو۔ که $\pi_1$ په~$\pi$ کښې په ثبوت $\pi_1'$ بدل کړو،
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi_2}{a}{c}$}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+نو يو ناپاک استنتاج په پاک استنتاج بدلېږي۔ يوازې د ځانګړي متغير $c$ نوم په~$a$ بدلوو؛ وروستے سېکوېنټ، جوړښت او لوړوالے هماغه دي۔ هېڅ پخوا پاک استنتاج ناپاکېږي نه، او ښايي د زاړه نوم ځينې نور استنتاجونه هم پاک شي۔ نو په نوي ثبوت کښې د ناپاکو ځانګړي‌متغيري استنتاجونو شمېر~$< n$ دے۔ پايله د استقرا له فرضيې څخه ترلاسه کېږي۔
+\end{proof}
+
+د پورته قضيې څرګنده حواله به بيا نۀ ورکوو، خو فرضوو به چې ټول تر بحث لاندې !!{proof}s منظم دي۔ که منظم نۀ وي، د ځانګړو متغيرونو د نومونو په بدلولو ئې تل منظمولے شو۔
+
+\end{document}

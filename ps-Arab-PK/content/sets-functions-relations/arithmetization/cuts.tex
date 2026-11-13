@@ -62,9 +62,7 @@ $\lambda = \bigcup S$۔
 لومړے ادعا کوو چې $\lambda$ يو پرېکون دے:
 \begin{enumerate}
 \item ځکه چې $S$ ناتش دے، لږ تر لږه يو پرېکون په $S$ کښې دے، نو
-$\emptyset \neq \lambda$۔ \textbf{د ژباړې د نسخې سمون
-(OLARI-003):} انګرېزي سرچينه دا ګام په تېروتنه د پاسني حد له فرض
-سره تړي؛ اړين دليل د همدې سټ ناتش والے دے۔ ځکه چې $S$ د پرېکونونو سټ
+$\emptyset \neq \lambda$۔ ځکه چې $S$ د پرېکونونو سټ
 دے، $\lambda \subseteq \Rat$۔ ځکه چې $S$ پاسنی حد لري، کوم
 $p \in \Rat$ د هر پرېکون $\alpha \in S$ څخه بهر دے۔ نو
 $p\notin \lambda$، او له دې امله $\lambda \subsetneq \Rat$۔
@@ -98,15 +96,13 @@ $p_\Real = \Setabs{q \in \Rat}{q < p}$۔ بيا تعريفوو:
 	\alpha + \beta &= \Setabs{p + q}{p \in \alpha \land q \in \beta}\\
 %	\alpha - \beta &\defis \Setabs{p - q}{p \in \alpha \land q \in \Rat \setminus \beta}\\
 	\alpha \times \beta &=
-	\Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0^\mathbb{R} & \text{که }\alpha, \beta \geq 0_\Real
+	\Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0_\Real & \text{که }\alpha, \beta \geq 0_\Real
 %	\alpha \div \beta &\defis
 %	\Setabs{\nicefrac{p}{q}}{p \in \alpha \land q \in \Rat \setminus \beta}  & \text{که }\alpha \geq 0_\Real, \beta > 0_\Real
 \end{align*}
-\textbf{د ژباړې د نسخې سمون (OLARI-004):} سرچينې ناطق عددونه
-حقيقي عددونو ته په لاندې‌ليک نښه ورګډ کړي، خو په دې اتحاد کښې د
-حقيقي صفر نښه په پورته‌ليک ليکي۔ د فورمول د برابرۍ دپاره اصلي نښه
-ساتل شوې؛ دلته ئې ټاکل شوې معنا د حقيقي صفر پرېکون دے۔ د ضرب د
-نورو حالتونو د سمبالولو دپاره لومړے وټاکئ: %چې $0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$، او ورزيات کړئ:
+د هر پرېکون لپاره د صفر د ضرب قاعده دا ده چې
+$0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$۔
+د نفي لپاره وټاکئ: %چې $0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$، او ورزيات کړئ:
 \begin{align*}
 	-\alpha &= \Setabs{p - q}{p < 0 \land q \notin \alpha}
 \end{align*}
@@ -119,11 +115,12 @@ $p_\Real = \Setabs{q \in \Rat}{q < p}$۔ بيا تعريفوو:
 		\mathord{-}(\alpha \times \mathord{-}\beta) &\text{که }\alpha > 0_\Real \text{ او }\beta < 0_\Real
 	\end{cases}
 \end{align*}
-\textbf{د ژباړې د نسخې سمون (OLARI-005):} فعاله انګرېزي سرچينه
-هغه د ضرب حالتونه نۀ تعريفوي چې يو عامل صفر او بل منفي وي؛ د صفر
-قاعده يوازې په غېر فعاله تبصره کښې پاتې ده۔ نو تر هغې قاعدې پرته
-پورته ټوټه‌ييز تعريف بشپړ ضرب نۀ تعريفوي۔ بيا بايد وارزوو چې دا هر
-تعريف تل يو پرېکون ورکوي۔ په پاے کښې بايد په يوه اسانه (خو اوږده)
+د تفريق تعريف $\alpha-\beta=\alpha+(-\beta)$ دے۔ که $\beta>0_\Real$ وي،
+$\beta^{-1}$ د هغو ناطقو عددونو $p$ پرېکون دے چې يا $p\leq 0$ وي،
+يا داسې مثبت ناطق عدد $q\notin\beta$ وي چې $p<1/q$ وي۔ که
+$\beta<0_\Real$ وي، $\beta^{-1}=-((-\beta)^{-1})$ وټاکئ۔
+د ناصفر مخرج لپاره $\alpha\div\beta=\alpha\times\beta^{-1}$ دے۔
+بيا بايد وارزوو چې دا هر تعريف تل يو پرېکون ورکوي۔ په پاے کښې بايد په يوه اسانه (خو اوږده)
 څرګندونه کښې وښيو چې په دې ډول تعريف شوي پرېکونونه کټ مټ لکه څنګه
 چې بايد، هماغسې چلېږي۔ خو دا ټول \olref[check]{sec} ته پرېږدو۔
 \end{document}

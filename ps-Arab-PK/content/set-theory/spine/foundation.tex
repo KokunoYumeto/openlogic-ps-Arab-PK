@@ -68,24 +68,29 @@ $A \subseteq \trcl{A}$ او $\trcl{A}$ يو متعدي سټ دے۔
 	\alpha &= \supstrict\Setabs{\delta}{(\exists x \in A)
 	(x \subseteq V_\delta \land (\forall \gamma \in \delta)x \nsubseteq V_\gamma)}
 \end{align*}
+د بېلونې له مخې له راکړل شوي سټه د هغو غړو فرعي سټ
+اخلو چې لږ تر لږه يو داسې شاخص لري۔ د هر داسې غړي
+لپاره لومړنے شاخص يوازينے دے؛ تعويض د ټولو دغو شاخصونو
+سټ راکوي۔
 فرض کړئ $D = \emptyset$ دے۔ نو که $x \in A$ وي، داسې $\delta$ شته چې
 $x \subseteq V_\delta$ دے او د ترتيبي عددونو د ښه ترتيب له مخې
 $(\forall \gamma \in \delta)x \nsubseteq V_\gamma$ دے؛ نو $\delta \in \alpha$
-دے او د \olref[spine][Valphabasic]{Valphabasicprops} له مخې $x \in V_\alpha$
-دے۔ له دې امله، لکه څنګه چې غوښتل شوي وو، $A \subseteq V_{\alpha}$ دے۔
+دے او د \olref[spine][Valphabasic]{Valphabasicprops} له مخې اړوند
+پخوانی پړاو د وروستي پړاو غړے دے۔ د وروستي پړاو د
+توانمن‌والي له مخې $x \in V_\alpha$ دے۔ له دې امله
+$A \subseteq V_{\alpha}$ دے۔
 
 نو يوازې دا ښودل بس دي چې $D = \emptyset$ دے۔ د تناقض له لارې د ثبوت
 دپاره ئې عکس فرض کړئ۔ د بنسټ د اصل له مخې داسې $B \in D \subseteq A$
 شته چې $D \cap B = \emptyset$ دے۔ که $x \in B$ وي، نو $x \in A$ دے، ځکه
 $A$ متعدي دے؛ او څرنګه چې $x \notin D$ دے، نو $\exists \delta\ x \subseteq
-V_\delta$ دے۔ اوس داسې واخلئ:
+V_\delta$ دے۔ د لږ تر لږه شاخصونو سټ بيا په تعويض جوړوو۔
+اوس داسې واخلئ:
 \[
 	\beta = \supstrict\Setabs{\delta}{(\exists x \in B)(x \subseteq V_\delta \land (\forall \gamma < \delta)x \nsubseteq V_\gamma)}.
 \]
 لکه د مخکښې په شان، $B \subseteq V_\beta$ دے؛ دا له دې وينا سره تناقض
-لري چې $B \in D$ دے۔ (د سرچينې سمون، OLSTH-006: په دې يوې معادلې کښې
-کوچنے توری د مخکښې ټاکل شوي لوې توري پر ځاے راغلے و۔ دلته هماغه ټاکلے
-شوے سټ کارول شوے دے؛ نور شرطونه او فارمولونه ساتل شوي دي۔)
+لري چې $B \in D$ دے۔
 \end{proof}
 
 \begin{thm}\ollabel{zfentailsregularity}

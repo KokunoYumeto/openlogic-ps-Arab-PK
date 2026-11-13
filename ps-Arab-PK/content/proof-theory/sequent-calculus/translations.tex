@@ -1,0 +1,73 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{tr}
+
+\olsection{د \Log{G1c} او \Log{G3c} تر منځ د ثبوتونو اړول}
+
+يادونه مو کړې وه چې \Log{G1c} او \Log{G3c} دواړه د کلاسيکي منطق دپاره سم او بشپړ دي، يعنې هر يو ټول هغه سېکوېنټونه او يوازې هماغه ثابتوي چې په هر !!{structure} کښې رښتيا وي۔ په تېره، دواړه هماغه سېکوېنټونه ثابتوي۔ اوس دا خبره د سموالي او بشپړتيا له قضيو پرته، يوازې د ثبوت تيورۍ له لارې ثابتولے شو۔ دا ډول دليل د \Log{G1c} !!{proof}s د \Log{G3c} په !!{proof}s او برعکس د اړولو \emph{کړنلارې} ورکوي۔
+
+\begin{prop}
+که $\Log{G1c} \Proves S$ وي، نو $\Log{G3c} \Proves S$۔
+\end{prop}
+
+\begin{proof}
+  ښيو چې که $\pi$ په \Log{G1c} کښې !!a{proof} وي، نو په \Log{G3c} کښې د~$S$ !!a{proof}~$\pi'$ شته۔ پر $n
+  = \pheight{\pi}$ استقرا کوو۔
+
+  که $n = 0$ وي، نو $\pi$ بديهي اصل دے۔ $\lfalse \Sequent
+  \quad$ په~\Log{G3c} کښې هم بديهي اصل دے؛ سياق $\Gamma,
+  \Delta$ تش واخلئ۔ په \Log{G1c} کښې $!A \Sequent !A$ د هر ډول، نۀ يوازې د اتومي~$!A$، دپاره بديهي اصول دي۔ خو په \olref[ex]{prop:G3c-axioms} کښې مو ثابته کړې چې دا ټول سېکوېنټونه په~\Log{G3c} کښې !!{provable} دي۔
+
+  که $n>0$ وي، نو $\pi$ په قاعده~$R$ ختمېږي۔ د استقرا فرضيه راکوي چې په~\Log{G3c} کښې د دې قاعدې د مقدماتو !!{proof}s شته؛ يعنې نېغ فرعي !!{proof}s د \Log{G3c} په ثبوتونو اړول کېدے شي۔ که قاعده~$R$ په \Log{G3c} کښې هم وي، نو د مقدماتو پر اړول شوو !!{proof}s ئې تطبيقوو۔ د هغو قواعدو دپاره چې په~\Log{G3c} کښې عينې نۀ دي، مجازتيا کاروو۔ که قاعده~$R$ $\LeftR{\land}$ يا $\RightR{\lor}$ وي، نو \olref[adm]{prop:lor-G3-adm} تطبيق کړئ۔ که د کمزوري کولو قاعده وي، \olref[adm]{prop:weak-G3c-adm} او که د انقباض قاعده وي، \olref[inv]{prop:G3c-cont-adm} تطبيق کړئ۔ د عمومي کميت د کيڼې او وجودي کميت د ښۍ قاعدې دپاره، لومړے اصلي کمي فورمول د مجاز کمزوري کولو په وسيله د اړولې مقدمې په هماغه خوا کښې ورزيات کړئ؛ بيا هغه قاعده کار کړئ چې دغه نقل په مقدمه کښې ساتي۔
+\end{proof}
+
+\begin{prop}
+که $\Log{G3c} \Proves S$ وي، نو $\Log{G1c} \Proves S$۔
+\end{prop}
+
+\begin{proof}
+  بيا د $S$ د !!a{proof}~$\pi$ پر !!{height} استقرا کوو۔ د \Log{G3c} هر بديهي اصل په~\Log{G1c} کښې له يوه بديهي اصل څخه د \LeftR{\Weakening} او \RightR{\Weakening} په څو تطبيقونو !!{prove} کېدے شي:
+  \[
+  \Axiom$!C \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter !C$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter \Delta, !C$
+  \DisplayProof
+\qquad
+  \Axiom$\lfalse \fCenter$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  که $\pi$ په قاعده~$R$ ختمېږي، د استقرا فرضيه په \Log{G1c} کښې د مقدماتو !!{proof}s راکوي؛ چېرته چې قاعده ګډه وي، هماغه قاعده~$R$ پر دغو !!{proof}s تطبيقوو۔ د عمومي کميت د کيڼې او وجودي کميت د ښۍ قاعدې په مقدمه کښې د اصلي کمي فورمول يو نقل شته۔ کله چې په \Log{G1c} کښې اړونده قاعده تطبيق کړو، په پايله کښې ئې دوه نقلونه راځي؛ په هماغه خوا کښې انقباض يو نقل پرېږدي۔ د \LeftR{\land} او \RightR{\lor} قواعد هم د \Log{G1c} او~\Log{G3c} تر منځ بېل دي۔ د \Log{G3c} بڼې په \Log{G1c} کښې داسې اشتقاقېږي:
+  \[
+  \Axiom$!A, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+\qquad
+  \Axiom$\Gamma \fCenter \Delta, !A, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !A \lor !B$
+  \RightLabel{\RightR{\Contraction}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+  \]
+\end{proof}
+
+\end{document}

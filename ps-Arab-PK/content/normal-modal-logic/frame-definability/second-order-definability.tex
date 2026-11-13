@@ -37,15 +37,14 @@
   \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
       \lif \ST_x(!C))$.}}{}
   \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
-      \liff \ST_x(!C))}$.}{}
+      \liff \ST_x(!C))$.}}{}
   \tagitem{prvBox}{\indcase{!A}{\Box !B}{$\ST_x(\indfrm) =
       \lforall[y][(\Atom{Q}{x,y} \lif \ST_y(!B))]$.}}{}
   \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{$\ST_x(\indfrm) =
       \lexists[y][(\Atom{Q}{x,y} \land \ST_y(!B))]$.}}{}
   \end{enumerate}
-  \emph{د سرچينې يادونه: د رښتيا د حالت په اصلي کرښه کښې
-  د رښتيا پر ځاے بيا د دروغو سمبول راغلے و؛ دلته د همدې
-  حالت سم سمبول ښودل شوے دے۔}
+  په دوو وروستيو قواعدو کښې د کميت ټاکنې متغير تازه اخلو،
+  يعنې د روانې نړۍ له متغيره بېل متغير ټاکو۔
 \end{defn}
 
 د بېلګې په توګه، $\ST_x(\Box p \lif p)$ دا دے:
@@ -97,7 +96,8 @@ $\lforall[y][(\Atom{Q}{x,y}
 
 \begin{proof}
   $\Sat{F'}{!A'}$ هله او يوازې هله چې د هر هغه
-  !!{structure}~$\mModel{M'}$ دپاره چې
+  !!{structure}~$\mModel{M'}$ دپاره چې د چوکاټ هماغه ډومېن
+  او د لاسرسي هماغه اړيکه لري، او
   $\Assign{P_i}{M'} \subseteq W$ د $i = 1$،
   \dots،~$n$ دپاره ولري، او د هر داسې~$s$ دپاره
   چې $s(x) \in W$ وي،
@@ -158,9 +158,6 @@ $R = \Assign{Q}{M}$ وي۔ نو د هر
 او $s(X) = \Setabs{z}{Rxz}$ وي،
 $\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
     \Atom{X}{y})] \lif \Atom{X}{x}}[s]$ لرو۔
-\emph{د سرچينې يادونه: دلته اصلي متن د ازادو
-متغيرونو دپاره ګومارنه په لومړۍ صدقي نښه
-کښې نۀ وه ښودلې؛ دا ورزياته شوې ده۔}
 خو د~$s(X)$ د ټاکنې له مخې دا معنا لري چې
 $\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
     \Atom{Q}{x,y})] \lif \Atom{Q}{x,x}}[s]$،

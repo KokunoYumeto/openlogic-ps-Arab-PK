@@ -35,12 +35,12 @@
 \begin{proof}
 \begin{derivation}
   1. & $(!A \land !B) \lif !A$ & \Taut \\
-  2. & $\Box((!A \land !B) \lif !A)$ & \Nec \\
+  2. & $\Box((!A \land !B) \lif !A)$ & \Nec, 1 \\
   3. & $\Box((!A \land !B) \lif !A) \lif (\Box(!A \land !B) \lif \Box!A)$
   & \Ax{K} \\
   4. & $\Box(!A \land !B) \lif \Box!A$ & \MP, 2, 3 \\
   5. & $(!A \land !B) \lif !B$ & \Taut \\
-  6. & $\Box((!A \land !B) \lif !B)$ & \Nec \\
+  6. & $\Box((!A \land !B) \lif !B)$ & \Nec, 5 \\
   7. & $\Box((!A \land !B) \lif !B) \lif (\Box(!A \land !B) \lif \Box!B)$
   & \Ax{K} \\
   8. & $\Box(!A \land !B) \lif \Box!B$ & \MP, 6, 7 \\
@@ -73,7 +73,7 @@
     & \qquad $(\Box!A \lif (\Box !B \lif \Box(!A \land !B))))$ & \Taut\\
     7. & $(\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $(\Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \MP, 4, 6\\
-    8. & $\Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \MP, 5, 7\\
+    8. & $\Box!A \lif (\Box !B \lif \Box(!A \land !B))$ & \MP, 5, 7\\
     9. & $(\Box!A \lif (\Box !B \lif \Box(!A \land !B)))) \lif {}$\\
     & \qquad $((\Box!A \land \Box!B) \lif \Box(!A \land !B))$ & \Taut\\
     10. & $(\Box!A \land \Box!B) \lif \Box(!A \land !B)$ & \MP, 8, 9

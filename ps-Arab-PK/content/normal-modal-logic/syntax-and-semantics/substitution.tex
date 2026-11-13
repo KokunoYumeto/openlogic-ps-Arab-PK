@@ -57,9 +57,6 @@
           \subst{!D_n}{p_n}}$ دا دے:
         \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \liff
           \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
-    \textbf{د ژباړې د نسخې سمون (OLNML-002):} د سرچينې په دې حالت کښې
-    د دوه‌اړخيز شرط پر ځاے د يو اړخيز شرط \texttt{prvIf} نښه راغلې وه؛ دلته
-    يوازې هغه په \texttt{prvIff} بدله شوې ده، څو حالت له خپل عامل سره سم وي۔
     \item \indcase{!A}{\Box !B}{%
         $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ داسې محاسبه کېږي:
         $\Box
@@ -88,12 +85,14 @@
       ځايناستۍ سره يوه نۀ ده۔ د بېلګې په توګه، پورته
       $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ له
       $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$ سره پرتله کړئ، چې دا دے:}
-    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ يعنې،}\\
+    \Subst{\Diamond(p_2 \lif p_3)}{\lnot\Box p_1}{p_2} &
+    \lif \Subst{\Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ يعنې،}\\
     \Diamond(\lnot\Box p_1 \lif p_3) &
     \lif \Box(\Diamond(\lnot\Box p_1
     \lif p_3) \land \lnot\Box p_1)\\
     \intertext{او له $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$ سره ئې هم پرتله کړئ:}
-    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ يعنې،}\\
+    \Subst{p_1}{\Diamond(p_2 \lif p_3)}{p_1} &
+    \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ يعنې،}\\
     \Diamond(p_2 \lif p_3) &
     \lif \Box(\Diamond(p_2
     \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).

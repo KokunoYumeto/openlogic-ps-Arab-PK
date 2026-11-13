@@ -1,0 +1,283 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: proof-examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{ex}
+
+\olsection{د ثبوتونو بېلګې}
+
+د سېکوېنټونو د !!{proof}s د ورکولو دپاره عموماً دا اسانه وي چې له وروستي سېکوېنټ څخه پورته خوا ته لاړ شو: په هغه کښې !!a{formula} د فعالې !!{formula} په توګه وټاکو، د اړوندې قاعدې مقدمې د سېکوېنټ د پاسه وليکو، او بيا دغه کړنه تر هغې تکرار کړو چې بديهي اصولو ته ورسېږو۔ د بېلګې په توګه، فرض کړئ غواړو دا سېکوېنټ ثابت کړو:
+\[(!C \land !D) \lif !E \Sequent !C \lif (!D \lif !E)\]
+$!C \lif (!D \lif !E)$ ته وګورئ: دا د $!A \lif !B$ په بڼه دے او د سېکوېنټ په ښۍ خوا کښې راځي۔ که ټول سېکوېنټ د \Log{G1c} له $\RightR{\lif}$ قاعدې سره برابر کړو،
+\[\Axiom$ !A, \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lif !B $
+\DisplayProof\]
+نو راښيي چې بايد $\Gamma = \{(!C \land !D) \lif !E\}$، $\Delta =
+\emptyset$، $!A \ident !C$ او $!B \ident !D \lif !E$ واخلو۔ په دې توګه د ثبوت وروستے استنتاج داسې کېدے شي:
+\[\Axiom$ !C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+که همدغه لاره بيا وکاروو او $!D \lif !E$ د فعال فورمول په توګه وټاکو، نو دا ترلاسه کوو:
+\[\Axiom$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+اوس بايد $(!C \land !D) \lif !E$ ته پام وکړو او د \Log{G1c} $\LeftR{\lif}$ قاعده وکاروو:
+\[\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof\]
+له دې څخه دې بڼې ته رسېږو:
+\[\Axiom$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+په کيڼ پورته سېکوېنټ کښې !!{formula} $!C \land !D$ د اصلي فورمول په توګه او $\RightR{\land}$ قاعده کارول دا راکوي:
+\[
+\Axiom$!D, !C \fCenter !E, !C$
+\Axiom$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+تر دې ځايه هر څۀ سم دي۔ پام وکړئ چې ټولې کارولې لارې په \Log{G3c} کښې هم کار کوي، ځکه تر دې ځايه کارولې قاعدې په \Log{G1c} او~\Log{G3c} کښې يو شان دي۔ د !!a{proof} داسې ټوټې ته رسېدلي يو چې په ټولو پورته سېکوېنټونو کښې هماغه !!{formula} په کيڼه او ښۍ خوا دواړو کښې شته۔ خو دا لا پوره بديهي اصول نۀ دي۔
+
+په \Log{G1c} کښې بايد د ټولو پورته سېکوېنټونو !!{proof}s د $!A \Sequent !A$ په بڼه له بديهي اصولو څخه ورکړو۔ دا د کمزوري کولو د قواعدو په وسيله په اسانۍ کېږي؛ د بېلګې په توګه، تر ټولو کيڼ پورته سېکوېنټ $!D, !C \Sequent
+!E, !C$ په لاندې ډول !!{prove} کېدے شي:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\DisplayProof
+\]
+په ټوليزه توګه، په \Log{G1c} کښې !!a{proof} لرو چې داسې ښکاري:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\Axiom$!D \fCenter !D$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !D$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!C, !E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+د دې ثبوت جوړښت، په تېره بيا لوړوالے ئې، په دې پورې نۀ تړلے چې !!{formula}s $!C$، $!D$ او~$!E$ څۀ دي۔ په پورته !!{proof} کښې دغه نښې په هر ډول !!{formula}s بدلولے شو، او پايله به بيا هم په~\Log{G1c} کښې !!{proof} وي۔ په \Log{G1c} کښې دا ثبوت \emph{سکيماتي} دے۔
+
+په \Log{G3c} کښې د پېژندنې بديهي اصول د $!A, \Gamma \Sequent
+\Delta, !A$ په بڼه سېکوېنټونه دي چې $!A$ بايد اتومي وي۔ نو که څۀ هم $!D, !C \Sequent
+!E, !C$ د \Log{G3c} بديهي اصل ښکاري ($\Gamma = \{!D\}$؛ $\Delta =
+\{!E\}$)، خو د پېژندنې دا بڼه هغه وخت \emph{په رښتيا} بديهي اصل ورکوي چې $!C$ په رښتيا اتومي وي۔ زموږ د ثبوت ټوټه په \Log{G3c} کښې بشپړ ثبوت دے چې $!C$، $!D$ او $!E$ اتومي !!{formula}s وي۔
+د دې درو فورمولونو اتومي کېدل کافي دي، لازم شرط نۀ دے؛ د پاتې سياق يو ګډ اتومي فورمول هم هر پورته سېکوېنټ بديهي کولے شي۔ د کيڼې تشې نښې بديهي اصول هم په نظام کښې شته۔
+
+که څۀ هم په کره توګه مو لا نۀ دي ښودلي چې
+\[\Log{G3c} \Proves (!C \land !D) \lif !E \fCenter !C \lif (!D \lif
+!E),\]
+خو په عمل کښې همدومره کول راته بس دي او همدغه کولے شو۔ دا ځکه چې د $!A, \Gamma \Sequent \Delta, !A$ په بڼه هر سېکوېنټ په \Log{G3c} کښې د ثبوت وړ دے، که پخپله $!A$ اتومي هم نۀ وي۔ دا د~$!A$ پر ژوروالي~$\depth{!A}$ د استقرا په وسيله ښودلے شو۔
+
+\begin{defn}\ollabel{defn:depth}
+د !!a{formula} \emph{ژوروالے}~$\depth{!A}$ په لاندې ډول تعريفېږي:
+\begin{enumerate}
+  \item که $!A$ اتومي وي، نو $\depth{!A} = 0$۔
+  \item که $!A \ident \lnot !B$، $!A \ident \lforall[x][!B]$ يا $!A \ident \lexists[x][!B]$ وي، نو $\depth{!A} = \depth{!B} + 1$۔
+  \item که $!A \ident (!B \land !C)$، $(!B \lor !C)$ يا $(!B \lif
+  !C)$ وي، نو $\depth{!A} = \max(\depth{!B},\depth{!C}) + 1$۔
+\end{enumerate}
+\end{defn}
+
+دا ثابتول ګران نۀ دي چې د هر ترم~$t$ دپاره $\depth{A(x)} = \depth{A(t)}$ دے۔ زموږ دپاره مهمه خبره دا ده چې په هره قاعده کښې د اصلي !!{formula} ژوروالے تل د فعالو !!{formula}s له ژوروالي څخه زيات وي۔ د بېلګې په توګه، لرو:
+\begin{align*}
+\depth{P(x)} = \depth{P(a)} & = 0,\\
+\depth{\lforall[x][P(x)]} & = 1,\\
+\depth{(\lforall[x][P(x)] \lif P(a))} & = \max(1,0) + 1 = 2.
+\end{align*}
+له دې څخه پر~$\depth{!A}$ د استقرا په وسيله د ځينو پايلو د ثابتولو دپاره کار اخيستلے شو، لکه لاندې پايله۔
+
+\begin{prop}\ollabel{prop:G1c-axioms}
+د هر~$!A$ دپاره، په $\Log{G1c}$ کښې د $!A \Sequent !A$ !!a{proof} شته چې ټول بديهي اصول ئې اتومي دي۔
+\end{prop}
+
+\begin{proof}
+  پر~$\depth{!A}$ د استقرا په وسيله۔ که $\depth{!A} = 0$ وي، نو $!A$ اتومي دے او $!A \Sequent !A$ له وړاندې په~\Log{G1c} کښې د غوښتل شوې بڼې !!{proof} دے۔ که $\depth{!A} > 0$ وي، نو $!A$ د لږ ژوروالي له !!{formula}s څخه جوړ شوے دے، لکه $!A \ident \lnot !B$، $!A \ident
+  (!B \land !C)$ يا $!A \ident \lforall[x][!B(x)]$۔ د استقرا فرضيه دا ده چې د ټولو هغو $!D$ دپاره چې $\depth{!D} < \depth{!A}$ وي، $\Log{G1c} \Proves !D \Sequent !D$ له اتومي بديهي اصولو څخه حاصلېږي۔
+
+  که $!A \ident \lnot !B$ وي، نو $\depth{!B} < \depth{!A}$ دے او د استقرا له فرضيې څخه په \Log{G1c} کښې د $!B \Sequent !B$ !!a{proof}~$\pi_1$ له اتومي بديهي اصولو څخه شته۔ دا د $\lnot !B \Sequent \lnot !B$ !!a{proof} ته په لاندې ډول غځولے شو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B \fCenter !B$
+  \RightLabel{\LeftR{\lnot}}
+  \UnaryInf$\lnot !B, !B \fCenter $
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\lnot !B \fCenter \lnot !B$
+  \DisplayProof
+\]
+
+  که $!A \ident (!B \land !C)$ وي، نو $\depth{!B} < \depth{!A}$ او $\depth{!C} < \depth{!A}$ دي۔ د استقرا له فرضيې څخه په \Log{G1c} کښې د $!B
+  \Sequent !B$ او $!C \Sequent !C$ !!{proof}s~$\pi_1$ او~$\pi_2$ له اتومي بديهي اصولو څخه شته۔ دا د $!B \land !C \Sequent !B \land !C$ !!a{proof} ته په لاندې ډول غځولے شو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B, \fCenter !B$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C, \fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C\fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!C, \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C, \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$!B \land !C, !B \land !C \fCenter !B \land !C$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B \land !C \fCenter !B \land !C$
+  \DisplayProof
+  \]
+
+  اوس فرض کړئ $!A \ident \lforall[x][B(x)]$۔ داسې !!a{constant}~$c$ واخلئ چې په $\lforall[x][B(x)]$ کښې نۀ راځي۔ بيا $\depth{B(c)} =
+  \depth{!B(x)} < \depth{!A}$ دے او د استقرا له فرضيې څخه په \Log{G1c} کښې د $!B(c)
+  \Sequent !B(c)$ !!a{proof}~$\pi_1$ له اتومي بديهي اصولو څخه شته۔ دا د $\lforall[x][B(x)] \Sequent \lforall[x][B(x)]$ !!a{proof} ته په لاندې ډول غځولے شو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+
+  پاتې صورتونه د تمرينونو په توګه پرېښودل کېږي۔
+\end{proof}
+
+\begin{prob}
+  د \olref{prop:G1c-axioms} ثبوت بشپړ کړئ: هغه صورتونه سر ته ورسوئ چې $!A \ident (!B \lor !C)$، $!A \ident (!B \lif !C)$ او $!A \ident \lexists[x][B(x)]$ وي۔
+\end{prob}
+
+زموږ د موخې دپاره، په هغه صورت کښې چې $!A \ident \lnot !B$ وي، دا !!{proof} هم کارولے شو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \fCenter !B$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !B, \lnot !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B \fCenter \lnot !B$
+\DisplayProof
+\]
+خو داسې سېکوېنټي نظامونه هم شته چې دغه لاره پکې کار نۀ کوي۔ شهودي سېکوېنټي حساب \Log{G1i} د \Log{G1c} په شان دے، او ټول سېکوېنټونه داسې محدودوي چې په ښۍ خوا کښې ئې تر يوه زياته !!{formula} نۀ وي۔ که $\Delta = \emptyset$ وي، نو لومړنے !!{proof} به په~\Log{G1i} کښې هم !!a{proof} وي، خو دويم به نۀ وي، ځکه په يوه سېکوېنټ کښې $!B$ او~$\lnot !B$ دواړه په ښۍ خوا کښې دي۔
+له دې سره د شرط د کيڼې قاعدې لومړۍ مقدمه هم بدلېږي: د هغې په ښي لوري کښې يوازې د شرط مقدم وي؛ د پاتې ښي سياق کاپي پکې نۀ راځي۔ يوازې د سېکوېنټونو د شمېر شرط د شهودي نظام د تعريف دپاره کافي نۀ دے۔
+
+پام وکړئ چې ان په \Log{G1c} کښې هم، په هغه صورت کښې چې $!A \ident \lforall[x][!B(x)]$ وي، په عمومي ډول د قواعدو بل ترتيب نۀ شو کارولے۔ که ټاکلے ثابت په کيڼ فورمول کښې په رښتيا راځي، لاندې بڼه !!a{proof} \emph{نۀ ده}:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$!B(c) \fCenter \lforall[x][!B(x)]$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+ځکه په~$\RightR{\lforall}$ کښې د ځانګړي متغير شرط ماتېږي۔
+که کمي متغير په خپل بدن کښې هېڅ پېښه ونۀ لري، نو ټاکلے ثابت په کيڼ فورمول کښې هم نۀ راځي او د همدې ځانګړي متغير شرط نۀ ماتېږي؛ دا د پورته عمومي ممانعت استثنا ده۔
+
+\begin{prop}\ollabel{prop:G3c-axioms}
+د $!A, \Gamma
+\Sequent \Delta, !A$ په بڼه هر سېکوېنټ (چې $!A$ ئې \emph{ضروري نۀ ده} اتومي وي) په~\Log{G3c} کښې د ثبوت وړ دے۔
+\end{prop}
+
+\begin{proof}
+دا ثبوت د \olref{prop:G1c-axioms} ثبوت ته ډېر ورته دے، خو د استقرا په فرضيې کښې بايد احتياط وکړو۔ هغه صورت چې $n =
+\depth{!A} = 0$ وي، بيا هم اسانه دے۔ که $n=0$ وي، نو $!A$ اتومي دے او $!A,
+\Gamma \Sequent \Delta, !A$ د~\Log{G3c} بديهي اصل دے۔
+
+اوس فرض کړئ $n>0$۔ بيا بېل بېل صورتونه څېړو۔ د استقرا فرضيه دا ده چې د ټولو هغو $!D$ دپاره چې $\depth{!D} < n$ وي، او د ټولو $\Pi$ او $\Lambda$ دپاره، $\Log{G3c} \Proves !D, \Pi \Sequent \Lambda, !D$ دے۔ دلته د $!A \ident (!B \land !C)$ صورت ښيو۔ د استقرا فرضيه دوه ځله کاروو: يو ځل د $!D = !B$، $\Pi = !C, \Gamma$ او $\Lambda
+= \Delta$ دپاره، څو د $!B, !C, \Gamma \Sequent
+\Delta, !B$ !!a{proof}~$\pi_1$ ترلاسه کړو؛ او بل ځل د $!D = !C$، $\Pi = !B, \Gamma$ او $\Lambda
+= \Delta$ دپاره، څو د $!B, !C, \Gamma \Sequent
+\Delta, !C$ !!a{proof}~$\pi_2$ ترلاسه کړو۔ دلته د~$!B \land !C, \Gamma \Sequent
+\Delta, !B \land !C$ !!{proof} دے:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+
+د $!A \ident \lforall[x][!B(x)]$ دپاره، داسې !!a{constant} واخلئ چې په~$\lforall[x][!B(x)]$، $\Gamma$ يا~$\Delta$ کښې نۀ وي۔ د استقرا فرضيه د $!D = !B(c)$، $\Pi = \lforall[x][!B(x)], \Gamma$ او $\Lambda = \Delta$ دپاره تطبيق کړئ۔ دا د $!B(c),
+\lforall[x][!B(x)], \Gamma \Sequent \Delta, !B(c)$ !!a{proof}~$\pi_1$ راکوي چې له هغې څخه دا ترلاسه کوو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B(c), \lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+په $\RightR{\lforall}$ کښې د ځانګړي متغير شرط د~$c$ د ټاکلو د لارې له مخې پوره کېږي۔
+\end{proof}
+
+\begin{prob}
+  د \olref{prop:G3c-axioms} ثبوت ته دوام ورکړئ: هغه صورتونه سر ته ورسوئ چې $!A \ident (!B \lif !C)$ او $!A \ident
+  \lexists[x][B(x)]$ وي۔
+\end{prob}
+
+\end{document}

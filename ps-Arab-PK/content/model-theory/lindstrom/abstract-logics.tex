@@ -51,7 +51,7 @@ $L(\Lang{L})$ هماغه !!{sentence}s په دواړو کښې رښتونې وي�
   $\Lang{L'}$ دپاره، که~$\Lang{L} \subseteq \Lang{L'}$ وي، نو
   $L(\Lang{L}) \subseteq L(\Lang{L'})$۔
 \item (\emph{د غځونې خاصيت}) د هر~$!E \in L(\Lang{L})$ دپاره د
-  $\Lang{L}$ يو \emph{متناهي} فرعي سټ~$\Lang{L'}$ شته، داسې چې
+  $\Lang{L}$ يو \emph{متناهي} فرعي !!{language}~$\Lang{L'}$ شته چې~$!E \in L(\Lang{L'})$ او
   اړيکه~$\Struct{M} \models_L !E$ يوازې د~$\Lang{L'}$ پر
   راکمونې پورې اړه لري؛ يعنې که~$\Struct{M}$ او~$\Struct{N}$ پر
   $\Lang{L'}$ يوه راکمونه ولري، نو~$\Struct{M} \models_L !E$ هله او
@@ -77,7 +77,7 @@ $L(\Lang{L})$ هماغه !!{sentence}s په دواړو کښې رښتونې وي�
   \Mod(L){!F}$ وي۔ د اټومي !!{formula}s او نورو رابطونو دپاره هم
   همداسې ده۔
 \item (\emph{د کميت ټاکونکي خاصيت}) په~$\Lang{L}$ کښې د هر ثابت~$c$
-  او هر~$!E \in L(\Lang{L})$ دپاره داسې~$!F \in L(\Lang{L})$ شته
+  او هر~$!E \in L(\Lang{L})$ دپاره داسې~$!F \in L(\Lang{L'})$ شته
   چې
   \[
   \Mod[L'](L){!F} = \Setabs{\Struct{M}}{\Expan{M}{a} \in
@@ -98,19 +98,12 @@ $L(\Lang{L})$ هماغه !!{sentence}s په دواړو کښې رښتونې وي�
     يوازې هله چې } \Struct{N} \models_L !E,
   \]
   چې~$\Struct{N}$ د~$\Struct{M}$ هغه فرعي جوړښت دے چې !!{domain} ئې
-  $\Domain{N} = \Setabs{a\in \Domain{M}}{\Assign{R}{M}(a, b_1, \dots, b_n)}$
+  $\Domain{N} = \Setabs{a\in \Domain{M}}{\tuple{a,b_1,\ldots,b_n}\in X}$
   دے (\olref[bas][sub]{rem:substructure} وګورئ)، او
   $\Expan{M}{X, b_1, \ldots, b_n}$ د~$\Struct{M}$ هغه غځونه ده چې
   $R$،~$c_1$، \dots،~$c_n$ په ترتيب سره په~$X$،~$b_1,$
-  \dots،~$b_n$ تفسيروي (چې~$X \subseteq M^{n+1}$)۔
+  \dots،~$b_n$ تفسيروي (چې~$X \subseteq \Domain{M}^{n+1}$)۔
 \end{enumerate}
-\textbf{د ژباړې د نسخې سمون (OLMOD-024):} سرچينې د نوم‌اړونې په
-شرط کښې نوم‌اړول شوے جوړښت د اصلي !!{language} اړوند بللے و؛ دلته هغه د اصلي
-جوړښت اړوند وبلل شو، او نوم‌اړول شوې جمله هم په څرګنده وپېژندل شوه۔
-\textbf{د ژباړې د نسخې سمون (OLMOD-025):} سرچينې د نسبي کولو په شرط
-کښې د نوي محمول ځاييزه کچه نۀ وه ټاکلې؛ له ورپسې تعريف ساحې او غځونې
-سره سم دلته هغه يو زيات له ورکړو ثابتونو، يعنې~$(n+1)$-ځاييز، ټاکل
-شوے دے۔
 \end{defn}
 
 \begin{defn}

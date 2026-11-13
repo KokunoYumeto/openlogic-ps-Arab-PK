@@ -11,7 +11,11 @@
 \olsection{د لاسرسي د نورو اړيکو لپاره قاعدې}
 
 د هغو منطقونو لپاره چې د لاسرسي ځانګړې اړيکې يې ټاکي،
-په \olref{tab:more-rules} کښې اضافي قاعدې ګورو۔
+په \olref{tab:more-rules} کښې اضافي قاعدې ګورو۔ د پنځم
+اصل لپاره لاندې قواعد په متعديو اقليدسي چوکاټونو کښې کارېږي:
+له يوې نړۍ نه د هغې هرې لاسرسي وړ نړۍ ته د تلو په وخت
+د دواړو د لاسرسي وړ نړۍو سټ برابر وي۔ تعدي د يوه لوري
+شموليت او اقليدسي‌والے د بل لوري شموليت ورکوي۔
 
 \iftag{prvBox}{\iftag{prvDiamond}{% [] and <> primitive
 \begin{table}
@@ -164,6 +168,8 @@
 
 د دې قاعدو په ورزياتولو داسې نظامونه تر لاسه کېږي چې د
 \olref{tab:logics-rules} د منطقونو لپاره سم او بشپړ دي۔
+په جدول کښې راغلې قاعدې د K د سېکوېنټ حساب له قاعدو سره
+يو ځاے کارول کېږي۔
 
 \begin{table}
   \begin{center}
@@ -171,21 +177,21 @@
       \hline
       منطق & د~$R$ خاصيت \dots & قاعدې\\
       \hline
-      $\Log{T} = \Log{KT}$ & انعکاسي & $\Box$,
+      $\Log{T} = \Log{KT}$ & انعکاسي &
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}
       \\ \hline
-      $\Log{D} = \Log{KD}$ & مسلسل & $\Box$,
+      $\Log{D} = \Log{KD}$ & مسلسل &
       \iftag{prvBox}{%
         \iftag{prvDiamond}{D}{D$\Box$}}{D$\Diamond$}
       \\ \hline
-      $\Log{K4}$ & متعدي & $\Box$,
+      $\Log{K4}$ & متعدي &
       \iftag{prvBox}{4$\Box$}{}% 
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{4$\Diamond$}{}
       \\ \hline
-      $\Log{B} = \Log{KTB}$ & انعکاسي، & $\Box$,
+      $\Log{B} = \Log{KTB}$ & انعکاسي، &
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -194,7 +200,7 @@
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{B$\Diamond$}{}
       \\ \hline
-      $\Log{S4} = \Log{KT4}$ & انعکاسي، & $\Box$,
+      $\Log{S4} = \Log{KT4}$ & انعکاسي، &
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -203,7 +209,7 @@
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{4$\Diamond$}{}
       \\ \hline
-      $\Log{S5} = \Log{KT5}$ & انعکاسي، & $\Box$,
+      $\Log{S5} = \Log{KT5}$ & انعکاسي، &
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -231,7 +237,8 @@
     \UnaryInf$\fCenter \Box!A \lif \Box\Box!A$
   \end{prooftree}
 \end{ex}
-}{\iftag{prvDiamond}{
+}{}
+\iftag{prvDiamond}{
 \begin{ex}
   دلته داسې سېکوېنټ !!{derivation} وړاندې کوو چې $\Log{K4} \Proves \Ax{4}$، يعنې
   $\Diamond\Diamond!A \lif \Diamond!A$.
@@ -243,7 +250,7 @@
     \UnaryInf$\fCenter \Diamond\Diamond!A \lif \Diamond!A$
   \end{prooftree}
 \end{ex}
-}{}}
+}{}
 
 \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
 \begin{ex}
@@ -291,10 +298,16 @@
 \end{ex}
 }
 \begin{ex}
-د~\Log{S5} سېکوېنټ حساب د~\Cut{} له قاعدې پرته بشپړ نۀ دے؛
+د~\Log{S5} همدا سېکوېنټ حساب د~\Cut{} له قاعدې پرته بشپړ نۀ دے؛
 مثلاً \iftag{prvBox}{$\Diamond\Box !A \lif !A$}{$!A \lif
 \Box\Diamond !A$}، چې په~$\Log{S5}$ کښې معتبر دے، بې له~\Cut
-څخه ثبوت نۀ لري۔ دلته د~\Cut په کارولو يو !!a{derivation} دے:
+څخه ثبوت نۀ لري که دنننے فارمول يو قضيېيز متغير وي۔ د پرېکون
+پرته د وروستي شرط له قاعدې نه شاته چې لاړ شو، په اړونده
+سېکوېنټ کښې ساده متغير د مودالي قاعدې د څنګ‌فارمول شرط ماتوي۔
+د جوړښتي قاعدو له لارې د دواړو اړخونو هره ممکنه کمونه چې
+يو اړخ تش کړي، يو نامعتبر سېکوېنټ ورکوي؛ تکراري نسخې هم
+د مودالي قاعدې شرط نۀ شي پوره کولے۔ دلته د~\Cut په کارولو
+يو !!a{derivation} دے:
 \begin{prooftree}
 \iftag{prvBox}{\iftag{prvDiamond}{% both [] and <> primitive
 \Axiom$\Box !A \fCenter \Box!A$
@@ -336,7 +349,7 @@
 \UnaryInf$\lnot\Diamond!A , \Diamond!A \fCenter$
 \RightLabel{5$\Diamond$}
 \UnaryInf$\Diamond\lnot\Diamond!A , \Diamond!A\fCenter$
-\RightLabel{\RightR{\Exchange}}
+\RightLabel{\LeftR{\Exchange}}
 \UnaryInf$\Diamond!A, \Diamond\lnot\Diamond!A\fCenter $
 
 \RightLabel{\Cut}

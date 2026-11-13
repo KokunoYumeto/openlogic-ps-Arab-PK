@@ -20,7 +20,8 @@ variable}s لپاره د $V^\Sigma$ تعريف دا نتيجه نېغ په نې�
 
 \begin{prop}[د صدق لمه]
   \ollabel{prop:truthlemma}
-  د هر !!{formula}~$!A$ لپاره، $\mSat{M^\Sigma}{!A}[\Delta]$ هله او يوازې هله چې
+  د هر !!{formula}~$!A$ لپاره، د کانوني مدل په هره نړۍ کښې
+  $\mSat{M^\Sigma}{!A}[\Delta]$ هله او يوازې هله چې
   $!A \in \Delta$۔
 \end{prop}
 
@@ -101,9 +102,9 @@ variable}s لپاره د $V^\Sigma$ تعريف دا نتيجه نېغ په نې�
 
           اوس فرض کړو چې $\Box !B \in \Delta$۔ داسې $\Delta' \in W^\Sigma$
           واخلو چې $R^\Sigma \Delta\Delta'$ وي، يعنې $\Box^{-1}\Delta
-          \subseteq \Delta'$۔ چونکې $\Box !B \in \Delta$، نو $!B \in
+          \subseteq \Delta'$۔ څرنګه چې $\Box !B \in \Delta$، نو $!B \in
           \Box^{-1} \Delta$۔ له دې امله، $!B \in \Delta'$۔ د
-          استقرا فرضيې له مخې، $\mSat{M^\Sigma}{!B}[\Delta']$۔ چونکې
+          استقرا فرضيې له مخې، $\mSat{M^\Sigma}{!B}[\Delta']$۔ څرنګه چې
           $\Delta'$ د $R^\Sigma \Delta\Delta'$ په شرط هره نړۍ وه، نو د
           ټولو $\Delta' \in W^\Sigma$ لپاره چې $R^\Sigma
           \Delta\Delta'$ وي، $\mSat{M^\Sigma}{!B}[\Delta']$۔ د
@@ -119,9 +120,9 @@ variable}s لپاره د $V^\Sigma$ تعريف دا نتيجه نېغ په نې�
           $R^\Sigma \Delta\Delta'$ وي او $!B \in \Delta'$۔ د
           $R^\Sigma$ د تعريف له مخې،\iftag{prvBox}{ داسې يو $\Delta'$ شته چې
             $\Box^{-1} \Delta \subseteq \Delta'$ وي او $!B \in \Delta'$۔
-            د \olref[mod]{prop:diamond} له مخې،}{} داسې يو $\Delta'$ شته
+            د \olref[mod]{lem:box-iff-diamond} له مخې،}{} داسې يو $\Delta'$ شته
           چې $\Diamond \Delta' \subseteq \Delta$ وي او $!B \in
-          \Delta'$۔ چونکې $!B \in \Delta'$، نو $\Diamond !B \in \Diamond
+          \Delta'$۔ څرنګه چې $!B \in \Delta'$، نو $\Diamond !B \in \Diamond
           \Delta'$، نو $\Diamond !B \in \Delta$۔
 
           اوس فرض کړو چې $\Diamond !B \in \Delta$۔ د
@@ -133,16 +134,15 @@ variable}s لپاره د $V^\Sigma$ تعريف دا نتيجه نېغ په نې�
             \Delta \subseteq \Delta'$ وي او $!B \in \Delta'$۔}{} د
           $R^\Sigma$ د تعريف له مخې، $R^\Sigma \Delta\Delta'$، نو داسې
           يو $\Delta' \in W^\Sigma$ شته چې $R^\Sigma
-          \Delta\Delta'$ وي او $!B \in \Delta'$۔ د
+          \Delta\Delta'$ وي او $!B \in \Delta'$۔ د استقرا د فرض
+          له مخې په هماغه نړۍ کښې دنننے فارمول رښتيا دے۔ د
           \olref[syn][trw]{defn:mmodels} له مخې، $\mSat{M^\Sigma}{\Diamond
             !B}[\Delta]$۔}}}{}
   \end{enumerate}
 \end{proof}
 
-\begin{probtag}{probFalse,probTrue,probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond}
-  د \olref[nml][com][tru]{prop:truthlemma} ثبوت بشپړ کړئ۔ (د سرچينې د دې تمرين په ټاګ کښې
-  \texttt{proband} د ثبوت له \texttt{probAnd} سره د لويو او وړو تورو توپير لري؛ دلته د ثبوت
-  هماغه ټاګ راولو، څو د «او» رابطې اختياري تمرين هم په سم ډول وټاکل شي۔)
+\begin{probtag}{probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond}
+  د \olref[nml][com][tru]{prop:truthlemma} ثبوت بشپړ کړئ۔
 \end{probtag}
 
 \end{document}

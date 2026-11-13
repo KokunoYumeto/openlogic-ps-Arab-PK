@@ -1,0 +1,409 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: invertibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{inv}
+
+\olsection{د قواعدو د معکوسولو وړتيا}
+
+\begin{defn}
+قاعده~$R$،
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+په يو نظام کښې \emph{د معکوسولو وړ} ده، که هر کله $\Proves S$
+وي، نو $\Proves[h_i] S_i$ د $i = 1$، \dots،~$n$ دپاره وي۔
+دا په يو نظام کښې \emph{!!{height} ساتونکې او د معکوسولو وړ}
+(يا \emph{!!{hp}-د معکوسولو وړ}) ده، که هر کله $\Proves_n S$
+وي، نو $\Proves[n] S_i$ د $i =
+1$، \dots،~$n$ دپاره وي۔
+\end{defn}
+
+\begin{lem}\ollabel{lem:G3c-invert}
+د~\Log{G3c} قاعدې د $\lnot$، $\land$، $\lor$ او $\lif$ دپاره
+!!{height} ساتونکې او د معکوسولو وړ دي، يعنې:
+\begin{enumerate}
+  \item \RightR{\lnot}: که $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, \lnot !A$ وي، نو $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta$ دے۔
+  \item \LeftR{\lnot}: که $\Log{G3c} \Proves[n] \Gamma, \lnot !A
+  \Sequent \Delta$ وي، نو $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  !A$ دے۔
+  \item \RightR{\land}: که $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \land !B$ وي، نو $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A$ او $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !B$ دي۔
+  \item \LeftR{\land}: که $\Log{G3c} \Proves[n] \Gamma, !A \land !B
+  \Sequent \Delta$ وي، نو $\Log{G3c} \Proves[n] !A, !B, \Gamma \Sequent
+  \Delta$ دے۔
+  \item \RightR{\lor}: که $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \lor !B$ وي، نو $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A, !B$ دے۔
+  \item \LeftR{\lor}: که $\Log{G3c} \Proves[n] !A \lor !B, \Gamma \Sequent
+  \Delta$ وي، نو $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta$ او $\Log{G3c} \Proves[n] !B, \Gamma \Sequent
+  \Delta$ دي۔
+  \item \RightR{\lif}: که $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \lif !B$ وي، نو $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta, !B$ دے۔
+  \item \LeftR{\lif}: که $\Log{G3c} \Proves[n] !A \lif !B, \Gamma
+  \Sequent \Delta$ وي، نو $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  !A$ او $\Log{G3c} \Proves[n] !B, \Gamma \Sequent \Delta$ دي۔
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+بايد وښيو چې د هرې قاعدې~$R$ د~\Log{G3c} دپاره، که
+!!a{proof}~$\pi$ د پايلې~$S$ دپاره وي چې د~$R$ ده، نو
+!!{proof}s~$\pi_i$ د مقدماتو $S_i$ دپاره هم شته چې د~$R$ دي،
+او $\pheight{\pi_i}
+\le \pheight{\pi}$ وي۔ قاعده \LeftR{\land} وګورئ: فرض کړئ
+!!a{proof}~$\pi$ شته چې وروستے سېکوېنټ ئې د $!A \land !B, \Gamma
+\Sequent \Delta$ په بڼه دے۔ بايد وښيو چې !!a{proof} $\pi'$
+د $!A, !B, \Gamma \Sequent \Delta$ دپاره شته چې $\pheight{\pi'} \le
+\pheight{\pi}$ وي۔ دا پر $n = \pheight{\pi}$ د استقرا په وسيله کوو۔
+
+که $n = 0$ وي، نو $\pi$ يوازې يو بديهي اصل لري: $!A \land !B, \Gamma
+\Sequent \Delta$۔ په \Log{G3c} کښې د پېژندنې بديهي اصول د $!C, \Gamma
+\Sequent \Delta, !C$ په بڼه دي چې $!C$ اتومي وي۔ په بله وينا،
+$!C$، $!A \land !B$ نۀ شي کېدے۔ که $!A \land !B, \Gamma \Sequent \Delta$
+د پېژندنې بديهي اصل وي، نو يو اتومي $!C$ بايد د دواړو $\Gamma$
+او~$\Delta$ !!a{element} وي۔ خو بيا $!A, !B, \Gamma \Sequent \Delta$
+هم بديهي اصل دے، او خپل !!{proof}~$\pi'$ مو وموند
+(چې !!{height} ئې هم~$0$ دے)۔
+\textbf{د بديهي حالت دويمه بڼه:} که $\lfalse$ په $\Gamma$ کښې وي، نو د کيڼې تشې نښې بديهي اصل هم شته؛ د تړنې د دواړو غړو تر بېلولو وروسته هم دغه بديهي اصل پاتې کېږي او لوړوالے ئې صفر دے۔
+
+که $n>0$ وي، په يو استنتاج پاے ته رسېږي۔ بايد د~$n$ دپاره
+دا ادعا ثابته کړو، خو فرض کولے شو چې د هر هغه !!{proof}
+دپاره سمه ده چې د ثبوت لوړوالے ئې~$<n$ وي، که څۀ هم
+چاپېرچل ئې بېل وي۔ په بله وينا، د هر $k<n$ او هر
+$\Pi$ او $\Lambda$ دپاره، که $!A \land !B, \Pi \Sequent \Lambda$
+!!a{proof} ولري چې !!{height} ئې~$k$ وي، نو !!a{proof} شته
+چې !!{height} ئې~$\le k$ وي او د $!A, !B, \Pi \Sequent \Lambda$ دپاره وي۔
+
+دوه صورتونه لرو: يا په کيڼه خوا کښې $!A \land
+!B$ اصلي دے، يا نۀ دے۔ که اصلي وي، نو وروستے استنتاج
+\LeftR{\land} دے او نېغ فرعي !!{proof}~$\pi_1$ په
+$!A, !B, \Gamma \Sequent \Delta$ پاے ته رسېږي۔ په دې صورت
+کښې پايله سمه ده، ځکه $\pheight{\pi_1} < \pheight{\pi}$ دے۔
+
+که $!A \land !B$ اصلي نۀ وي، نو بله !!{formula} اصلي ده، او $!A
+\land !B$ د وروستي استنتاج په چاپېرچل کښې دے۔ بيا د استقرا
+فرضيه د وروستۍ قاعدې~$R$ پر نېغو فرعي !!{proof}s تطبيقېږي؛
+له دې څخه !!a{proof}~$\pi_1'$، يا دوه !!{proof}s~$\pi_1'$ او~$\pi_2'$
+ترلاسه کېږي چې !!{height} ئې د~$\pi$ د نېغو فرعي !!{proof}s
+د ثبوت له لوړوالي څخه زيات نۀ وي۔ د $\pi_1'$ او $\pi_2'$
+وروستي سېکوېنټونه په کيڼ چاپېرچل کښې $!A, !B$ د
+$!A \land !B$ پر ځاے لري۔ قاعده~$R$ تطبيق کړئ، څو ثبوت~$\pi'$ ترلاسه کړئ۔
+د بېلګې په توګه، فرض کړئ $\pi$ په~\LeftR{\lif} پاے ته رسېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A \land !B, \Gamma' \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A \land !B, \Gamma', !D \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A \land !B, \Gamma', !C \lif !D \fCenter \Delta$
+\DisplayProof
+\]
+دلته په کيڼه خوا کښې $!C \lif !D$ اصلي دے، او کيڼ چاپېرچل
+$!A \land !B, \Gamma'$ دے (يعنې $\Gamma = \Gamma', !C \lif !D$)۔
+د استقرا فرضيه !!{proof}s $\pi_1'$ او $\pi_2'$ په ترتيب سره د
+$!A, !B, \Gamma' \Sequent \Delta, !C$ او $!A, !B, \Gamma',
+!D \Sequent \Delta$ دپاره راکوي۔
+دا دوه سېکوېنټونه بيا د \LeftR{\lif} قاعدې د مقدماتو په
+توګه کارېدے شي، څو~$\pi'$ ترلاسه کړو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!A, !B, \Gamma' \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, \Gamma', !D \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A, !B, \Gamma', !C \lif !D \fCenter \Delta$
+\DisplayProof
+\]
+لرو:
+\begin{align*}
+\pheight{\pi} & = \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1\\
+\pheight{\pi'} & = \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1
+\intertext{د تعريف له مخې، او}
+\pheight{\pi_1'} & \le \pheight{\pi_1}\\
+\pheight{\pi_2'} & \le \pheight{\pi_2}
+\intertext{د استقرا د فرضيې له مخې۔ نو}
+\pheight{\pi'} & \le \pheight{\pi}.
+\end{align*}
+\end{proof}
+
+\begin{prob}
+د \olref{lem:G3c-invert} ثبوت د \RightR{\lif} دپاره ورکړئ۔
+\end{prob}
+
+\begin{lem}\ollabel{lem:invert-quant}
+قاعدې \RightR{\lforall} او \LeftR{\lexists}
+په لاندې معنا !!{height} ساتونکې او د معکوسولو وړ دي:
+\begin{enumerate}
+  \item که $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  \lforall[x][!A(x)]$ وي، نو $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A(c)$ دے، او
+  \item که $\Log{G3c} \Proves[n] \lexists[x][!A(x)], \Gamma \Sequent
+  \Delta$ وي، نو $\Log{G3c} \Proves[n] !A(c), \Gamma \Sequent \Delta$ دے،
+\end{enumerate}
+د هر هغه $c$ دپاره چې په $\Gamma$، $\Delta$ او په ترتيب سره
+په $\lforall[x][!A(x)]$ يا $\lexists[x][!A(x)]$ کښې نۀ راځي۔
+\end{lem}
+
+\begin{proof}
+  (1) ښيو او (2) د تمرين په توګه پرېږدو۔ دليل د
+  \olref{lem:G3c-invert} ثبوت ته ورته دے۔ د استقرا له پيل څخه ټول ثبوت منظم فرضوو او د ټاکلي نوي ثابت څخه د ټولو داخلي ځانګړو متغيرونو نومونه تازه کوو۔ دا نوم بدلول وروستے سېکوېنټ او لوړوالے نۀ بدلوي؛ په نورو کمي قواعدو کښې هم د ځانګړي متغير شرط ساتي۔ د استقرا په ګام کښې
+  بيا دوه صورتونه دي۔ هغه صورت چې $\lforall[x][!A(x)]$
+  اصلي وي، بيا ژر حلېږي: د وروستي $\RightR{\lforall}$ استنتاج
+  مقدمه په غوښتل شوې بڼه $\Gamma
+  \Sequent \Delta, !A(a)$ ده، او په هغې پاے ته رسېدونکے نېغ
+  فرعي !!{proof}~$\pi_1$ د $\pheight{\pi_1} < \pheight{\pi}$ شرط
+  پوره کوي۔ سربېره پر دې، د ځانګړي متغير شرط راکوي چې $a$
+  په $\Gamma$، $\Delta$ يا $\lforall[x][!A(x)]$ کښې نۀ راځي۔
+  ځکه فرض کولے شو چې $\pi_1$ منظم دے، نو
+  $\Subst{\pi_1}{c}{a}$ د $\Gamma \Sequent \Delta, !A(c)$ يو
+  !!a{proof} دے چې !!{height} ئې هماغه دے، د
+  \olref[qua]{lem:subst-regular} له مخې۔
+
+  په دويم صورت کښې، $\lforall[x][!A(x)]$ په وروستي استنتاج
+  کښې اصلي نۀ دے؛ بل فورمول اصلي دے۔ بيا يو صورت د بېلګې
+  په توګه څېړو۔ فرض کړئ وروستے استنتاج~\RightR{\land} دے۔
+  په $\Delta$ کښې يوه !!{formula} د~$!B \land !C$ په بڼه ده
+  او اصلي ده۔ !!{proof}~$\pi$ داسې پاے ته رسېږي:
+  \[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+چې $\Delta = \Delta', !B \land !C$ دے۔ فرض کړئ $c$ داسې
+!!a{constant} دے چې په $\Delta$ کښې نۀ ښکاري؛ نو څرګنده ده
+چې په $\Delta', !B$ يا په $\Delta', !C$ کښې هم نۀ راځي۔
+نو د استقرا فرضيه پر $\pi_1$ او~$\pi_2$ تطبيقېږي؛
+!!{proof}s~$\pi_1'$ او $\pi_2'$ لرو چې
+$\pheight{\pi_1'} \le \pheight{\pi_1}$ او $\pheight{\pi_2'} \le
+\pheight{\pi_2}$ وي۔ غوښتل شوے !!{proof}~$\pi'$ د $\Gamma \Sequent
+\Delta, !A(c)$ دپاره دا دے:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !A(c), !B$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta', !A(c), !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !A(c), !B \land !C$
+\DisplayProof
+\]
+چې $\pheight{\pi'} = \max(\pheight{\pi_1'}, \pheight{\pi_2'})+1 \le \pheight{\pi}$ دے۔
+\end{proof}
+
+\Olref{lem:G3c-invert} د پرېکون لرې کولو د قضيې په ثبوت
+کښې مهم رول لري۔ خو د لاندې خبرې د ښودلو دپاره هم کارېدے شي:
+
+\begin{prop}\ollabel{prop:G3c-cont-adm}
+د~\Log{G1c} د انقباض قاعدې \LeftR{\Contraction} او \RightR{\Contraction}
+په~\Log{G3c} کښې !!{height} ساتونکې مجازې دي۔
+\end{prop}
+
+\begin{proof}
+د \RightR{\Contraction} او \LeftR{\Contraction} دپاره دليل
+يوځاے ورکوو۔ فرض کړئ $\pi$ د $\Gamma \Sequent \Delta, !A, !A$
+يا د $!A, !A, \Gamma \Sequent
+\Delta$ !!a{proof} دے، په~\Log{G3c} کښې۔ بايد وښيو چې يو
+\Log{G3c}-!!{proof}~$\pi'$ هم شته چې په ترتيب سره د
+$\Gamma \Sequent \Delta, !A$ يا $!A,
+\Gamma \Sequent \Delta$ دپاره وي، او $\pheight{\pi'} \le
+\pheight{\pi}$ وي۔ دا پر $n = \pheight{\pi}$ د استقرا په وسيله کوو۔
+
+که $n=0$ وي، نو $\pi$ يوازې يو بديهي اصل دے۔ خو که
+$\Gamma \Sequent \Delta, !A,
+!A$ د~\Log{G3c} بديهي اصل وي، نو $\Gamma \Sequent \Delta, !A$
+هم بديهي اصل دے۔ د پېژندنې د بديهي اصل په حالت کښې يا يو اتومي~$!C$ د دواړو $\Gamma$ او~$\Delta$
+!!a{element} دے، يا $!A$ اتومي دے او د~$\Gamma$ !!a{element}
+دے۔ هماغه دليل هغه وخت هم تطبيقېږي چې وروستے سېکوېنټ
+$!A, !A, \Gamma \Sequent
+\Delta$ وي۔
+\textbf{د تشې نښې حالت:} که $\lfalse$ په $\Gamma$ کښې وي، ښے او کيڼ انقباض دواړه دا بديهي اصل ساتي۔ په کيڼ انقباض کښې که $!A \ident \lfalse$ هم وي، د دوو نقلونو له يوځای کولو وروسته يو نقل پاتې وي؛ پايله بيا هم بديهي اصل دے۔
+
+که $n>0$ وي، نو $\pi$ په يوه قاعده~$R$ پاے ته رسېږي۔ که $!A$
+په دې وروستي استنتاج کښې اصلي نۀ وي، نو !!a{proof}~$\pi'$
+د \olref{lem:G3c-invert} د ثبوت په شان ترلاسه کولے شو: د~$\pi$
+پر نېغو فرعي !!{proof}s د استقرا فرضيه تطبيقوو، او پر ترلاسه
+شويو !!{proof}(s) هماغه قاعده~$R$ بيا تطبيقوو۔ د استقرا فرضيه
+دا ده چې که !!a{proof} شته چې !!{height} ئې~$k<n$ وي او يا
+د $\Pi \Sequent \Lambda, !D,
+!D$ يا د $!D, !D, \Pi \Sequent \Lambda$ دپاره وي، نو
+!!a{proof} شته چې !!{height} ئې~$\le k$ وي او په ترتيب سره
+د $\Pi \Sequent \Lambda, !D$ يا $!D, \Pi \Sequent
+\Lambda$ دپاره وي۔ (په ياد ولرئ چې د استقرا فرضيه تطبيقېږي،
+که چاپېرچلونه يا منقبضه !!{formula} له $\Gamma$، $\Delta$
+يا~$!A$ څخه بېل هم وي!)
+
+د بېلګې په توګه، فرض کړئ $R$، $\RightR{\land}$ دے،
+او $\pi$~داسې پاے ته رسېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B, !A, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta', !C, !A, !A$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A, !A$
+\DisplayProof
+\]
+چې $\Delta = \Delta', !B \land !C$ دے۔ د استقرا فرضيه
+!!{proof}s $\pi_1'$ او $\pi_2'$ په ترتيب سره د $\Gamma \fCenter \Delta', !B, !A$
+او $\Gamma \fCenter \Delta', !C, !A$ دپاره راکوي، چې
+$\pheight{\pi_1'} \le  \pheight{\pi_1}$ او $\pheight{\pi_2'} \le
+\pheight{\pi_2}$ وي۔ !!{proof}~$\pi'$ دا دے:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !B, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta', !C, !A$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+\DisplayProof
+\]
+
+که $!A$ په وروستي استنتاج کښې اصلي وي، نو د معکوسولو
+لمّه (\olref{lem:G3c-invert}) د~$\pi$ پر نېغو فرعي !!{proof}s
+تطبيقوو، بيا د استقرا فرضيه، او بيا قاعده~$R$ تطبيقوو۔
+د بېلګې په توګه، فرض کړئ $\pi$، $\Gamma \Sequent \Delta, !A, !A$
+ثابتوي، $!A
+\ident (!B \land !C)$ دے، او په وروستي استنتاج کښې اصلي دے۔
+نو $\pi$ داسې ښکاري:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta, !B \land !C, !B \land !C$
+\DisplayProof
+\]
+\olref{lem:G3c-invert} پر $\pi_1$ تطبيق کړئ، څو !!a{proof}~$\pi_1'$
+د $\Gamma \Sequent \Delta, !B, !B$ دپاره ترلاسه کړئ۔ (دا
+!!a{proof} د $\Gamma \Sequent \Delta, !C, !B$ دپاره هم راکوي،
+خو هغې ته اړتيا نۀ لرو۔) په همدې ډول، د
+\olref{lem:G3c-invert} پر~$\pi_2$ د تطبيق په وسيله
+!!a{proof}~$\pi_2'$ د $\Gamma \Sequent \Delta, !C, !C$ دپاره
+ترلاسه کوو۔ ځکه د \RightR{\land} معکوسول !!{height} ساتي، نو
+$\pheight{\pi_1'} \le  \pheight{\pi_1} < \pheight{\pi}$ او
+$\pheight{\pi_2'} \le  \pheight{\pi_2} < \pheight{\pi}$ دي۔
+نو د استقرا فرضيه پر $\pi_1'$ او $\pi_2'$ تطبيقېږي:
+!!{proof}s~$\pi_1''$ او $\pi_2''$ په ترتيب سره د $\Gamma \Sequent \Delta, !B$
+او $\Gamma \Sequent \Delta, !C$ دپاره شته، چې $\pheight{\pi_1''}
+\le \pheight{\pi_1'} \le \pheight{\pi_1}$ او $\pheight{\pi_2''} \le
+\pheight{\pi_2'} \le \pheight{\pi_2}$ وي۔ بيا !!{proof}~$\pi'$ دا دے:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$\Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+چې $\pheight{\pi'} \le \pheight{\pi}$ دے۔
+
+د کميت‌ښودونکو د قواعدو په هغو صورتونو کښې ځانګړے پام
+ضروري دے چې !!{formula} اصلي وي۔
+
+فرض کړئ $!A \ident \lforall[x][!B(x)]$ په ښۍ خوا کښې اصلي
+دے۔ نو $\pi$ داسې پاے ته رسېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, \lforall[x][!B(x)], !B(a)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)], \lforall[x][!B(x)]$
+\DisplayProof
+\]
+د \olref{lem:invert-quant} له مخې، !!a{proof}~$\pi_1'$ شته
+چې !!{height} ئې $\le \pheight{\pi_1}$ وي او د $\Gamma \fCenter \Delta, !B(c),
+!B(a)$ دپاره وي، د هر هغه~$c$ دپاره چې په $\Gamma \fCenter \Delta,
+\lforall[x][!B(x)], !B(a)$ کښې نۀ راځي۔ فرض کولے شو چې
+$\pi_1'$ منظم دے او د بدلولو دواړه ثابتونه پکې د ځانګړو متغيرونو نومونه نۀ دي؛ دا د نومونو په تازه کولو سره بې له دې چې وروستے سېکوېنټ يا لوړوالے بدل شي، حاصلېږي۔ نو د \olref[qua]{lem:subst-regular} له مخې،
+!!{proof} $\Subst{\pi_1'}{a}{c}$ د $\Gamma \fCenter \Delta, !B(a),
+!B(a)$ !!a{proof} دے چې !!{height} ئې هم $\le \pheight{\pi_1}$ دے۔
+اوس د استقرا فرضيه تطبيقېږي او !!a{proof}~$\pi_1''$ د $\Gamma
+\fCenter \Delta, !B(a)$ دپاره راکوي۔ د \RightR{\lforall} قاعده
+تطبيق کړئ، څو~$\pi'$ ترلاسه کړئ:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B(a)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+چې $\pheight{\pi'} \le \pheight{\pi}$ دے۔
+
+اوس فرض کړئ $!A \ident \lexists[x][!B(x)]$ دے
+او په ښۍ خوا کښې اصلي دے۔ نو $\pi$ داسې ښکاري:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, \lexists[x][!B(x)], \lexists[x][!B(x)], !B(t)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!B(x)], \lexists[x][!B(x)]$
+\DisplayProof
+\]
+د استقرا فرضيه پر~$\pi_1$ تطبيقېږي، او
+!!a{proof}s~$\pi_1'$ د $\Gamma \Sequent \Delta, \lexists[x][!B(x)],
+!B(t)$ دپاره شته۔ (په ياد ولرئ چې دلته د معکوسولو لمّې ته
+هېڅ اړتيا نۀ شته!) بيا !!{proof}~$\pi'$ دا دے:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta,  \lexists[x][!B(x)], !B(t)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!B(x)]$
+\DisplayProof
+\]
+چې $\pheight{\pi'} \le \pheight{\pi}$ دے۔
+\end{proof}
+
+\begin{prob}
+د \olref{prop:G3c-cont-adm} د ثبوت خاکه د \LeftR{\Contraction}
+دپاره ورکړئ۔ هغه صورتونه بيان کړئ چې $!A \ident (!B \land !C)$
+او $!A \ident (!B
+\lif !C)$ وي۔
+\end{prob}
+
+\begin{prob}
+د \olref{prop:G3c-cont-adm} د ثبوت خاکه د \LeftR{\Contraction}
+دپاره د کميت‌ښودونکو په پاتې صورتونو کښې ورکړئ، يعنې هلته
+چې $!A \ident
+\lforall[x][!B(x)]$ او $!A \ident \lexists[x][!B(x)]$ وي۔
+\end{prob}
+
+\end{document}

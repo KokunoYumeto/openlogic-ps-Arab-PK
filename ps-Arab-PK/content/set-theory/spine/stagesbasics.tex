@@ -7,8 +7,8 @@
 
 د $V_\alpha$ ګانو د تعريف د بنسټيز اهميت د څرګندولو دپاره به ځينې
 بنسټيزې نتيجې وړاندې کړو. په يوه تعريف پېل کوو:\footnote{د دې خاصيت
-دپاره معياري اصطلاح نشته؛ اصلي متن ئې «potent» بولي، د \citet{ButtonLT1}
-د نومولو په تعقيب. دلته ئې پښتو بڼه «توانمن» اخيستل شوې ده.}
+دپاره «توانمن» د \citet{ButtonLT1} د «potent» اصطلاح
+ژباړه ده۔ د دې خاصيت لپاره يو منلے معياري نوم نشته۔}
 \begin{defn}
 	سټ $A$ \emph{توانمن} دے، که او يوازې که $\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ وي.
 \end{defn}
@@ -31,8 +31,10 @@
 د $\alpha = \emptyset$ حالت څرګند دے.
 
 فرض کړئ $\alpha = \ordsucc{\beta}$ دے. د \olref{Valphacum} د ښودلو
-دپاره، که $\gamma \in \alpha$ وي، نو $V_\gamma \subseteq V_\beta$ د فرض
-له مخې دے، نو $V_\gamma \in \Pow{V_\beta} = V_\alpha$ دے.
+دپاره، که $\gamma \in \alpha$ وي، نو $V_\gamma \subseteq V_\beta$ دے۔
+که شاخصونه برابر وي، دا د سټ له ځان سره د احتوا له مخې
+دے؛ او که لومړے شاخص کوچنے وي، د استقرا له فرضه راځي۔
+نو $V_\gamma \in \Pow{V_\beta} = V_\alpha$ دے۔
 د \olref{Valphapotent} د ښودلو دپاره فرض کړئ $A \subseteq B \in V_\alpha$
 دي، يعنې $A
 \subseteq B \subseteq V_\beta$؛ نو $A \subseteq V_\beta$ دے، نو $A \in
@@ -47,7 +49,10 @@ $x
 دي، نو $V_\gamma \in V_{\ordsucc{\gamma}}$ د فرض له مخې دے، او له دې
 $V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$ دے.
 د \olref{Valphatrans} او \olref{Valphapotent} د ښودلو دپاره يوازې وګورئ
-چې د متعدي سټونو اتحاد متعدي دے، او د توانمنو سټونو اتحاد توانمن دے.
+چې په اتحاد کښې د يوه غړي لپاره يو شاهد سټ شته چې هغه
+غړے رانغاړي۔ که شاهد متعدي وي، د غړي نور غړي هم په شاهد
+او اتحاد کښې دي۔ که شاهد توانمن وي، د غړي فرعي سټونه هم
+په شاهد او اتحاد کښې دي۔
 \end{proof}
 
 \begin{lem}\ollabel{Valphanotref}

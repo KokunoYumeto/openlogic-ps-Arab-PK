@@ -136,16 +136,12 @@ $(d)_{\len{d}-1}$ د هغه د پاې-!!{formula} ګوډل شمېره راکوي
   $\Subst{!A(x)}{c}{x}$ يوه !!a{sentence} ده؛ او دا چې $c$ په~$!B$
   کښې نۀ راځي، په دې شرط باوروو چې د~$!B$ هر سمبول له~$c$ څخه بېل
   وي۔
-  \textbf{د ژباړې د نسخې سمون (OLCMP-081):} سرچينې د مخکښې کرښې
-  شاخص~$j$ کاراوه خو $j<i$ ئې کمیت ايښودلے نۀ و، او ورپسې تشريح کښې
-  ئې په تېروتنه د~$a$ پر ځاے د ثابت~$c$ حد ياد کړے و۔ دلته ورک
-  محدود کمیت ورزيات او تشريح له ښودل شوي شرط سره برابره شوې ده۔
 
   د \QR{} بله بڼه د تمرین دپاره پرېږدو۔
 \item $d$ هله د يوه سم !!{derivation} ګوډل شمېره ده چې هره کرښه ئې
-  بديهي اصل وي، يا په مودوس پوننس يا~\QR{} توجيه شوې وي۔ نو:
+  بديهي اصل وي، يا په مودوس پوننس يا~\QR{} توجيه شوې وي۔ اشتقاق لږ تر لږه يوه کرښه لري۔ نو:
   \[
-  \fn{Deriv}(d) \defiff \bforall{i < \len{d}}{(\fn{IsAx}((d)_i) \lor
+  \fn{Deriv}(d) \defiff \len{d}>0 \land \bforall{i < \len{d}}{(\fn{IsAx}((d)_i) \lor
     \fn{MP}(d,i) \lor \fn{QR}(d, i))}
   \]
 \end{enumerate}
@@ -203,15 +199,11 @@ $\Proves(!B_1\lif(!B_2\lif\cdots(!B_n\lif !A)\cdots))$ وي۔ دا چې
   \concat \fn{hCond}(s, y, n) \concat \Gn{)}\\
   \fn{Cond}(s, y) & = \fn{hCond}(s, y, \len{s})\\
   \intertext{نو $\Prf[\Gamma](x,y)$ داسې تعريفولے شو:}
-  \Prf[\Gamma](x, y) & \defiff \bexists{s < \fn{sequenceBound}(x,x)}{(} \\
+  \Prf[\Gamma](x, y) & \defiff \fn{Sent}(y) \land \bexists{s < \fn{sequenceBound}(x,x)+1}{(} \\
   &\qquad (x)_{\len{x}-1} = \fn{Cond}(s,y) \land {} \\
   &\qquad\bforall{i<\len{s}}{(s)_i \in \Gamma} \land {} \\
   &\qquad\fn{Deriv}(x)).
 \end{align*}
-\textbf{د ژباړې د نسخې سمون (OLCMP-082):} سرچينې د
-$\fn{hCond}$ په بازګشتي معادله کښې پر ښي لوري $\fn{Cond}$ کاراوه،
-سره له دې چې $\fn{Cond}$ يوازې په ورپسې کرښه د بشپړې مرستندويې تابع
-له لارې تعريفېږي۔ دلته بازګشتي غږ بېرته $\fn{hCond}$ ته شوے دے۔
 د~$s$ حد له دې څخه راځي چې هر $(s)_i$ د !!{derivation} د وروستۍ
 کرښې د يوه فرعي-!!{formula} ګوډل شمېره ده؛ يعنې له
 $(x)_{\len{x}-1}$ څخه وړه ده۔ د مقدماتو~$!B \in \Gamma$ شمېر،

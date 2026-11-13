@@ -3,11 +3,11 @@
 \begin{document}
 
 \olfileid{sth}{choice}{hartogs}
-\olsection{د پرتلې وړتيا او د هارتوګس لم}
+\olsection{د پرتلې وړتيا او د هارتوګس لمه}
 
-دا يې ښه اړخ و۔ اوس بد اړخ ته راځو۔ بې له انتخابه
-چارې \emph{ګډې وډې} کېږي۔ د دې د ليدو دپاره د
-\cite{Hartogs1915} دا ښکلې پايله وګورئ:
+بې له ټاکنې د هرې جوړې د اندازو پرتله نۀ شي ثابتېدې۔
+د \cite{Hartogs1915} لاندې پايله د دې خبرې په ثبوت
+کښې کارېږي۔
 
 \begin{lem}[\emph{په $\ZF$ کښې}]\ollabel{HartogsLemma}
 د هر سټ $A$ دپاره داسې ترتيبي عدد $\alpha$ شته
@@ -16,7 +16,7 @@
 
 \begin{proof}
 که $B \subseteq A$ او $R \subseteq B^2$ وي، نو
-\olref[ord-arithmetic][using-addition]{rankcomputation}
+د \olref[ord-arithmetic][using-addition]{rankcomputation}
 له مخې $\tuple{B, R} \subseteq
 V_{\setrank{A}+4}$ وي۔ نو د بېلونې په
 کارولو دا سټ په پام کښې ونيسئ:
@@ -34,24 +34,23 @@ V_{\setrank{A}+4}$ وي۔ نو د بېلونې په
 $\alpha$ ترتيبي عدد دے، ځکه دا د ترتيبي عددونو انتقالي
 سټ دے۔ ځکه که $\gamma \in \beta \in \alpha$ وي، نو
 $\beta = \ordtype{B, R}$ د داسې کوم
-$B \subseteq R$ دپاره وي، او بيا
+$B \subseteq A$ دپاره وي، او بيا
 $\gamma = \ordtype{B_b, R_b}$ د کوم $b
 \in B$ دپاره وي، د
-\olref[ordinals][iso]{wellordinitialsegment} له مخې؛
+\olref[ordinals][iso]{wellordinitialsegment} له مخې۔
+دا پيلنۍ برخه هم د اصلي سټ پر فرعي سټ ښه ترتيب دے،
 نو $\gamma \in \alpha$۔
-\textbf{د سرچينې يادښت (OLSTH-023):} په تېر چاپي استدلال
-کښې د فرعي سټ نسبت د مخکيني سټ پر ځاے له اړيکې سره
-تړل شوے دے۔ دا د تعريف له شرط سره نه لګېږي۔ چاپي
-رياضيکي نښه هماغسې ساتل شوې او دا تېروتنه نه ده رغول شوې۔
 
 د تناقض دپاره فرض کړئ چې
 !!a{injection} $f \colon \alpha \to A$ شته۔
 بيا چې:
 \begin{align*}
 	B &= \ran{f}\\
-	R &= \Setabs{\tuple{f(\alpha), f(\beta)} \in A \times A}{\alpha \in \beta}.
+	R &= \Setabs{\tuple{f(\xi), f(\eta)} \in A \times A}{\xi,\eta\in\alpha \text{ او } \xi\in\eta}.
 \end{align*}
-څرګنده ده چې $\alpha = \ordtype{B, R}$ او
+دا اړيکه د غړيتوب ترتيب د تابعې حاصل ته لېږدوي۔
+ځکه تابع يو پر يو ده او پر خپل حاصل باندې ده، د دواړو
+ترتيبونو هم‌شکلي ده۔ نو $\alpha = \ordtype{B, R}$ او
 $\tuple{B, R} \in C$۔ نو $\alpha
 \in \alpha$، چې تناقض دے۔
 \end{proof}

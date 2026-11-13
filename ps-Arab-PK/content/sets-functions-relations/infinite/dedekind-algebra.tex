@@ -30,24 +30,19 @@
 \olref{repeatedapplication} نشو سمبالولے۔ د ډېډېکېنډ ستره بريا دا وه
 چې شرط \olref{repeatedapplication} ئې په سټي بڼه داسې بيا بيان کړ:
 \begin{enumerate}
-	\item[3$'$.] طبيعي عددونه تر ټولو کوچنے سټ دے چې \emph{د تالي
-	تابعې له مخې بند} دے: يعنې که $s$ د سټ پر هر !!{element} تطبيق
+	\item[3$'$.] طبيعي عددونه تر ټولو کوچنے سټ دے چې صفر پکښې غړے وي او
+	\emph{د تالي تابعې له مخې بند} وي: يعنې که $s$ د سټ پر هر !!{element} تطبيق
 	کړو، د سټ يو بل !!{element} ترلاسه کوو۔
 \end{enumerate}
 خو دا خبره بايد ورو ورو په تفصيل وليکو۔
 
 \begin{defn}\ollabel{Closure}
-	د هرې تابع $f$ دپاره، سټ $X$ د $f$ له مخې \emph{بند} {هله او يوازې هله چې}
-	$(\forall x \in X)f(x) \in X$ وي۔ اوس د هر $o$ دپاره تعريف کړئ:
-	$$\closureofunder{f}{o} = \bigcap\Setabs{X}{o \in X\text{ او }X
+	فرض کړئ $f\colon A\to A$ يوه تابعه ده۔ د $A$ فرعي سټ
+	$X$ د $f$ له مخې \emph{بند} هله او يوازې هله دے چې
+	$(\forall x \in X)f(x) \in X$ وي۔ اوس د هر $o\in A$ دپاره تعريف کړئ:
+	$$\closureofunder{f}{o} = \bigcap\Setabs{X\subseteq A}{o \in X\text{ او }X
 \text{ د $f$ له مخې بند دے}}$$
 \end{defn}
-\textbf{د ژباړې د نسخې سمون (OLINF-001):} د «هرې تابع» دا بيان
-په پټه دا فرضوي چې تابع د يوه چاپېريال سټ له ځان څخه ځان ته ده او
-ټول څېړل شوي سټونه ئې د ډومېن دننه دي۔ که دا شرط ونۀ منل شي، د
-ډومېن څخه بهر د غړي د تابعې قيمت تعريف نۀ لري او د رېنج او ټاکلي
-غړي اتحاد هم لازماً د تابعې له مخې بند نۀ وي۔ لاندې کارونې همدا
-ځان-ته-تابع حالت لري۔
 
 نو $\closureofunder{f}{o}$ د ټولو هغو سټونو اشتراک دے چې د $f$ له
 مخې بند دي او $o$ ئې يو !!a{element} دے۔ په وجداني ډول، نو
@@ -55,7 +50,7 @@ $\closureofunder{f}{o}$ تر ټولو \emph{کوچنے} داسې د $f$ له م�
 سټ دے چې $o$ ئې يو !!a{element} دے۔ راتلونکې پايله دا وجداني خبره
 دقيقه کوي؛
 \begin{lem}\ollabel{closureproperties}
-	د هرې تابع $f$ او هر $o \in A$ دپاره:
+	د هرې تابعې $f\colon A\to A$ او هر $o \in A$ دپاره:
 	\begin{enumerate}
 		\item\ollabel{closurehaselem} $o \in \closureofunder{f}{o}$؛ او
 		\item\ollabel{closureclosed} $\closureofunder{f}{o}$ د $f$ له مخې بند دے؛ او
@@ -66,9 +61,11 @@ $\closureofunder{f}{o}$ تر ټولو \emph{کوچنے} داسې د $f$ له م�
 
 \begin{proof}
 پام وکړئ چې لږ تر لږه يو داسې سټ شته چې د $f$ له مخې بند دے او $o$
-ئې يو !!a{element} دے، يعنې $\ran{f}\cup \{o\}$۔ نو
-$\closureofunder{f}{o}$، چې د دې \emph{ټولو} سټونو اشتراک دے، شتون
-لري۔ اوس بايد \olref{closurehaselem}--\olref{closuresmallest} وارزوو۔
+ئې يو !!a{element} دے، يعنې $\ran{f}\cup \{o\}$۔ دا د
+ساحې فرعي سټ دے، او د هر غړي ارزښت يې د تابعې په حاصل کښې
+دے۔ د ټولو مناسبو فرعي سټونو کورنۍ د فرعي سټونو له سټه په
+بېلونه اخلو۔ نو $\closureofunder{f}{o}$، چې د دې \emph{ټولو}
+سټونو اشتراک دے، شتون لري۔ اوس بايد \olref{closurehaselem}--\olref{closuresmallest} وارزوو۔
 
 د \olref{closurehaselem} په اړه: $o \in \closureofunder{f}{o}$،
 ځکه دا د هغو سټونو اشتراک دے چې په ټولو کښې $o$ يو !!a{element} دے۔

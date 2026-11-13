@@ -79,9 +79,9 @@ $\Gamma \Entails !B$ او $\Gamma \Entails !B \lif !A$۔ بيا د
 له مخې $\Gamma \Entails !A$۔
 
 \iftag{FOL}{اوس فرض کړئ وروستنے ګام په~\QR توجيه شوے دے۔ بيا هغه
-ګام د~$!C \lif \lforall[x][B(x)]$ بڼه لري، او ترې مخکښې ګام
+ګام د~$!C \lif \lforall[x][!B(x)]$ بڼه لري، او ترې مخکښې ګام
 $!C \lif !B(c)$ دے، چې $c$ په~$\Gamma$، $!C$ يا
-$\lforall[x][B(x)]$ کښې نۀ راځي۔ د استقرا د فرضيې له مخې
+$\lforall[x][!B(x)]$ کښې نۀ راځي۔ د استقرا د فرضيې له مخې
 $\Gamma \Entails !C \lif !B(c)$۔ د
 \olref[syn][sem]{thm:sem-deduction} له مخې
 $\Gamma \cup \{!C\} \Entails !B(c)$۔
@@ -99,10 +99,7 @@ $\Assign{c}{M'} = s(x)$ وي۔ ځکه $c$ په~$\Gamma$ يا~$!C$ کښې نۀ
 راځي، د~\olref[syn][ext]{cor:extensionality-sent} له مخې
 $\Sat{M'}{\Gamma \cup \{!C\}}$۔ ځکه
 $\Gamma \cup \{!C\} \Entails !B(c)$، نو $\Sat{M'}{!B(c)}$۔
-\textbf{د ژباړې د نسخې سمون (OLAX-010):} سرچينې په دې پوره کېدو
-ادعا کښې د بي-سي د ميتا-فارمول نښه پرېښې وه؛ په مخکښې لازميت او
-ورپسې ټولو استعمالونو کښې همدا نښه موجوده ده، نو دلته بېرته
-راوستل شوه۔ ځکه $!B(c)$ يوه !!a{sentence} ده، د
+ځکه $!B(c)$ يوه !!a{sentence} ده، د
 \olref[syn][ass]{prop:sentence-sat-true} له مخې
 $\Sat{M'}{!B(c)}[s]$۔ د~\olref[syn][ext]{prop:ext-formulas} له مخې
 $\Sat{M'}{!B(x)}[s]$ هله او يوازې هله چې

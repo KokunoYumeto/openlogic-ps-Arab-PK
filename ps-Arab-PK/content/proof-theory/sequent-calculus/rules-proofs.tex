@@ -1,0 +1,124 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{rp}
+
+\olsection{قواعد او \usetoken{P}{proof}}
+
+لومړے ځينې تعريفونه ورکوو او د اړوندو اصطلاحاتو معنا ټاکو۔
+
+د بېلګې په توګه، د \Log{G3c} هغه دوه قواعد وګورئ چې په $!A \land !B$ لرونکو سېکوېنټونو کښې له $!A$ او~$!B$ لرونکو سېکوېنټونو څخه د !!{proving} اجازه ورکوي:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\DisplayProof
+\]
+د کرښې د پاسه سېکوېنټونو ته \emph{مقدمې} او تر کرښې لاندې سېکوېنټ ته \emph{پايله} وايو۔ په هره قاعده کښې د $\Gamma$ او $\Delta$ !!{formula}s \emph{سياق} يا \emph{اړخيز !!{formula}s} بلل کېږي۔ په پايله کښې هغه !!{formula} چې د سياق برخه نۀ ده، \emph{اصلي} !!{formula} بلل کېږي؛ او په مقدماتو کښې له سياق څخه بهر !!{formula}s ته \emph{فعال} يا \emph{مرستيال} !!{formula}s وايو۔
+
+د کميت‌ښودونکو قواعد لږ پېچلي دي۔ د بېلګې په توګه، په \Log{G1c} کښې د $\lforall$ قواعد داسې دي:
+\[\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\]
+په \LeftR{\lforall} کښې فعال !!{formula}~$!A(t)$ دے، چې $t$~تړلے ترم دے، يعنې متغير نۀ لري۔ دا استنتاج هغه وخت صحيح، يعنې د \LeftR{\lforall} له شېما سره برابر دے، چې داسې !!{formula}~$!A$، متغير~$x$ او تړلے ترم~$t$ شته چې د پايلې اصلي !!{formula} $\lforall[x][!A]$ او د مقدمې فعال !!{formula}~$\Subst{!A}{t}{x}$ وي۔ د \RightR{\lforall} قاعده هم همداسې ده، خو د هر ترم~$t$ پر ځاے په مقدمه کښې فعال !!{formula} بايد~$\Subst{!A}{a}{x}$ وي، چې $a$ يو !!a{constant} دے۔ دغه ثابت د \RightR{\lforall} د استنتاج \emph{ځانګړے متغير} بلل کېږي۔ استنتاج يوازې هغه وخت صحيح دے چې په لاندې سېکوېنټ کښې~$a$ نۀ وي؛ يعنې $a$ په $\Gamma$، $\Delta$ يا~$!A$ کښې رانۀ شي۔ دې ته \emph{د ځانګړي متغير شرط} وايو۔
+
+د \Log{G1c} او \Log{G3c} په څېر سېکوېنټي نظامونه د شېما په بڼه له ټاکلو قواعدو او ځينو سېکوېنټونو څخه جوړ دي چې بديهي اصول ګڼل کېږي او هغه هم د شېما په بڼه ټاکل شوي دي۔ په دغه نظام کښې !!^{proof}s د سېکوېنټونو متناهي ونې دي چې له بديهي اصولو څخه د استنتاج په قواعدو، په استقرايي ډول جوړېږي۔ هره پاڼه بديهي اصل دے؛ هر بل سېکوېنټ د نظام په يوه قاعده د پاسه نېغو سېکوېنټونو څخه اخيستل کېږي۔
+
+\begin{defn}\ollabel{defn:proof}
+په سېکوېنټي نظام کښې \emph{!!^{proof}s} د سېکوېنټونو متناهي ونې دي چې داسې استقرايي تعريفېږي:
+\begin{enumerate}
+  \item\ollabel{defn:prf:axiom} هر بديهي اصل !!a{proof} دے۔
+  \item\ollabel{defn:prf:one-prem} که $\pi_1$ داسې !!a{proof} وي چې په سېکوېنټ~$S_1$ ختمېږي، او $S$ هغه سېکوېنټ وي چې له~$S_1$ څخه په يوه‌مقدمه‌ييزه قاعده~$R$ اخيستل کېږي، نو
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$S$}
+  \DisplayProof
+  \]
+  !!a{proof} دے۔
+  \item\ollabel{defn:prf:two-prem} که $\pi_1$ او $\pi_2$ داسې !!{proof}s وي چې په ترتيب سره په سېکوېنټونو~$S_1$ او~$S_2$ ختمېږي، او $S$ هغه سېکوېنټ وي چې له~$S_1$ او $S_2$ څخه په دوه‌مقدمه‌ييزه قاعده~$R$ اخيستل کېږي، نو
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \DeduceC{$S_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$S$}
+  \DisplayProof
+  \]
+  !!a{proof} دے۔
+\end{enumerate}
+\end{defn}
+
+\Olref{defn:proof} !!{proof}s د سېکوېنټونو د ونو په توګه تعريفوي۔ ونې داسې انګېرو چې «پورته» لوري ته غځېږي۔ تر ټولو پورته غوټې، يعنې پاڼې، بديهي اصول دي او \emph{لومړني سېکوېنټونه} بلل کېږي۔ تر ټولو لاندې سېکوېنټ ته \emph{وروستے سېکوېنټ} وايو۔ که $\pi$ د وروستي سېکوېنټ~$S$ !!a{proof} وي، نو $\pi \Proves S$ هم ليکو۔ که د سېکوېنټ~$S$ !!a{proof} شته، $\Proves S$ ليکو؛ کله کله د $\Proves$ نښې کيڼ لوري ته هغه نظام هم ليکو چې ثبوت پکې شته، لکه $\Log{G1c} \Proves !A, !B \Sequent !A \land
+!B$۔ له لومړنيو سېکوېنټونو پرته په !!a{proof} کښې هر سېکوېنټ د کومې قاعدې~$R$ د استنتاج \emph{پايله} ده۔ يو يا دوه سېکوېنټونه چې په !!a{proof} کښې نېغ د هغه د پاسه دي، يعنې د غوټې مورني غړي، د استنتاج \emph{مقدمې} دي۔
+
+هغه !!{proof}s چې د !!a{proof} په استقرايي جوړولو کښې کارېږي، د هغه \emph{فرعي !!{proof}s} بلل کېږي۔ هغه فرعي !!{proof}s چې د استنتاج په مقدماتو ختمېږي، د هغه استنتاج \emph{نېغ فرعي !!{proof}s} دي۔
+
+ډېر ځله د !!{proof}s پېچلتيا په يوه طبيعي شمېره اندازه کوو۔ په !!a{proof} کښې د سېکوېنټونو شمېر اخيستلے شو، خو ډېر ځله د !!a{proof} !!{height} غوره اندازه وي: د وروستي سېکوېنټ او يوه لومړني سېکوېنټ تر منځ په تر ټولو اوږده څانګه کښې د استنتاجونو شمېر دے۔ استقرايي تعريف ئې هم ورکولے شو۔
+
+\begin{defn}
+د !!a{proof}~$\pi$ \emph{!!{height}}~$\pheight{\pi}$ داسې استقرايي تعريفېږي:
+\begin{enumerate}
+  \item که $\pi$ يوازې يو بديهي اصل وي، نو $\pheight{\pi} = 0$۔
+  \item که $\pi$ په يوه‌مقدمه‌ييز استنتاج ختمېږي چې نېغ فرعي !!{proof}~$\pi_1$ لري، نو $\pheight{\pi} = \pheight{\pi_1} + 1$۔
+  \item که $\pi$ په دوه‌مقدمه‌ييز استنتاج ختمېږي چې نېغ فرعي !!{proof}s~$\pi_1$ او~$\pi_2$ لري، نو $\pheight{\pi} =
+  \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$۔
+\end{enumerate}
+که سېکوېنټ~$S$ داسې !!a{proof} ولري چې لوړوالے ئې $\le n$ وي، نو $\Proves[n] S$ ليکو۔
+\end{defn}
+
+\begin{ex}
+په \Log{G3c} کښې د $!C, \Gamma \Sequent \Delta, !C$ په بڼه هر سېکوېنټ بديهي اصل دے، چې $!C$ بايد اتومي وي۔ فرض کړئ $!D$ او $!E$ اتومي جملې دي۔ نو $!D, !E \Sequent !D$ او $!D, !E \Sequent !E$ د $!C, \Gamma \Sequent \Delta, !C$ بديهي اصل بېلګې دي۔ د بېلګې په توګه، که $!C \ident !E$، $\Gamma = \{!D\}$ او $\Delta = \emptyset$ په $!C, \Gamma \Sequent \Delta, !C$ کښې واخلو، نو عين $!D, !E
+\Sequent !E$ سېکوېنټ ترلاسه کوو۔ (په ياد ولرئ چې دلته څوګونې \emph{مجموعې} دي، نو $!D, !E \Sequent !E$ او $!E, !D \Sequent !E$ يو سېکوېنټ دي۔)
+
+څرنګه چې $!D, !E \Sequent !D$ د~\Log{G3c} د يوه بديهي اصل بېلګه ده، نو پخپله په~\Log{G3c} کښې !!a{proof} شمېرل کېږي؛ د \olref{defn:proof}\olref{defn:prf:axiom} له مخې $!D, !E
+\Sequent !E$ هم همداسې دے۔ دې دواړو ته $\pi_1$ او~$\pi_2$ وايو۔ د \olref{defn:prf:two-prem} له مخې له دغو دوو !!{proof}s څخه د دوه‌مقدمه‌ييزې قاعدې~$\RightR{\land}$ په کارولو يو نوے ثبوت ($\pi_3$) جوړولے شو:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\DisplayProof
+\]
+بيا له $\pi_3$ څخه د يوه‌مقدمه‌ييزې قاعدې~$\LeftR{\land}$ په کارولو (د \olref{defn:proof}\olref{defn:prf:one-prem} له مخې) دا !!{proof}~$\pi_4$ اخلو:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\insertBetweenHyps{\hspace{5ex}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\LeftSubproofLabel{$\pi_3$}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!D \land !E  \fCenter !D \land !E$
+\RightSubproofLabel{$\pi_4$}
+\DisplayProof
+\]
+په~$\pi_4$ کښې د وروستي استنتاج نېغ فرعي !!{proof}~$\pi_3$ دے۔ د $\RightR{\land}$ د استنتاج نېغ فرعي !!{proof}s $\pi_1$ او~$\pi_2$ دي۔ د $\pi_4$ فرعي !!{proof}s $\pi_1$، $\pi_2$، $\pi_3$ او پخپله $\pi_4$ دي۔ لرو: $\pheight{\pi_1} =
+\pheight{\pi_2} = 0$، $\pheight{\pi_3} = 1$ او $\pheight{\pi_4} = 2$۔ ومو ښودل چې د هر اتومي $!D$ او~$!E$ دپاره $\Log{G3c} \Proves[4] !D \land !E  \fCenter !D
+\land !E$۔
+\end{ex}
+
+\end{document}

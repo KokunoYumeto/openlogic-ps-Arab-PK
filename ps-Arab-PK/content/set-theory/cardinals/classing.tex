@@ -44,8 +44,6 @@ $n \neq m$۔ د درې‌ګوني وېش له مخې يا $n \in m$ يا $m \in 
 \begin{enumerate}
 	\item\ollabel{card:notinomega} $\card{A} \notin \omega$، يعنې
 	د $A$ اصلي شمېر طبيعي عدد نۀ دے؛
-	\textbf{د سرچينې يادښت (OLSTH-018):} چاپي متن دلته د سټ
-	پخپله طبيعي عدد نۀ کېدل وايي؛ دا د ښودل شوي شرط معنا نه ده۔
 	\item\ollabel{card:omegaplus} $\omega \leq \card{A}$؛
 	\item\ollabel{card:infinite} $A$ د ډېډېکېنډ په معنا نامتناهي دے۔
 \end{enumerate}
@@ -54,7 +52,11 @@ $n \neq m$۔ د درې‌ګوني وېش له مخې يا $n \in m$ يا $m \in 
 \begin{proof}
 دا د \olref[ord-arithmetic][using-addition]{ordinfinitycharacter}،
 \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} او
-\olref{naturalsarecardinals} له مخې دي۔
+\olref{naturalsarecardinals} له مخې دي۔ د سټ او د هغه د
+اصلي عدد تر منځ دوه اړخيز يو پر يو سمون د ډېډېکېنډ په معنا
+نامتناهي والى دواړو لورو ته لېږدوي: يو پر يو ځان‌تابعه د
+دغه سمون او د هغه د معکوس په وسيله بلې خوا ته وړو؛ له
+حاصل څخه بهر غړے هم ورسره لېږدېږي۔
 \end{proof}
 
 له دې سره هغه ځينې مفهومونه په \emph{رسمي ډول تعريفولے} شو چې
@@ -96,11 +98,14 @@ $\omega$ اصلي عدد دے، ځکه چې $\omega$ د ډېډېکېنډ په م
 \begin{proof}
 فرض کړئ $\alpha$ يو نامتناهي تالي ترتيبي عدد وي، نو
 $\alpha = \beta \ordplus 1$ د کوم $\beta$ دپاره دے۔ د
-\olref{finitecardisoequal} له مخې $\beta$ هم نامتناهي دے؛ نو د
+\olref{finitecardisoequal} په رڼا کښې د متناهي ترتيبي
+عدد تالی هم متناهي دے۔ نو $\beta$ هم نامتناهي دے؛ له دې امله د
 \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} له مخې
 $\cardeq{\beta}{\beta \ordplus 1}$۔ اوس د
 \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} له مخې
-$\card{\beta} = \card{\beta\ordplus 1} = \card{\alpha}$؛ نو
+$\card{\beta} = \card{\beta\ordplus 1} = \card{\alpha}$؛ خو
+د مخکني ترتيبي عدد اصلي عدد تر هماغه مخکني عدد لوی نۀ دے۔
+ځکه مخکنی ترتيبي عدد پخپله يو هم‌شمېره شاهد دے۔ نو
 $\alpha \neq \card{\alpha}$۔
 \end{proof}
 
@@ -122,6 +127,9 @@ $\card{A} \leq \omega$ وي؛ او $A$ هغه وخت او يوازې هغه وخ
 که $\card{A} \leq \omega$ وي، نو د
 \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} او
 \olref{omegaisacardinal} له مخې $\cardle{A}{\omega}$۔ له
+دې څخه شمېر وړتيا راځي، ځکه طبيعي عددونو ته يو پر يو تابعه
+د خپل حاصل پر سر يو دوه اړخيز سمون ورکوي۔ تش حاصل، متناهي
+حاصل او نامتناهي حاصل د اړوندې شمېرنې درې حالتونه دي۔ له
 \emph{چپې خوا ښۍ خوا ته}: که $A$ !!{enumerable} وي، نو د
 \olref[sfr][siz][enm-alt]{defn:enumerable} له مخې درې حالتونه دي:
 \begin{enumerate}
@@ -152,7 +160,7 @@ $\omega$ يوازينے !!{enumerable} نامتناهي اصلي عدد دے۔
 د درې‌ګوني وېش له مخې $\cardfont{a} = \omega$۔
 \end{proof}
 
-البته اصلي عددونه بې‌شمېره دي۔ نو پوښتنه کولے شو: \emph{څو
+د اصلي عددونو لړۍ نامتناهي ده۔ نو پوښتنه کولے شو: \emph{څو
 اصلي عددونه شته؟} لاندې پايلې ښيي چې ښايي دا پوښتنه له سره
 وڅېړو۔
 
@@ -167,8 +175,12 @@ $\alpha \in \cardfont{b} \in X$ د کوم اصلي عدد $\cardfont{b}$
 دپاره وي۔ ځکه چې $\cardfont{b}$ اصلي عدد دے،
 $\cardless{\alpha}{\cardfont{b}}$۔ ځکه چې $\cardfont{b}
 \subseteq \bigcup X$، نو $\cardle{\cardfont{b}}{\bigcup X}$،
-او له دې $\cardneq{\alpha}{\bigcup X}$۔ په عمومي کولو سره
-$\bigcup X$ اصلي عدد دے۔
+او له دې $\cardneq{\alpha}{\bigcup X}$۔ که دواړه
+هم‌شمېره واے، له لوی اتحاد څخه د سمون معکوس به د منځني
+اصلي عدد لپاره په کوچني عدد کښې يو پر يو تابعه ورکړې واے۔
+له دواړو يو پر يو تابعو به دوه اړخيز سمون راوتلے واے، چې
+له کلکې نابرابرۍ سره ټکر لري۔ په عمومي کولو سره
+$\bigcup X$ اصلي عدد دے؛ د تشې کورنۍ اتحاد هم صفر دے۔
 \end{proof}
 
 \begin{thm}\ollabel{lem:NoLargestCardinal}

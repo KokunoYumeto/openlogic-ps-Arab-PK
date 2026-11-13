@@ -220,10 +220,6 @@ $\fn{EndFmla}(d)=(d)_{(d)_0+1}$ د هغه د پاې-!!{formula} ګوډل
   \end{multline*}
   لومړۍ کرښه باوري کوي چې د~$d$ پاې-!!{formula} يوه جمله ده۔ وروستۍ
   کرښه هغه حالت رانغاړي چې $d$ يوازې يو فرض وي۔
-  \textbf{د ژباړې د نسخې سمون (OLCMP-079):} سرچينې د قاعدو او فرض
-  د فصل د ګروپ قوسونه پرېښي وو، نو د جملې شرط يوازې پر لومړي
-  بديل پلي کېده۔ دلته ټول بديلونه د هماغه $\fn{Sent}$ شرط لاندې
-  ګروپ شوي دي، لکه چې ورپسې تشريح ئې غواړي۔
 \end{proof}
 
 \begin{prob}
@@ -281,26 +277,18 @@ $\fn{EndFmla}(d)=(d)_{(d)_0+1}$ د هغه د پاې-!!{formula} ګوډل
   $!A$ د~$\delta$ يو !!a{undischarged} فرض دے۔
 
   بنسټيزه بازګشتي تابع $\fn{SubtreeSeq}(d)$ د~$\delta$ د ټولو
-  فرعي-!!{derivation}s د ګوډل شمېرو لړۍ راکوي۔ د~$\delta$ د
-  فرعي-!!{derivation}s د ګوډل شمېرو هره لړۍ د هغې يوه فرعي لړۍ ده۔
-  د فرعي لړۍ کېدل يوه بنسټيزه بازګشتي اړيکه ده:
+  فرعي-!!{derivation}s د ګوډل شمېرو لړۍ راکوي۔ د ريښې او پاڼې تر منځ د فرعي-!!{derivation}s د لارې هر کوډ د دغې لړۍ غړے دے۔ دلته يوازې د هر غړي شتون ازمويو؛ ترتيب او تکرار د غړيتوب په دغه ازموينه کښې شرط نۀ دي۔
   $\fn{Subseq}(s,s')$ هله صدق کوي چې
-  $\bforall{i<\len{s}}{\lexists[j<\len{s'}][(s)_i=(s')_j]}$۔ د
+  $\bforall{i<\len{s}}{\bexists{j<\len{s'}}{(s)_i=(s')_j}}$۔ د
   سمدستي فرعي-!!{derivation} کېدل هم داسې دي:
   $\fn{Subderiv}(d,d')$ هله صدق کوي چې
   $\bexists{j<(d')_0}{d=(d')_{j+1}}$۔
-  \textbf{د ژباړې د نسخې سمون (OLCMP-080):} د سرچينې ازموينې
-  $(d')_j$ کاراوه، خو په همدې تعريف شوي کوډ کښې $(d')_0$ د سمدستي
-  فرعي-اشتقاقونو شمېر دے او د هغو کوډونه له شاخص~$1$ څخه
-  پيلېږي۔ دلته $j+1$ کارول شوے، څو لومړے عددي سرليک ونه نيسي او
-  وروستے فرعي-اشتقاق پرې نۀ ږدي۔
-  نو $\fn{OpenAssum}(z,d)$ داسې تعريفولے شو:
+  د لارې اوږدوالے د کوډ د پرله‌پسې کمېدو له کبله تر ټولو زيات د ريښې کوډ جمع يو دے، او د هرې غوټې کوډ تر ريښې زيات نۀ دے۔ د لړۍ د کوډ حد له دغو دوو حدونو راځي۔ صفر د هغو فرضونو نښه ده چې له پيله پرانيستي دي؛ يوازې مثبته نښه د ختمولو په شرط کښې ګورو۔ نو $\fn{OpenAssum}(z,d)$ داسې تعريفولے شو:
   \begin{multline*}
-    \bexists{s<\fn{SubtreeSeq}(d)}{(\fn{Subseq}(s, \fn{SubtreeSeq}(d))
-      \land (s)_0 = d \land {}} \\
-    \bexists{n<d}{((s)_{\len{s} \tsub 1} = \tuple{0, z, n} \land {}}\\
-      \bforall{i<(\len{s} \tsub 1)}{(\fn{Subderiv}((s)_{i+1}, (s)_i) \land {}}\\
-      \fn{DischargeLabel}((s)_i) \neq n))).
+    \bexists{s<\fn{sequenceBound}(d,d+1)+1}{(\len{s}>0 \land (s)_0=d \land {}} \\
+    \bexists{n<d}{((s)_{\len{s}\tsub 1}=\tuple{0,z,n} \land {}} \\
+    \bforall{i<(\len{s}\tsub 1)}{(\fn{Subderiv}((s)_{i+1},(s)_i) \land {}} \\
+    (n=0 \lor \fn{DischargeLabel}((s)_i)\neq n)))).
   \end{multline*}
 \end{proof}
 
@@ -326,7 +314,7 @@ $\fn{EndFmla}(d)=(d)_{(d)_0+1}$ د هغه د پاې-!!{formula} ګوډل
   شو:
   \begin{align*}
     \Prf[\Gamma](x, y) \defiff {}
-    & \fn{Deriv}(x) \land \fn{EndFmla}(x) = y \land {} \\
+    & \fn{Sent}(y) \land \fn{Deriv}(x) \land \fn{EndFmla}(x) = y \land {} \\
     & \bforall{z < x}{(\fn{OpenAssum}(z, x) \lif R_\Gamma(z))}.
   \end{align*}
 \end{proof}

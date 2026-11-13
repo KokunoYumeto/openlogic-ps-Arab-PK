@@ -48,7 +48,7 @@ $\alpha \ordplus \beta = \ordtype{\alpha \disjointsum \beta, \rlexless}$۔
 \end{defn}
 \noindent
 پام وکړئ چې دلته مو د نښو په کارونه کښې لږ تساهل کړے دے؛ په کره
-ډول بايد «$\Setabs{\tuple{x,y}\in \alpha\disjointsum\beta}{x \rlexless y}$»
+ډول بايد «$\Setabs{\tuple{x,y}}{x,y\in\alpha\disjointsum\beta\land x \rlexless y}$»
 د «$\rlexless$» پر ځاے وليکو۔ خو د لنډيز دپاره به لاندې همدا
 تساهل روان ساتو۔
 
@@ -61,12 +61,17 @@ $\tuple{\alpha \disjointsum \beta, \rlexless}$ ښه ترتيب دے،
 \end{lem}
 
 \begin{proof}
-په څرګنده $\rlexless$ پر $\alpha \disjointsum \beta$ تړلې اړيکه ده۔
-د دې د ښه‌بنسټه والي د ښودلو دپاره ناتش
+$\rlexless$ پر $\alpha \disjointsum \beta$ يو کلک کلي
+ترتيب دے۔ د جوړې دويمې برخې لومړے پرتله کېږي؛ که برابرې
+وي، لومړۍ برخې پرېکړه کوي۔ د دواړو مختصونو کلک ترتيبي
+خاصيتونه د ځان پر وړاندې نۀ صدق، انتقالي والى او د بېلو
+جوړو پرتله تضمينوي۔ د دې د ښه‌بنسټه والي د ښودلو دپاره ناتش
 $X \subseteq \alpha \disjointsum \beta$ وټاکئ۔ $Y$ دې د $X$
 هغه فرعي سټ وي چې د غړو دويم مختص ئې تر ټولو کوچنے وي، يعنې
 $Y = \Setabs{\tuple{\gamma, i} \in X}{(\forall \tuple{\delta, j} \in X)i \leq j}$۔
 اوس د $Y$ هغه غړے وټاکئ چې لومړے مختص ئې تر ټولو کوچنے وي۔
+هغه په ټول فرعي سټ کښې هم تر ټولو کوچنے دے، ځکه هر بل غړے يا
+لوے دويم مختص لري، يا په همدې مختص کښې لوے يا برابر لومړے مختص لري۔
 \end{proof}
 \noindent
 په دې توګه د ترتيبي جمع يو ښه ښکاره تعريف لرو۔ يوه د تعجب وړ
@@ -83,9 +88,9 @@ $\alpha\disjointsum1 = (\alpha \times \{0\})
 \cup (\{0\} \times \{1\})$ پورې وګورئ؛ دا
 $f(\gamma) = \tuple{\gamma, 0}$ د $\gamma \in \alpha$ دپاره،
 او $f(\alpha) = \tuple{0, 1}$ ټاکي۔
-OLSTH-013: د سرچينې په ښودل شوي قيمت کښې دواړه برخې له مخکې
-ټاګ شوې دي؛ د دويمې ناګډې جمع پر ځاے د همدغو برخو عادي اتحاد
-ښودل شوے دے۔ د f قيمتونه نه دي بدل شوي۔
+په لومړۍ برخه کښې ترتيب د لومړي مختص له مخې ساتل کېږي۔
+وروستے غړے دويمې برخې ته ځي، چې يوازې همدا يو غړے لري۔
+نو دا تابعه يو پر يو او پوره ده او ترتيب په دواړو لورو ساتي۔
 \end{proof}
 \noindent
 سربېره پر دې، په اسانه ښودل کېږي چې جمع ځينې بازګشتي شرطونه
@@ -113,9 +118,8 @@ OLSTH-013: د سرچينې په ښودل شوي قيمت کښې دواړه بر�
 	&= \ordtype{(\alpha\times \{0\}) \cup (\beta \times \{1\}), \rlexless} \ordplus 1\\
 	&= (\alpha \ordplus  \beta) \ordplus  1
 \end{align*}
-OLSTH-014: د سرچينې په دويمه معادله کښې د تش سټ او د يوغړي
-سټ نښې سره ګډې شوې وې؛ د صفر او يوه د حاصل ضرب پر ځاے تش سټ
-راغلے دے۔ لومړۍ او وروستۍ معادلې عين دي۔
+له تشې برخې سره اتحاد لومړۍ برخه پر خپل حال پرېږدي۔
+د تالي په حالت کښې دويمه برخه يوازې يو وروستے غړے زياتوي۔
 اوس دې $\beta \neq \emptyset$ حدي وي۔ که $\delta < \beta$ وي،
 نو $\delta\ordplus 1 < \beta$ هم دے؛ له دې امله
 $\alpha \ordplus  \delta$ د $\alpha \ordplus  \beta$ يوه
@@ -124,7 +128,11 @@ $X = \Setabs{\alpha \ordplus  \delta}{\delta < \beta}$ کلکه
 پاسنۍ کرانه ده۔ سربېره پر دې، که
 $\alpha \leq \gamma < \alpha \ordplus  \beta$ وي، نو په ښکاره
 $\gamma = \alpha \ordplus \delta$ د کوم $\delta < \beta$
-دپاره دے۔ نو
+دپاره دے؛ ځکه له لومړۍ برخې وروسته هر مناسب پيلنے پرېکون
+د دويمې برخې يو پيلنے پرېکون اخلي۔ تر لومړۍ برخې کوچني
+شاخصونه د کورنۍ د لومړي غړي لاندې دي؛ نور کوچني شاخصونه
+پخپله د کورنۍ غړي دي۔ له دغو دواړو ډلو هېڅ يو شاخص کلک
+پاسنے حد نۀ شي کېدے۔ نو
 $\alpha \ordplus  \beta = \supstrict_{\delta< \beta}(\alpha\ordplus \delta)$۔
 \end{proof}
 
@@ -137,9 +145,11 @@ $\alpha \ordplus  \beta = \supstrict_{\delta< \beta}(\alpha\ordplus \delta)$۔
 نو د ترتيبي عددونو عمليې په دوو بېلو لارو تعريفولے شو۔ په
 \emph{ترکيبي} لاره يو ښه ترتيب شوے سټ په ښکاره جوړوو او د هغه
 د ترتيب ډول اخلو۔ يا ئې \emph{بازګشتي} لاره تعريفولے شو، يوازې
-د بازګښت معادلې په ايښودلو۔ که کار سم شوے وي، پايله يوه ده؛ ځکه
-\olref[ordinals][ordtype]{thmOrdinalRepresentation} تضمينوي چې
-دغه بازګشتي معادلې \emph{يوازيني} ترتيبي عددونه ټاکي۔
+د بازګښت معادلې په ايښودلو۔ دواړه طريقې يوه پايله ورکوي۔
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} په ترکيبي
+طريقه کښې د ترتيب ډول يو ترتيبي عدد ټاکي۔ د بازګښت د قضيې
+\emph{يوازينيت} بيا وايي چې د دغو معادلو هره پوره کوونکې
+تابعه هماغه ترتيبي جمع ورکوي۔
 
 په ډېرو اړخونو کښې د ترتيبي عددونو حساب د طبيعي عددونو د جمع
 په شان دے۔ د بېلګې په توګه، لاندې ثابتولے شو:
@@ -178,7 +188,11 @@ $(\alpha \ordplus  \beta) \ordplus  \delta = \alpha \ordplus  (\beta \ordplus
 که $\gamma$ حدي ترتيبي عدد وي، د استقرا له مخې فرض کړئ چې که
 $\delta \in \gamma$ وي، نو
 $(\alpha \ordplus  \beta) \ordplus  \delta =
-\alpha \ordplus  (\beta \ordplus  \delta)$؛ اوس:
+\alpha \ordplus  (\beta \ordplus  \delta)$۔ د لاندې محاسبې
+درېيمه برابري د جمع له حدي معادلې راځي۔ د ښي اړخ د جمع دويم
+حد پخپله يو حدي عدد دے، ځکه د مخکنيو پړاوونو جمعې په کلکه
+زياتېږي او تر هغه حده هم‌پايه دي۔ نو د ټولو کوچنيو شاخصونو
+پر ځاے همدغه هم‌پايه شاخصونه د کلک پاسني حد لپاره بس دي:
 \begin{align*}
 	(\alpha \ordplus  \beta) \ordplus  \gamma & = \supstrict_{\delta < \gamma}((\alpha \ordplus  \beta) \ordplus  \delta) \\
 	&= \supstrict_{\delta < \gamma}(\alpha \ordplus  (\beta \ordplus  \delta))\\

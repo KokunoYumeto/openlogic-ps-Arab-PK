@@ -1,0 +1,96 @@
+% Part: propositional-logic
+% Chapter: propositional-logic 
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{com}
+
+\olsection{د قضيوي منطق بشپړتيا}
+
+\begin{defn}
+\ollabel{def:MaxCon}
+د !!{formula}s سټ $\Gamma$ هغه وخت \emph{اعظمي سازګار} دے چې پخپله سازګار وي او، که $\Delta$ داسې سازګار سټ وي چې $\Gamma
+\subseteq \Delta$، نو $\Gamma = \Delta$۔
+\end{defn}
+
+\begin{lem}[د رښتينولۍ لمه]
+  \ollabel{lem:truth}
+فرض کړئ $\Gamma$ اعظمي سازګار دے۔ بيا:
+\begin{enumerate}
+\item \ollabel{lem:truth-1} $!A \in \Gamma$ هغه او يوازې هغه وخت چې $\lnot !A
+  \notin \Gamma$؛
+\item \ollabel{lem:truth-2} $\Gamma \Proves !A$ هغه او يوازې هغه وخت چې $!A \in \Gamma$؛
+\item \ollabel{lem:truth-3} $!A \lif !B \in \Gamma$ هغه او يوازې هغه وخت چې $!A \notin \Gamma$ يا $!B \in \Gamma$۔
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\begin{enumerate}
+\item فرض کړئ $!A \in \Gamma$۔ که $\lnot !A \in \Gamma$ هم وي، $\Gamma$ ناسازګار دے، نو دواړه غړي يو ځاے کېدے نۀ شي۔ که نۀ $!A$ او نۀ $\lnot!A$ په $\Gamma$ کښې وي، د \olref[fol][axd][prv]{prop:provability-exhaustive} له مخې له $\Gamma\cup\{!A\}$ او $\Gamma \cup \{\lnot !A\}$ څخه لږ تر لږه يو سازګار دے۔ دا د $\Gamma$ له اعظمي والي سره ټکر لري۔ نو له دغو دوو فورمولونو څخه کټ مټ يو په سټ کښې دے او دواړه لوري ثابت شول۔
+\item که $!A \in \Gamma$، نو ښکاره ده چې $\Gamma \Proves !A$۔ اوس فرض کړئ $\Gamma \Proves !A$۔ که $!A \notin \Gamma$، د \olref{lem:truth-1} له مخې $\lnot !A \in \Gamma$۔ بيا $\Gamma \Proves
+  !A$ او $\Gamma \Proves \lnot !A$، چې د سازګارۍ خلاف دي۔
+\item تمرين۔
+\end{enumerate}
+\end{proof}
+
+د \olref{lem:truth}\olref{lem:truth-2} هغه لورے چې له ثابتېدنې غړيتوب اخلي، ښيي چې $\Gamma$ \emph{له اشتقاقي پلوه تړلے} دے؛ يعنې که $\Gamma \Proves !A$ نو $!A
+\in \Gamma$، د هر $!A$ دپاره۔
+
+\begin{prob}
+د \olref{lem:truth} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{thm}[بشپړتيا]
+\ollabel{thm:completeness}
+که $\Gamma$ سازګار وي، نو $\Gamma$ د صدق وړ دے۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ $!A_0$، $!A_1$،~\dots د ژبې د ټولو !!{formula}s بشپړ نوملړ دے۔ د !!{formula}s مخ په زياتېدو سټونه $\Gamma_0$، $\Gamma_1$،~\dots په بازګښتي ډول داسې ټاکو:
+\begin{align*}
+\Gamma_0 & = \Gamma\\
+\Gamma_{n+1} &  =
+\begin{cases}
+  \Gamma_n \cup \{!A_n\} & \text{که $\Gamma_n \cup \{!A_n\}$ سازګار وي؛}\\
+  \Gamma_n \cup \{\lnot !A_n\} & \text{که داسې نۀ وي}.
+\end{cases}
+\end{align*}
+بيا داسې تعريفوو:
+\[
+\Gamma^* = \bigcup_{0\le n}\Gamma_n.
+\]
+لاندې خبرې په خپل ترتيب ثابتوو:
+\begin{enumerate}
+\item د هر $n$ دپاره سټ $\Gamma_n$ سازګار دے؛ د $n$ پر سر استقرا او \olref[fol][axd][prv]{prop:provability-exhaustive} وکاروئ۔
+\item $\Gamma^*$ سازګار دے؛ که تناقض پکې اشتقاقېدے، د اشتقاق متناهي فرضونه به ټول د سلسلې په يوه پړاو کښې وو، چې د هغه پړاو له سازګارۍ سره ټکر لري۔
+\item $\Gamma^*$ اعظمي دے؛ د نوملړ د هر غړي په خپل پړاو کښې يا هغه غړے يا ئې نفي شامله شوې ده۔ د يوځاے شوي سټ په هره ريښتينې پراختيا کښې به يو نوے فورمول له خپلې لا موجودې نفي سره يو ځاے شي۔
+\end{enumerate}
+اوس ارزښت‌ټاکنه $v$ داسې ټاکو چې $v(p_i) = \True$ هغه او يوازې هغه وخت وي چې $p_i \in \Gamma^*$۔ پر $!A$ جوړښتي استقرا ښيي چې په $\Gamma^*$ کښې غړيتوب د $v$ له مخې له رښتينولۍ سره برابر دے۔ د نفي او شرطي تړنې حالتونه د رښتينولۍ د لمې د غړيتوب له شرطونو اخلو۔ د او او يا حالتونه په ترتيب له \olref[fol][com][ccs]{prop:ccs-and} او \olref[fol][com][ccs]{prop:ccs-or} او د ارزښت‌ټاکنې له تعريفه اخلو۔ د دروغ ثابت په سازګار سټ کښې نشته او د رښتيا ثابت د \olref[fol][axd][prp]{ax:ltrue} او اشتقاقي تړلتيا له مخې پکې شته۔ په دې بديهي نظام کښې دوه‌اړخيز شرط د دوو متقابلو شرطونو د او تړنه ده۔ نو د پېچلو !!{sentence}s دپاره هم $\overline{v}(!A) = \True$ هغه او يوازې هغه وخت چې $!A \in \Gamma^*$۔ په ځانګړي ډول $v$، $\Gamma^*$ پوره کوي؛ او چې $\Gamma \subseteq \Gamma^*$، نو $\Gamma$ هم د صدق وړ دے۔
+\end{proof}
+
+\begin{cor}
+که $\Gamma \Entails !A$ نو $\Gamma \Proves !A$۔
+\end{cor}
+
+\begin{proof}
+که $\Gamma\Proves/ !A$، د \olref[fol][axd][prv]{prop:prov-incons} له مخې $\Gamma \cup \{\lnot !A\}$ سازګار دے۔ د بشپړتيا د قضيې له مخې $\Gamma \cup
+\{\lnot !A\}$ د صدق وړ دے، نو $\Gamma \Entails/ !A$۔
+\end{proof}
+
+\begin{prop}[د تراکم قضيه]
+\ollabel{prop:compactness}
+$\Gamma$ هغه او يوازې هغه وخت د صدق وړ دے چې د $\Gamma$ هر \emph{متناهي} فرعي سټ $\Gamma_0$ د صدق وړ وي۔
+\end{prop}
+
+\begin{proof}
+$\Gamma$ هغه او يوازې هغه وخت د صدق نۀ وړ دے چې ناسازګار وي۔ دا بيا هغه او يوازې هغه وخت وي چې د $\Gamma$ کوم متناهي فرعي سټ $\Gamma_0$ ناسازګار وي، ځکه اشتقاق يوازې متناهي فرضونه کاروي۔ په پای کښې همدا هغه او يوازې هغه وخت وي چې د $\Gamma$ کوم متناهي فرعي سټ $\Gamma_0$ د صدق نۀ وړ وي۔
+\end{proof}
+
+\begin{cor}
+$\Gamma \Entails !A$ هغه او يوازې هغه وخت چې د $\Gamma$ د کوم متناهي فرعي سټ $\Gamma_0$ دپاره $\Gamma_0 \Entails !A$ وي۔
+\end{cor}
+
+\end{document}

@@ -31,8 +31,11 @@ $\alpha$ دپاره ښه ترتيب دے۔
 \end{lem}
 
 \begin{proof}
-څرګنده ده چې $\canonord$ پر $\alpha \times \alpha$ هرې دوو
-بېلابېلو جوړو ته ترتيب ورکوي۔ فرض کړئ نه $\tuple{\alpha_1,
+$\canonord$ پر $\alpha \times \alpha$ د درې‌برخيزې کلي
+له مخې يو کلک ترتيب دے: لومړے تر ټولو لوے مختص،
+بيا لومړے مختص او بيا دويم مختص پرتله کېږي۔ د دغو
+درې برخو کلکه قاموسي پرتله انتقالي او بې‌انعکاسه ده او
+هرې دوو بېلابېلو جوړو ته ترتيب ورکوي۔ فرض کړئ نه $\tuple{\alpha_1,
 \alpha_2}$ له $\tuple{\beta_1,
 \beta_2}$ څخه د $\canonord$ له مخې کوچنۍ وي، نه دويمه له
 لومړۍ څخه۔ بيا $\max(\alpha_1,
@@ -58,9 +61,12 @@ $\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
 \end{prop}
 
 \begin{proof}
-بس $f \colon \alpha \to \beta$ دې دا تابع وټاکي:
+د هم‌شمېرۍ يوه دوه اړخيزه تابعه $f \colon \alpha \to \beta$
+واخلئ۔ هغه دا تابع ټاکي:
 $\tuple{\gamma_1,
 \gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$۔
+په دواړو مختصونو د هغې معکوس وکاروئ، څو د دې نوې تابعې
+معکوس ترلاسه شي۔
 \end{proof}
 \noindent
 اوس دا ټول د يوه مهمې لمې په ثبوت کښې کاروو:
@@ -75,7 +81,9 @@ $\cardeq{\alpha}{\alpha \times \alpha}$، د هر نامتناهي ترتيبي
 \olref[sfr][siz][zigzag]{natsquaredenumerable} ښيي چې
 $\cardeq{\omega}{\omega\times\omega}$، نو $\omega \in \alpha$۔
 سربېره پر دې، $\alpha$ اصلي عدد دے: د تناقض دپاره فرض کړئ
-چې نه دے؛ بيا $\card{\alpha} \in \alpha$، نو د فرضيې له مخې
+چې نه دے؛ بيا $\card{\alpha} \in \alpha$، او د
+راکړل شوي نامتناهي عدد سره د هم‌شمېرۍ له مخې دا کوچنے
+اصلي عدد هم نامتناهي دے۔ نو د فرضيې له مخې
 $\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$؛
 او د تعريف له مخې $\cardeq{\card{\alpha}}{\alpha}$؛ نو له
 \olref{simplecardproduct} څخه
@@ -88,7 +96,10 @@ $\cardeq{\alpha}{\alpha\times\alpha}$ راځي۔
 \end{align*}
 که $\gamma = \max(\gamma_1, \gamma_2)$ ونيسو، نو
 $\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$۔
-نو کله چې $\gamma$ نامتناهي وي، لاندې ته پام وکړئ:
+له ټاکلې جوړې مخکښې د هرې جوړې دواړه مختصونه تر لوی
+مختص يا له هغه سره برابر دي۔ که دا مختص متناهي وي،
+نو مخکنۍ برخه متناهي ده او اندازه يې تر اصلي نامتناهي
+عدد کمه ده۔ نو کله چې $\gamma$ نامتناهي وي، لاندې ته پام وکړئ:
 \begin{align*}
 	\text{Seg}(\gamma_1, \gamma_2) &
 	\precsim ((\gamma \ordplus 1)\ordtimes (\gamma \ordplus 1))\\
@@ -98,7 +109,10 @@ $\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$۔
 	&\approx \gamma \text{، د استقرا د فرضيې له مخې}\\
 	& \prec \alpha\text{، ځکه $\alpha$ اصلي عدد دے}
 \end{align*}
-نو $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$،
+د ترتيب د ډول هره خاصه پيلنۍ برخه د يوې ټاکلې جوړې
+مخکنۍ برخه ده۔ که ډول تر اصلي عدد لوے وے، نو خپله
+اصلي عدد به يوه داسې پيلنۍ برخه وه چې اندازه يې تر
+ځان کمه وي۔ نو $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$،
 او له دې $\cardle{\alpha \times \alpha}{\alpha}$۔ څرنګه چې
 طبعاً $\cardle{\alpha}{\alpha \times \alpha}$، پايله د
 شرودر--برنشتاين له قضيې راځي۔
@@ -120,7 +134,12 @@ $\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$۔
 \cardfont{b})$۔ بيا د \olref{alphatimesalpha} په کارولو سره
 $\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
 \cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
-\cardfont{a} \cardtimes \cardfont{a}$۔ \end{proof}\noindent په ورته ډول،
+\cardfont{a} \cardtimes \cardfont{a}$۔ د ضرب د
+نابرابرۍ لپاره له دويم نامتناهي عامل څخه يو ثابت غړے
+وټاکئ؛ په دغه مختص لومړے عامل په حاصل ضرب کښې ورګډېږي۔
+بل لور د کوچني عامل د ورګډولو تابع ورکوي، ځکه د دواړو
+سترو عاملونو حاصل ضرب د لومړي عامل هومره غړي لري۔
+\end{proof}\noindent په ورته ډول،
 که $\cardfont{a}$ نامتناهي وي، د $\cardfont{a}$ په اندازه د
 داسې سټونو اتحاد چې د هر يوه اندازه $\leq\cardfont{a}$ وي،
 اندازه يې هم $\leq\cardfont{a}$ وي:

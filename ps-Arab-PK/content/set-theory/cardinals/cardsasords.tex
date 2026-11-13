@@ -53,13 +53,18 @@ $A$ ښه ترتيب جوړوي»۔
 $A$ وټاکئ۔ د ښه ترتيب له مخې $\tuple{A, R}$ يو ښه ترتيب
 شته۔ د \olref[ordinals][ordtype]{thmOrdinalRepresentation} له مخې
 $\tuple{A, R}$ له يوه يوازيني ترتيبي عدد $\beta$ سره هم‌شکل دے۔
-نو $\cardeq{A}{\beta}$۔ د نامتناهيت هاخوا استقرا له مخې داسې يو
+نو $\cardeq{A}{\beta}$۔ تر دې شاهد پورې ټول هم‌شمېره
+ترتيبي عددونه په بېلونه راټول کړئ۔ دا ناتش سټ د ښه ترتيب
+له مخې يو تر ټولو کوچنے غړے لري۔ يعنې داسې يو
 تر ټولو کوچنے ترتيبي عدد $\gamma$ شته چې $\cardeq{A}{\gamma}$
 وي۔ نو $\card{A} = \gamma$، او \olref{cardaexists} او
 \olref{cardaapprox} ثابت شول۔ د \olref{cardaidem} د ثبوت دپاره
 وګورئ چې که $\delta \in \gamma$ وي، نو $\cardless{\delta}{A}$ د
-$\gamma$ د ټاکنې له مخې؛ او ځکه چې هم‌شمېري يوه د همارزښت
-اړيکه ده (\olref[sfr][siz][equ]{equinumerosityisequi})، نو
+$\gamma$ د ټاکنې له مخې: کوچنے ترتيبي عدد په لوی کښې
+فرعي سټ دے، نو د ورګډولو تابعه له هغه څخه راځي۔ د لږوالي
+له مخې دوه اړخيز يو پر يو سمون نشته۔ دا دواړه شرطونه د
+هم‌شمېرۍ په دواړو لورو د تابعو له يوځاے کولو سره ساتل کېږي
+(\olref[sfr][siz][equ]{equinumerosityisequi})، نو
 $\cardless{\delta}{\gamma}$ هم دے۔ نو $\gamma =
 \card{\gamma}$۔
 %So, for reductio, suppose that there is some ordinal $\delta \in \gamma$ such that $\cardeq{\gamma}{\delta}$. Then, $\cardeq{\cardeq{A}{\gamma}}{\delta}$ so that $\cardeq{A}{\delta}$ by \olref[sfr][set][equ]{equinumerosityisequi}, which contradicts the choice of $\gamma$ as the least ordinal such that $\cardeq{A}{\gamma}$. 
@@ -83,8 +88,8 @@ $\kappa, \lambda$۔):
 \end{lem}
 
 \begin{proof}
-د دويمې ادعا له چپې خوا ښۍ خوا ته لورے ثابتوو (نور حالتونه ورته
-دي او تمرين ته يې پرېږدو)۔ نو لاندې شکل وګورئ:
+د دويمې ادعا له چپې خوا ښۍ خوا ته لوري نه پيل کوو۔
+د پاتې لورو دليلونه ورپسې راځي۔ لومړے لاندې شکل وګورئ۔
 \begin{center}
 	\begin{tikzpicture}
 	\node (nodea) {$A$};
@@ -102,6 +107,16 @@ $\kappa, \lambda$۔):
 !!a{injection} $A\to B$ شته۔ اوس د غشو په تعقيب له $\card{A}$
 څخه $A$ ته، بيا $B$ ته، او بيا $\card{B}$ ته ځو؛ په دې توګه
 !!a{injection} $\card{A} \to \card{B}$ ترلاسه کوو (مات غشے)۔
+د دې تابعې حاصل د ښي ترتيبي عدد فرعي سټ دے؛ د القا شوي
+ترتيب ډول يې تر ښي ترتيبي عدد لوی نۀ دے۔ ځکه له فرعي سټ
+څخه د ترلاسه شوي ترتيب هر غړے په اصلي ترتيب کښې لږ تر لږه
+د خپل نوي شاخص هومره شاخص لري۔ دا په نامتناهيت هاخوا استقرا
+ثابتېږي۔ حاصل له کيڼ سټ سره هم‌شمېره دے، نو د کيڼ اصلي
+عدد لږوالے غوښتل شوې نابرابري ورکوي۔ په مقابل لوري کښې
+د کوچني ترتيبي عدد د ورګډولو تابع واخلئ او له دواړو
+دوه اړخيزو تابعو سره يې يوځاے کړئ۔ د برابرۍ ادعا د
+هم‌شمېرۍ د انتقالي والي او د لږ ترتيبي استازي له ټاکلو راځي۔
+کلکه نابرابري بيا د نابرابرۍ او د برابرۍ د نشتون ګډ شرط دے۔
 \end{proof}\noindent له \olref{lem:CardinalsBehaveRight} څخه د
 شرودر--برنشتاين قضيه هم بيا ثابتولے شو۔ دا ادعا ده چې که
 $\cardle{A}{B}$ او $\cardle{B}{A}$ وي، نو $\cardeq{A}{B}$۔
